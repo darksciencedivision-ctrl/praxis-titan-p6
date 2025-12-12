@@ -1,0 +1,10 @@
+=== FIRST-ORDER PROBABILISTIC RISK ASSESSMENT (PRA) ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-07_05-08-02.txt
+
+Domain | Risk | FailureClass | Likelihood | Severity | DeterministicRPN | PosteriorMean | PosteriorRPN
+--- | --- | --- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.450 | 5.00 | 2.250 | 0.483 | 2.417
+Technical | Substation fire | CMF | 0.300 | 5.00 | 1.500 | 0.433 | 2.167
+Cyber | SCADA intrusion | CF | 0.400 | 4.00 | 1.600 | 0.467 | 1.867
+Operational | Load shedding misfire | LF | 0.350 | 3.00 | 1.050 | 0.450 | 1.350
+Environmental | Storm line failure | ENV | 0.550 | 4.00 | 2.200 | 0.517 | 2.067

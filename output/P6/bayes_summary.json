@@ -1,0 +1,33 @@
+{
+  "bayes_output": {
+    "R_GAS": {
+      "alpha_post": 2.35,
+      "alpha_prior": 1.0,
+      "beta_post": 1.65,
+      "beta_prior": 1.0,
+      "domain": "Gas",
+      "id": "R_GAS",
+      "p_base": 0.675,
+      "p_effective": 0.5875,
+      "pseudo_n_used": 2.0,
+      "risk": "Compressor backbone trip"
+    },
+    "R_GRID": {
+      "alpha_post": 4.0,
+      "alpha_prior": 2.0,
+      "beta_post": 6.0,
+      "beta_prior": 3.0,
+      "domain": "PowerGrid",
+      "id": "R_GRID",
+      "p_base": 0.4,
+      "p_effective": 0.4,
+      "pseudo_n_used": 5.0,
+      "risk": "Regional 500 kV corridor loss"
+    }
+  },
+  "diagnostics": {
+    "input_count": 2,
+    "priors_source": "C:\\ai_control\\config\\risk_priors_example.json",
+    "warnings": []
+  }
+}

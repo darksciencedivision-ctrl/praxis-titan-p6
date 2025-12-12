@@ -1,0 +1,6 @@
+{
+  "scenarios": [
+    "config/scenario_example.json",
+    "config/scenario_example_alt.json"
+  ]
+}

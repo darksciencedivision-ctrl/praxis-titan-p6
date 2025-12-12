@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "ccf_groups": [
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "ccf_group": "GasBackboneFault",
+      "beta_factor": 0.99
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "ccf_group": "GasBackboneFault",
+      "beta_factor": 0.99
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "ccf_group": "SubstationGroup",
+      "beta_factor": 0.5
+    }
+  ]
+}

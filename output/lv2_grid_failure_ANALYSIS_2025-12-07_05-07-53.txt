@@ -1,0 +1,33 @@
+1) SYSTEM BREAKDOWN (TABLE)
+
+| Component                 | Status      |
+|---------------------------|-------------|
+| Transformer overloads     | Occurring   |
+| Substation fires         | Occurring   |
+| SCADA communication loss | Occurring   |
+| Emergency load shedding  | Planned     |
+
+2) RISK ANALYSIS (NUMERIC WITH RPN)
+
+- Likelihood of transformer overloads: 0.9
+- Severity of transformer overloads: 4
+- RPN for transformer overloads: 3.6
+
+- Likelihood of substation fires: 0.75
+- Severity of substation fires: 5
+- RPN for substation fires: 3.75
+
+- Likelihood of SCADA communication loss: 0.85
+- Severity of SCADA communication loss: 3
+- RPN for SCADA communication loss: 2.55
+
+- Likelihood of emergency load shedding: 0.6
+- Severity of emergency load shedding: 2
+- RPN for emergency load shedding: 1.2
+
+3) RESEARCH QUESTIONS (NUMBERED)
+
+1. What are the primary causes of transformer overloads in a national power grid?
+2. How can substation fires be prevented or mitigated during peak demand events?
+3. What measures can be taken to improve SCADA communication resilience during crises?
+4. Are there strategies for more efficient emergency load shedding that minimize disruption?

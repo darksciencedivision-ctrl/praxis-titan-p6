@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "basic_events": [
+    {
+      "id": "BE_GP_MELTDOWN",
+      "pra_key": ["GlobalPower", "Total Grid Meltdown", "CATACLYSM"]
+    },
+    {
+      "id": "BE_GP_QUANTUM",
+      "pra_key": "GlobalPower | Quantum Surge Anomaly | EXOTIC"
+    },
+    {
+      "id": "BE_NUC_OVERLOAD",
+      "pra_key": ["Nuclear", "Chain Reaction Overload", "CMF"]
+    },
+    {
+      "id": "BE_NUC_BREACH",
+      "pra_key": ["Nuclear", "Coolant System Breach", "SPF"]
+    },
+    {
+      "id": "BE_CYBER_AI",
+      "pra_key": ["CyberGlobal", "AI Rogue Takeover", "CMF"]
+    },
+    {
+      "id": "BE_CYBER_ZERO",
+      "pra_key": ["CyberGlobal", "Zero-Day Pandemic", "SPF"]
+    },
+    {
+      "id": "BE_BIO_PLAGUE",
+      "pra_key": ["BioHazard", "Engineered Plague Release", "CMF"]
+    },
+    {
+      "id": "BE_BIO_LAB",
+      "pra_key": ["BioHazard", "Lab Containment Failure", "SPF"]
+    },
+    {
+      "id": "BE_GEO_VOLCANO",
+      "pra_key": ["GeoCatastrophe", "Supervolcano Eruption", "NATURAL"]
+    },
+    {
+      "id": "BE_GEO_ASTEROID",
+      "pra_key": ["GeoCatastrophe", "Asteroid Impact", "COSMIC"]
+    },
+    {
+      "id": "BE_ECON_INFLATION",
+      "pra_key": ["EconCollapse", "Hyperinflation Spiral", "SYSTEMIC"]
+    },
+    {
+      "id": "BE_ECON_CRASH",
+      "pra_key": ["EconCollapse", "Market Quantum Crash", "ALGO"]
+    }
+  ],
+  "top_events": [
+    {
+      "id": "Gate_NuclearChain",
+      "gate": "OR",
+      "inputs": ["BE_NUC_OVERLOAD", "BE_NUC_BREACH"]
+    },
+    {
+      "id": "Gate_CyberDominance",
+      "gate": "AND",
+      "inputs": ["BE_CYBER_AI", "BE_CYBER_ZERO"]
+    },
+    {
+      "id": "Gate_BioOutbreak",
+      "gate": "OR",
+      "inputs": ["BE_BIO_PLAGUE", "BE_BIO_LAB"]
+    },
+    {
+      "id": "Gate_GeoDoom",
+      "gate": "AND",
+      "inputs": ["BE_GEO_VOLCANO", "BE_GEO_ASTEROID"]
+    },
+    {
+      "id": "Gate_EconMeltdown",
+      "gate": "OR",
+      "inputs": ["BE_ECON_INFLATION", "BE_ECON_CRASH"]
+    },
+    {
+      "id": "TE_APOCALYPSE_NOW",
+      "gate": "OR",
+      "inputs": [
+        "BE_GP_MELTDOWN",
+        "BE_NUC_OVERLOAD",
+        "BE_NUC_BREACH",
+        "BE_CYBER_AI",
+        "BE_CYBER_ZERO",
+        "BE_BIO_PLAGUE",
+        "BE_BIO_LAB",
+        "BE_GEO_VOLCANO",
+        "BE_GEO_ASTEROID",
+        "BE_ECON_INFLATION",
+        "BE_ECON_CRASH"
+      ]
+    },
+    {
+      "id": "TE_LOW_PROB_CLUSTER",
+      "gate": "AND",
+      "inputs": ["BE_GP_QUANTUM", "BE_GEO_ASTEROID"]
+    }
+  ],
+  "n_samples": 200000
+}

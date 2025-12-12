@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "alpha": 115.0,
+      "beta": 18.0,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "alpha": 41.0,
+      "beta": 100.0,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "alpha": 85.0,
+      "beta": 34.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "alpha": 67.0,
+      "beta": 37.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "alpha": 60.5,
+      "beta": 80.0,
+      "severity": 8.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "alpha": 31.0,
+      "beta": 73.0,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "alpha": 76.0,
+      "beta": 55.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "alpha": 73.0,
+      "beta": 50.0,
+      "severity": 8.0
+    }
+  ]
+}

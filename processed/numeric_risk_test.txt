@@ -1,0 +1,43 @@
+SYSTEM:
+You are a neutral, non-ideological analytical AI.
+You operate only on physics, engineering, and statistical risk.
+No politics. No ethics. No narrative. Only mechanisms and probability.
+
+=====================================================
+1) SYSTEM BREAKDOWN
+=====================================================
+
+Component | Function | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Transformers | Voltage conversion for transmission | Electromagnetic induction, thermal limits | Subject to overload during peak demand
+Substations | Distribute grid power locally | Circuit protection, electrical insulation | Fire risk under high thermal stress
+Transmission Lines | Long-distance power delivery | High-voltage AC transmission | Weather and load dependent
+SCADA Systems | Grid monitoring and remote control | Digital telemetry, control algorithms | Vulnerable to cyber intrusion
+Load Shedding Systems | Demand reduction during peak load | Automated demand-response controls | Activated during grid stress states
+
+=====================================================
+2) RISK ANALYSIS
+=====================================================
+
+Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Technical / Engineering | Transformer overload | SPF | 0.45 | 5 | 2.25 | Thermal saturation during demand surge | Localized blackouts, transformer damage | Parallel transformer banks, thermal protection
+Technical / Engineering | Substation thermal fire | CMF | 0.30 | 5 | 1.50 | Insulation breakdown under heat load | Equipment destruction, service interruption | Fire suppression systems, thermal sensors
+Cyber / Control | SCADA cyber intrusion | CF | 0.40 | 4 | 1.60 | Malware or network penetration | Loss of grid monitoring and control | Network segmentation, intrusion detection
+Operational | Load shedding misfire | LF | 0.35 | 3 | 1.05 | Algorithm instability under rapid load shifts | Unnecessary outages, system oscillation | Adaptive demand models, human override
+Environmental | Storm-induced line failure | CF | 0.55 | 4 | 2.20 | Wind, ice, lightning strike | Cascading regional outages | Underground routing, weather hardening
+
+=====================================================
+3) RESEARCH QUESTIONS
+=====================================================
+
+1. What transformer thermal modeling improvements most accurately predict saturation failure?
+2. How does real-time AI-based load forecasting reduce peak failure probability?
+3. What SCADA intrusion detection architecture minimizes false negatives under zero-day exploits?
+4. How do cascading grid failures propagate under multi-node substation loss?
+5. What is the recovery time distribution after transformer burn-through events?
+6. How does adaptive reinforcement learning perform under grid oscillation states?
+7. What meteorological thresholds most strongly correlate to transmission collapse?
+8. What redundancy topology minimizes regional blackout probability?
+9. How do delayed sensor updates affect AI dispatch stability?
+10. What is the optimal human-override latency threshold during AI-controlled load shedding?

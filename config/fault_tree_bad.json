@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "fault_tree_id": "FT_VALIDATION_TEST",
+  "reliability_horizons": [1.0],
+  "top_event": "TE_UNWANTED_FAIL",
+  "gates": {
+    "BE_GRID_LOSS": {
+      "type": "basic_event",
+      "risk_id": "PowerGrid_Regional 500 kV corridor loss_CMF"
+    },
+    "G_PROTECTION_IGNORED": {
+      "type": "NOT",
+      "inputs": ["BE_GRID_LOSS"]
+    },
+    "TE_UNWANTED_FAIL": {
+      "type": "AND",
+      "inputs": ["BE_GRID_LOSS", "G_PROTECTION_IGNORED"]
+    }
+  }
+}

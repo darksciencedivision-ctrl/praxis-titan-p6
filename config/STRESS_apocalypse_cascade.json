@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "links": [
+    {
+      "source": ["GlobalPower", "Total Grid Meltdown", "CATACLYSM"],
+      "target": ["Nuclear", "Chain Reaction Overload", "CMF"],
+      "influence": 1.0
+    },
+    {
+      "source": ["Nuclear", "Chain Reaction Overload", "CMF"],
+      "target": ["CyberGlobal", "AI Rogue Takeover", "CMF"],
+      "influence": 0.999
+    },
+    {
+      "source": ["CyberGlobal", "AI Rogue Takeover", "CMF"],
+      "target": ["BioHazard", "Engineered Plague Release", "CMF"],
+      "influence": 1.0
+    },
+    {
+      "source": ["BioHazard", "Engineered Plague Release", "CMF"],
+      "target": ["GlobalPower", "Total Grid Meltdown", "CATACLYSM"],
+      "influence": 0.5
+    },
+    {
+      "source": ["GeoCatastrophe", "Supervolcano Eruption", "NATURAL"],
+      "target": ["EconCollapse", "Hyperinflation Spiral", "SYSTEMIC"],
+      "influence": 0.000001
+    },
+    {
+      "source": ["EconCollapse", "Hyperinflation Spiral", "SYSTEMIC"],
+      "target": ["GeoCatastrophe", "Supervolcano Eruption", "NATURAL"],
+      "influence": 0.0
+    }
+  ]
+}

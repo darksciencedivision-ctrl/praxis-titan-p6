@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "basic_events": [
+    {
+      "id": "BE_R1",
+      "pra_key": [
+        "PowerGrid",
+        "Collapse",
+        "CMF"
+      ]
+    },
+    {
+      "id": "BE_R2",
+      "pra_key": [
+        "Power",
+        "Substation Fire",
+        "SPF"
+      ]
+    },
+    {
+      "id": "BE_R4",
+      "pra_key": [
+        "Gas",
+        "Compressor Fault",
+        "SPF"
+      ]
+    },
+    {
+      "id": "BE_R5",
+      "pra_key": [
+        "Cyber",
+        "DDoS Attack",
+        "CMF"
+      ]
+    }
+  ],
+  "top_events": [
+    {
+      "id": "Gate_A",
+      "gate": "AND",
+      "inputs": [
+        "BE_R1",
+        "BE_R2"
+      ]
+    },
+    {
+      "id": "Gate_B",
+      "gate": "OR",
+      "inputs": [
+        "BE_R4",
+        "BE_R5"
+      ]
+    },
+    {
+      "id": "TE_GlobalBlackout",
+      "gate": "AND",
+      "inputs": [
+        "BE_R1",
+        "BE_R2",
+        "BE_R4"
+      ]
+    }
+  ],
+  "n_samples": 50000
+}

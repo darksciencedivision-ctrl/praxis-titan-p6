@@ -1,0 +1,175 @@
+{
+  "numeric": {
+    "basic_probs": {
+      "R_GRID": 0.4,
+      "R_GAS": 0.45
+    },
+    "rows": [
+      {
+        "id": "R_GRID",
+        "domain": "PowerGrid",
+        "risk": "Regional 500 kV corridor loss",
+        "failure_class": "CMF",
+        "likelihood": 0.4,
+        "severity": 5.0,
+        "p_s": 0.4,
+        "severity_numeric": 5.0,
+        "rpn": 2.0
+      },
+      {
+        "id": "R_GAS",
+        "domain": "Gas",
+        "risk": "Compressor backbone trip",
+        "failure_class": "SPF",
+        "likelihood": 0.45,
+        "severity": 4.0,
+        "p_s": 0.45,
+        "severity_numeric": 4.0,
+        "rpn": 1.8
+      }
+    ]
+  },
+  "bayes": {
+    "posterior_probs": {
+      "R_GRID": 0.42857142857142855,
+      "R_GAS": 0.4642857142857143
+    },
+    "posterior_rows": [
+      {
+        "risk_id": "R_GRID",
+        "p_basic": 0.4,
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.0,
+        "beta_post": 4.0,
+        "posterior_mean": 0.42857142857142855
+      },
+      {
+        "risk_id": "R_GAS",
+        "p_basic": 0.45,
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.25,
+        "beta_post": 3.75,
+        "posterior_mean": 0.4642857142857143
+      }
+    ]
+  },
+  "ccf": {
+    "probs": {
+      "R_GRID": 0.42857142857142855,
+      "R_GAS": 0.4642857142857143
+    },
+    "cfg": {
+      "groups": [
+        {
+          "name": "XFMR_COMMON_CAUSE",
+          "beta_factor": 0.3,
+          "members": [
+            {
+              "domain": "Technical",
+              "risk": "Transformer overload",
+              "failure_class": "SPF"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "cascade": {
+    "results": {
+      "final_probs": {
+        "R_GRID": 0.42857142857142855,
+        "R_GAS": 0.4642857142857143
+      },
+      "multipliers": {
+        "schema_version": "1.0",
+        "description": "Cascade influences between gas compressor backbone and 500 kV grid corridor for example_black_swan.",
+        "links": [
+          {
+            "source": [
+              "Gas",
+              "Compressor backbone trip",
+              "SPF"
+            ],
+            "target": [
+              "PowerGrid",
+              "Regional 500 kV corridor loss",
+              "CMF"
+            ],
+            "influence": 0.65
+          },
+          {
+            "source": [
+              "PowerGrid",
+              "Regional 500 kV corridor loss",
+              "CMF"
+            ],
+            "target": [
+              "Gas",
+              "Compressor backbone trip",
+              "SPF"
+            ],
+            "influence": 0.35
+          }
+        ]
+      }
+    },
+    "final_probs": {
+      "R_GRID": 0.42857142857142855,
+      "R_GAS": 0.4642857142857143
+    },
+    "cfg": {
+      "schema_version": "1.0",
+      "description": "Cascade influences between gas compressor backbone and 500 kV grid corridor for example_black_swan.",
+      "links": [
+        {
+          "source": [
+            "Gas",
+            "Compressor backbone trip",
+            "SPF"
+          ],
+          "target": [
+            "PowerGrid",
+            "Regional 500 kV corridor loss",
+            "CMF"
+          ],
+          "influence": 0.65
+        },
+        {
+          "source": [
+            "PowerGrid",
+            "Regional 500 kV corridor loss",
+            "CMF"
+          ],
+          "target": [
+            "Gas",
+            "Compressor backbone trip",
+            "SPF"
+          ],
+          "influence": 0.35
+        }
+      ]
+    }
+  },
+  "fault_tree": {
+    "top_event": "TE_K2_OF_2",
+    "basic_event_probs": {
+      "R_GRID": 0.42857142857142855,
+      "R_GAS": 0.4642857142857143
+    },
+    "mc_samples": 100000,
+    "p_top_analytic": 0.1989795918367347,
+    "gate_outputs": {
+      "BE_GRID_FAIL": 0.42857142857142855,
+      "BE_GAS_FAIL": 0.4642857142857143,
+      "TE_K2_OF_2": 0.1989795918367347
+    },
+    "p_top_mc": 0.19984,
+    "mc": {
+      "p_top_mc": 0.19984,
+      "n_samples": 100000
+    }
+  },
+  "reliability": {}
+}

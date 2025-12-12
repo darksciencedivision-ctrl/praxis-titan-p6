@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "description": "Cascade influences between gas compressor backbone and 500 kV grid corridor for example_black_swan.",
+  "links": [
+    {
+      "source": [
+        "Gas",
+        "Compressor backbone trip",
+        "SPF"
+      ],
+      "target": [
+        "PowerGrid",
+        "Regional 500 kV corridor loss",
+        "CMF"
+      ],
+      "influence": 0.65
+    },
+    {
+      "source": [
+        "PowerGrid",
+        "Regional 500 kV corridor loss",
+        "CMF"
+      ],
+      "target": [
+        "Gas",
+        "Compressor backbone trip",
+        "SPF"
+      ],
+      "influence": 0.35
+    }
+  ]
+}

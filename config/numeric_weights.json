@@ -1,0 +1,16 @@
+{
+  "severity_max": 5.0,
+  "weights": {
+    "likelihood": 0.5,
+    "severity": 0.3,
+    "failure_class": 0.2
+  },
+  "failure_class_weights": {
+    "CMF": 1.25,
+    "SPF": 1.00,
+    "LF": 0.90,
+    "ENV": 0.80,
+    "CYBER": 1.15,
+    "DEFAULT": 1.00
+  }
+}

@@ -1,0 +1,8 @@
+1) SYSTEM BREAKDOWN
+
+Component | Function  | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Transformer Overload | Power transfer capacity | Thermal limits of copper wire used in transformer windings | [SPECULATIVE] Transformer damage or failure could lead to widespread power outages.
+Substation Fires | Power distribution management | Fire suppression systems and building materials | Uncertainty exists regarding the effectiveness of fire suppression systems during extreme weather events.
+SCADA Communication Loss | Remote monitoring and control | Cybersecurity measures, redundancy in communication channels | [SPECULATIVE] A single point failure in the communication system could lead to widespread power outages.
+Emergency Load Shedding | Power demand management | Pre-planned load shedding protocols | Uncertainty exists regarding the effectiveness of load shedding protocols during a winter peak demand event.

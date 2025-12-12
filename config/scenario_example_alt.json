@@ -1,0 +1,22 @@
+{
+  "scenario_name": "Titan Alt Scenario",
+  "description": "Alternate test scenario for P6 batch runner.",
+  "risks": [
+    {
+      "id": "R_GRID",
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "likelihood": 0.30,
+      "severity": 5.0
+    },
+    {
+      "id": "R_GAS",
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "CMF",
+      "likelihood": 0.60,
+      "severity": 4.0
+    }
+  ]
+}

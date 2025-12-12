@@ -1,0 +1,21 @@
+{
+  "priors": [
+    {
+      "id": "R_GRID",
+      "domain": "PowerGrid",
+      "alpha_prior": 2.0,
+      "beta_prior": 3.0,
+      "n_obs": 5.0
+    },
+    {
+      "id": "R_GAS",
+      "domain": "Gas",
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "n_obs": 2.0
+    }
+  ],
+  "default_alpha": 0.5,
+  "default_beta": 0.5,
+  "pseudo_n": 10.0
+}

@@ -1,0 +1,24 @@
+=== PRAxis FAULT-TREE MONTE CARLO ===
+PRA source: C:\ai_control\output\pra_ANALYSIS_2025-12-08_21-27-31.txt
+Reliability source: C:\ai_control\output\reliability_from_numeric_ANALYSIS_2025-12-08_21-27-31.txt
+Fault-tree config: C:\ai_control\fault_tree_config.txt
+Simulations: 100000
+
+=== BASIC EVENTS (BE probabilities after overrides) ===
+BE_ID | Domain | Risk | FailureClass | Probability
+BE1 | Environmental | 125 °F (52 °C) heat dome 5 days | ENV | 0.000000
+BE2 | Environmental | Carrington-level GMD (G5) | ENV | 0.000000
+BE3 | Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF | 0.000000
+BE4 | Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF | 0.000000
+BE5 | Cyber | Starlink + public cloud simultaneous multi-region loss | CF | 0.000000
+BE6 | Technical | >400 large transformers permanent damage | CMF | 0.000000
+BE7 | Nuclear | Station blackout >8 hours at ≥12 plants | CMF | 0.000000
+BE8 | Human | Control room + field crew <25% available | LF | 0.000000
+BE9 | Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF | 0.000000
+
+=== TOP EVENTS (Monte Carlo results, 95% CI) ===
+TE_ID | GateType | K | p_hat | StdErr | CI_low_95 | CI_high_95
+TE_CONTINENTAL_COLLAPSE | AND | - | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_TRANSFORMER_APOCALYPSE | KOFN | 3 | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_NUCLEAR_CASCADE | KOFN | 4 | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_TOTAL_SOCIETAL | OR | - | 0.000000 | 0.000000 | 0.000000 | 0.000000

@@ -1,0 +1,48 @@
+{
+  "scenario_id": "BUILDER_CONSTRAINT_001",
+  "scenario_name": "Builder Under Constraint",
+  "description": "A high-output human–AI analytical system (Samuel + PRAXIS) is producing exceptional throughput despite inadequate workstation capability and insufficient access to certifications required for career advancement. The system risks stagnation without external support.",
+
+  "risks": [
+    {
+      "id": "R_HW_LIMIT",
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.65,
+      "severity": 0.90
+    },
+    {
+      "id": "R_CERT_GAP",
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "likelihood_scenario": 0.70,
+      "severity": 0.85
+    },
+    {
+      "id": "R_SOC_COMM",
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "likelihood_scenario": 0.60,
+      "severity": 0.80
+    },
+    {
+      "id": "R_ENG_OUTPUT",
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "likelihood_scenario": 0.30,
+      "severity": 0.95
+    },
+    {
+      "id": "R_SUPPORT_FAIL",
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "likelihood_scenario": 0.50,
+      "severity": 0.90
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "aggregate": {
+    "reliability_max": 0.09805990694531497,
+    "reliability_mean": 0.038120014644604384,
+    "reliability_min": 0.004593814932803197,
+    "top_event_max": 0.9954061850671968,
+    "top_event_mean": 0.9618799853553957,
+    "top_event_min": 0.901940093054685
+  },
+  "attention": {
+    "targets": [
+      {
+        "id": "R_GAS",
+        "max_abs_delta_reliability": 0.035929782522577725,
+        "max_abs_delta_top_event": 0.035929782522577725,
+        "name": "Gas | Compressor backbone trip"
+      },
+      {
+        "id": "R_GRID",
+        "max_abs_delta_reliability": 0.016303494064715096,
+        "max_abs_delta_top_event": 0.016303494064715096,
+        "name": "PowerGrid | Regional 500 kV corridor loss"
+      }
+    ]
+  },
+  "baseline": {
+    "hash": "73080d937d8a0ac3dfaf2d02bf98b824e8b212623504ddef8db0c5f29ccf7c3a",
+    "scenario_name": "Titan K-of-N Test Scenario",
+    "scenario_path": "C:\\ai_control\\config\\scenario_example.json",
+    "system_reliability": 0.03816402760609927,
+    "top_event_probability": 0.9618359723939007
+  },
+  "per_mode": {
+    "chaotic": {
+      "count": 6,
+      "reliability_max": 0.03383396515479142,
+      "reliability_mean": 0.022993359180210466,
+      "reliability_min": 0.009217674650245922,
+      "top_event_max": 0.9907823253497541,
+      "top_event_mean": 0.9770066408197895,
+      "top_event_min": 0.9661660348452086
+    },
+    "optimistic": {
+      "count": 6,
+      "reliability_max": 0.09805990694531497,
+      "reliability_mean": 0.08366526128666901,
+      "reliability_min": 0.06883074520681576,
+      "top_event_max": 0.9311692547931842,
+      "top_event_mean": 0.9163347387133309,
+      "top_event_min": 0.901940093054685
+    },
+    "pessimistic": {
+      "count": 6,
+      "reliability_max": 0.011915625015389897,
+      "reliability_mean": 0.007701423466933681,
+      "reliability_min": 0.004593814932803197,
+      "top_event_max": 0.9954061850671968,
+      "top_event_mean": 0.9922985765330664,
+      "top_event_min": 0.9880843749846101
+    }
+  },
+  "sensitivity": {
+    "factors": [
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "risks": [
+      {
+        "id": "R_GRID",
+        "max_abs_delta_reliability": 0.016303494064715096,
+        "max_abs_delta_top_event": 0.016303494064715096,
+        "name": "PowerGrid | Regional 500 kV corridor loss",
+        "points": [
+          {
+            "delta_reliability": 0.016303494064715096,
+            "delta_top_event": -0.016303494064715096,
+            "factor": 0.5,
+            "reliability": 0.05446752167081437,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GRID_f050.json",
+            "top_event": 0.9455324783291856
+          },
+          {
+            "delta_reliability": 0.007675550397242992,
+            "delta_top_event": -0.007675550397242992,
+            "factor": 0.75,
+            "reliability": 0.04583957800334226,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GRID_f075.json",
+            "top_event": 0.9541604219966577
+          },
+          {
+            "delta_reliability": 0.0,
+            "delta_top_event": 0.0,
+            "factor": 1.0,
+            "reliability": 0.03816402760609927,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GRID_f100.json",
+            "top_event": 0.9618359723939007
+          },
+          {
+            "delta_reliability": -0.0067813806577295965,
+            "delta_top_event": 0.0067813806577295965,
+            "factor": 1.25,
+            "reliability": 0.031382646948369675,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GRID_f125.json",
+            "top_event": 0.9686173530516303
+          },
+          {
+            "delta_reliability": -0.015031759420045865,
+            "delta_top_event": 0.015031759420045865,
+            "factor": 1.5,
+            "reliability": 0.023132268186053406,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GRID_f150.json",
+            "top_event": 0.9768677318139466
+          }
+        ]
+      },
+      {
+        "id": "R_GAS",
+        "max_abs_delta_reliability": 0.035929782522577725,
+        "max_abs_delta_top_event": 0.035929782522577725,
+        "name": "Gas | Compressor backbone trip",
+        "points": [
+          {
+            "delta_reliability": 0.035929782522577725,
+            "delta_top_event": -0.035929782522577725,
+            "factor": 0.5,
+            "reliability": 0.074093810128677,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GAS_f050.json",
+            "top_event": 0.925906189871323
+          },
+          {
+            "delta_reliability": 0.01902328632179251,
+            "delta_top_event": -0.01902328632179251,
+            "factor": 0.75,
+            "reliability": 0.05718731392789178,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GAS_f075.json",
+            "top_event": 0.9428126860721082
+          },
+          {
+            "delta_reliability": 0.0,
+            "delta_top_event": 0.0,
+            "factor": 1.0,
+            "reliability": 0.03816402760609927,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GAS_f100.json",
+            "top_event": 0.9618359723939007
+          },
+          {
+            "delta_reliability": -0.01382634120928028,
+            "delta_top_event": 0.01382634120928028,
+            "factor": 1.25,
+            "reliability": 0.02433768639681899,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GAS_f125.json",
+            "top_event": 0.975662313603181
+          },
+          {
+            "delta_reliability": -0.023500358746264882,
+            "delta_top_event": 0.023500358746264882,
+            "factor": 1.5,
+            "reliability": 0.014663668859834389,
+            "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_sensitivity_R_GAS_f150.json",
+            "top_event": 0.9853363311401656
+          }
+        ]
+      }
+    ]
+  },
+  "twins": [
+    {
+      "delta_reliability": -0.026248402590709374,
+      "delta_top_event": 0.026248402590709374,
+      "hash": "9c55b3f164255900b1c9fd813b76f3c416111bb12399a51ef199c3889c2743b8",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_01_pessimistic.json",
+      "system_reliability": 0.011915625015389897,
+      "top_event_probability": 0.9880843749846101,
+      "twin_index": 1,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_1 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.04148982472647933,
+      "delta_top_event": -0.04148982472647933,
+      "hash": "443380517a72f2ad7b8b2e9d3151d7b4f7ab040921effb9b5b31685ed4c88fc0",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_02_optimistic.json",
+      "system_reliability": 0.0796538523325786,
+      "top_event_probability": 0.9203461476674214,
+      "twin_index": 2,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_2 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.02894635295585335,
+      "delta_top_event": 0.02894635295585335,
+      "hash": "3775a9d4718b2e7b718919d6e3d4c3aee59d91870cd417fb15fce39330b5d7ac",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_03_chaotic.json",
+      "system_reliability": 0.009217674650245922,
+      "top_event_probability": 0.9907823253497541,
+      "twin_index": 3,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_3 (chaotic)"
+    },
+    {
+      "delta_reliability": -0.033570212673296074,
+      "delta_top_event": 0.033570212673296074,
+      "hash": "80c78e2c81a355ec93816e11d48a8d6b08438dfd10d99eadc293db1fa7095fc8",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_04_pessimistic.json",
+      "system_reliability": 0.004593814932803197,
+      "top_event_probability": 0.9954061850671968,
+      "twin_index": 4,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_4 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.053356799304252966,
+      "delta_top_event": -0.053356799304252966,
+      "hash": "4bb8d2ed86124551f0ae204d74e94f9e1800e785870cb2a065a958275bd7b189",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_05_optimistic.json",
+      "system_reliability": 0.09152082691035224,
+      "top_event_probability": 0.9084791730896478,
+      "twin_index": 5,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_5 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.022605852344467103,
+      "delta_top_event": 0.022605852344467103,
+      "hash": "66aa771ed3bbe5dfc1dba256cfa2050b4132521f875eb46a457a1c00ef5838dc",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_06_chaotic.json",
+      "system_reliability": 0.015558175261632168,
+      "top_event_probability": 0.9844418247383678,
+      "twin_index": 6,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_6 (chaotic)"
+    },
+    {
+      "delta_reliability": -0.03165014951412948,
+      "delta_top_event": 0.03165014951412948,
+      "hash": "1771f275ff9a13503f8dd6f1472b9fdad5017eb43e1b6076349637b5d76c349c",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_07_pessimistic.json",
+      "system_reliability": 0.006513878091969794,
+      "top_event_probability": 0.9934861219080302,
+      "twin_index": 7,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_7 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.030666717600716487,
+      "delta_top_event": -0.030666717600716487,
+      "hash": "35a54ea59171ee5d08d1dc41ff94e3b9e5226c030944daa72beec3669865734d",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_08_optimistic.json",
+      "system_reliability": 0.06883074520681576,
+      "top_event_probability": 0.9311692547931842,
+      "twin_index": 8,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_8 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.004330062451307848,
+      "delta_top_event": 0.004330062451307848,
+      "hash": "b2cf676aa1049b2c09f0f346a3919d31e7a4800c01aea260be47edae16b57aa8",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_09_chaotic.json",
+      "system_reliability": 0.03383396515479142,
+      "top_event_probability": 0.9661660348452086,
+      "twin_index": 9,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_9 (chaotic)"
+    },
+    {
+      "delta_reliability": -0.03200620083507677,
+      "delta_top_event": 0.03200620083507677,
+      "hash": "c4ee82264804434c8a7778a5114904a6d5f672766a6448717c4de4770c7cddd5",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_10_pessimistic.json",
+      "system_reliability": 0.006157826771022501,
+      "top_event_probability": 0.9938421732289775,
+      "twin_index": 10,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_10 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.059895879339215696,
+      "delta_top_event": -0.059895879339215696,
+      "hash": "4b0715f5e490ecd12f9cb5f6d1cb0e5ce336ecbe08882fb57199483fb4a3f8a1",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_11_optimistic.json",
+      "system_reliability": 0.09805990694531497,
+      "top_event_probability": 0.901940093054685,
+      "twin_index": 11,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_11 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.015794501658928817,
+      "delta_top_event": 0.015794501658928817,
+      "hash": "d878392715e7dcbe0b29766abc1e2a7e3c8d18b6d2677b8e23dcc5436f3ab0be",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_12_chaotic.json",
+      "system_reliability": 0.022369525947170454,
+      "top_event_probability": 0.9776304740528295,
+      "twin_index": 12,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_12 (chaotic)"
+    },
+    {
+      "delta_reliability": -0.030393516308497626,
+      "delta_top_event": 0.030393516308497626,
+      "hash": "adb9dd7aea6d3a7c69e2933f4e55f96da85b39d30ac63d3d54e36460eec22d65",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_13_pessimistic.json",
+      "system_reliability": 0.0077705112976016455,
+      "top_event_probability": 0.9922294887023984,
+      "twin_index": 13,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_13 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.05035081038246836,
+      "delta_top_event": -0.05035081038246836,
+      "hash": "6f65d708ee96bf902bc622ffb10697bb13fc6f3c18a10d1f08e3f00b8487db2c",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_14_optimistic.json",
+      "system_reliability": 0.08851483798856763,
+      "top_event_probability": 0.9114851620114324,
+      "twin_index": 14,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_14 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.008043588611895802,
+      "delta_top_event": 0.008043588611895802,
+      "hash": "5504475d7c493534f40b9dcbb0b498ce9f0ea5c1467f72a1324673607e34b576",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_15_chaotic.json",
+      "system_reliability": 0.03012043899420347,
+      "top_event_probability": 0.9698795610057965,
+      "twin_index": 15,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_15 (chaotic)"
+    },
+    {
+      "delta_reliability": -0.028907142913284223,
+      "delta_top_event": 0.028907142913284223,
+      "hash": "ff453aa1c646a0720d819d64ad4348cdbdce0a41a154adec1b8ba42cb5cf0016",
+      "mode": "pessimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_16_pessimistic.json",
+      "system_reliability": 0.009256884692815048,
+      "top_event_probability": 0.990743115307185,
+      "twin_index": 16,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_16 (pessimistic)"
+    },
+    {
+      "delta_reliability": 0.03724737073028561,
+      "delta_top_event": -0.03724737073028561,
+      "hash": "4cdcd9b31556ad9ef88ef8ae65d712eea7e69b1ff31a67095ea22d4f7f471f35",
+      "mode": "optimistic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_17_optimistic.json",
+      "system_reliability": 0.07541139833638488,
+      "top_event_probability": 0.9245886016636151,
+      "twin_index": 17,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_17 (optimistic)"
+    },
+    {
+      "delta_reliability": -0.011303652532879904,
+      "delta_top_event": 0.011303652532879904,
+      "hash": "8a3e760cfd0fb9dafa2cdef70d0d9de489d10a978d656bb501a4efbf0de424b1",
+      "mode": "chaotic",
+      "scenario_path": "C:\\ai_control\\output\\P6\\twin_scenarios\\scenario_twin_18_chaotic.json",
+      "system_reliability": 0.026860375073219367,
+      "top_event_probability": 0.9731396249267806,
+      "twin_index": 18,
+      "twin_name": "Titan K-of-N Test Scenario - TwinRun_18 (chaotic)"
+    }
+  ]
+}

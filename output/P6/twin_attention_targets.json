@@ -1,0 +1,16 @@
+{
+  "targets": [
+    {
+      "id": "R_GAS",
+      "max_abs_delta_reliability": 0.035929782522577725,
+      "max_abs_delta_top_event": 0.035929782522577725,
+      "name": "Gas | Compressor backbone trip"
+    },
+    {
+      "id": "R_GRID",
+      "max_abs_delta_reliability": 0.016303494064715096,
+      "max_abs_delta_top_event": 0.016303494064715096,
+      "name": "PowerGrid | Regional 500 kV corridor loss"
+    }
+  ]
+}

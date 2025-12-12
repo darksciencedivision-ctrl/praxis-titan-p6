@@ -1,0 +1,10 @@
+{
+  "run_id": "c13827f135d5",
+  "timestamp_utc": "2025-12-12T04:15:31Z",
+  "scenario_file": "C:\\ai_control\\config\\scenario_example.json",
+  "priors_file": "C:\\ai_control\\config\\risk_priors_example.json",
+  "twin_config_file": "C:\\ai_control\\config\\adversarial_twin_config.json",
+  "scenario_name": "Builder Under Constraint",
+  "scenario_hash": "9292a23ce628",
+  "priors_hash": "5c7ec81817bf"
+}

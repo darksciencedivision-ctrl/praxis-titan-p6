@@ -1,0 +1,27 @@
+1) SYSTEM BREAKDOWN
+
+| Component | Function | Physical / Technical Principles | Notes |
+| --- | --- | --- | --- |
+| Network transport layer | Data transfer between systems | Electromagnetic interference, signal propagation | Latency, bandwidth limitations |
+| Database replication system | Synchronization of data across nodes | Atomicity, consistency, isolation, durability (ACID) properties | Transaction integrity, data loss risks |
+| Failover controller | Automatic switch to backup system in case of failure | Fault tolerance, error detection, redundancy | System uptime, resilience against component failures |
+| Transaction metadata store | Storage of transaction details | Data encryption, access control mechanisms | Security, privacy risks |
+| Cloud routing fabric | Traffic management within the cloud network | Load balancing, distributed systems theory | Scalability, performance optimization |
+
+2) RISK ANALYSIS
+
+| Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Network transport layer | 0.01 | SPF | 0.02 | 4 | 0.08 | Electromagnetic interference, signal jamming | Data transfer interruption | Redundant channels, error correction techniques |
+| Database replication system | 0.03 | CMF | 0.05 | 3 | 0.009 | Race conditions during sync, database corruption | Data integrity loss, potential financial exposure | Synchronization throttling, checksum validation |
+| Failover controller | 0.04 | CF | 0.1 | 5 | 0.2 | Malicious intrusion, system hacking | System-wide service disruption | Multilayered security, continuous monitoring |
+| Transaction metadata store | 0.05 | LF | 0.08 | 2 | 0.04 | Data encryption weakness, unauthorized access | Metadata corruption, privacy breach | Advanced encryption standards, strict access controls |
+| Cloud routing fabric | 0.06 | ENV | 0.15 | 1 | 0.09 | Environmental failure, power outage | Traffic management disruption | Power redundancy, backup systems |
+
+3) RESEARCH QUESTIONS
+
+1. What is the probability of a single packet loss causing a failover in the network transport layer during high-traffic periods?
+2. How does the likelihood of an undetected database replication failure correlate with system load and synchronization rate?
+3. What is the statistical relationship between cyberattacks targeting the failover controller and the successful evasion of detection mechanisms?
+4. In what scenarios can weak encryption in the transaction metadata store lead to data corruption or exposure?
+5. How do environmental factors impact cloud routing fabric performance, and how does redundancy mitigate these risks?

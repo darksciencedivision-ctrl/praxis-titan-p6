@@ -1,0 +1,29 @@
+1) SYSTEM BREAKDOWN
+
+| Component | Function | Physical / Technical Principles | Notes |
+| --- | --- | --- | --- |
+| Substations | Convert AC power to DC for transmission | Transformer-based voltage conversion | [SPECULATIVE] |
+| Control Centers | Monitor and control grid operations | Real-time data processing, decision-making algorithms | [SPECULATIVE] |
+| Transmission Lines | Carry electricity between substations | Conductive materials, insulators, and supportive structures | [SPECULATIVE] |
+| AI Supervisor | Detect and respond to cyber-physical attacks | Machine learning models, threat intelligence, anomaly detection | [SPECULATIVE] |
+
+2) RISK ANALYSIS
+
+| Domain | Risk | Mechanism | Consequence | Possible Mitigation |
+| --- | --- | --- | --- | --- |
+| Technical / Engineering | Cybersecurity breaches | Exploits of vulnerabilities in hardware or software | System disruptions, power outages, potential fatalities from uncontrolled situations | Regular security audits, software updates, hardware fortification |
+| Social / Governance | Inadequate emergency response planning | Lack of coordination among local and federal agencies | Delayed recovery times, increased property damage, potential loss of life | Establishing clear lines of communication and roles for various agencies during emergencies |
+| Operational / Process | Equipment failures or malfunctions | Aging infrastructure, insufficient maintenance | System disruptions, power outages, potential fatalities from uncontrolled situations | Regular equipment inspections and preventative maintenance programs |
+
+3) RESEARCH QUESTIONS
+
+1. What are the most common types of vulnerabilities in modern grid components, and how can they be mitigated?
+2. How effective are current cybersecurity measures against coordinated cyber-physical attacks on critical infrastructure?
+3. Can machine learning algorithms effectively detect and respond to emerging threats in real-time?
+4. What is the optimal balance between decentralizing control and maintaining centralized oversight for a national power grid?
+5. How can emergency response planning be improved among various agencies to minimize the impact of large-scale power outages?
+6. Which technological advancements could enhance the resilience of the power grid against cyber-physical attacks?
+7. Can AI supervisors effectively maintain system stability during periods of high demand and potential threats?
+8. What are the most effective methods for detecting and responding to insider threats within critical infrastructure systems?
+9. How can we better understand the human factors that contribute to successful or unsuccessful cyber-physical attacks on power grids?
+10. Are there any significant trade-offs between privacy concerns and cybersecurity measures in a national power grid?

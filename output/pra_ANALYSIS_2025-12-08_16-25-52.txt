@@ -1,0 +1,15 @@
+=== FIRST-ORDER PROBABILISTIC RISK ASSESSMENT (PRA) ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_16-24-37.txt
+
+Domain | Risk | FailureClass | Likelihood | Severity | DeterministicRPN | PosteriorMean | PosteriorRPN
+--- | --- | --- | --- | --- | --- | --- | ---
+Technical | Regional blackout > 48 h | SPF | 0.600 | 5.00 | 3.000 | 0.533 | 2.667
+Technical | Loss of > 40 GW load | SPF | 0.650 | 5.00 | 3.250 | 0.550 | 2.750
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.450 | 5.00 | 2.250 | 0.483 | 2.417
+Technical | > 20 main transformer permanent damage | CMF | 0.550 | 5.00 | 2.750 | 0.517 | 2.583
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.700 | 4.00 | 2.800 | 0.567 | 2.267
+Cyber | SCADA wiper on balancing authorities | CF | 0.650 | 4.00 | 2.600 | 0.550 | 2.200
+Cyber | EMS/AGC cloud-region failure | CF | 0.550 | 4.00 | 2.200 | 0.517 | 2.067
+Human | 40% control-room staffing loss | LF | 0.600 | 3.00 | 1.800 | 0.533 | 1.600
+Nuclear | Emergency diesel generator start failure | CMF | 0.500 | 4.00 | 2.000 | 0.500 | 2.000
+Market | Mutual-aid & insurance failure | LF | 0.550 | 3.00 | 1.650 | 0.517 | 1.550

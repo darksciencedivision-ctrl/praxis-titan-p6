@@ -1,0 +1,15 @@
+{
+  "groups": [
+    {
+      "name": "XFMR_COMMON_CAUSE",
+      "beta_factor": 0.3,
+      "members": [
+        {
+          "domain": "Technical",
+          "risk": "Transformer overload",
+          "failure_class": "SPF"
+        }
+      ]
+    }
+  ]
+}

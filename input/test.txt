@@ -1,0 +1,2 @@
+Black Swan demo scenario for PRAXIS-Core.
+(You can paste your real scenario text here later.)

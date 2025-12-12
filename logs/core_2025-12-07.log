@@ -1,0 +1,36 @@
+2025-12-07T05:07:40.658891 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:07:40.659509 Processing: grid_cyberattack.txt
+2025-12-07T05:07:40.660052 Calling Ollama…
+2025-12-07T05:07:45.870134 Saved analysis to: C:/ai_control\output\grid_cyberattack_ANALYSIS_2025-12-07_05-07-45.txt
+2025-12-07T05:07:45.870546 Processing: grid_test.txt
+2025-12-07T05:07:45.877930 Calling Ollama…
+2025-12-07T05:07:49.149560 Saved analysis to: C:/ai_control\output\grid_test_ANALYSIS_2025-12-07_05-07-49.txt
+2025-12-07T05:07:49.150132 Processing: lv2_grid_failure.txt
+2025-12-07T05:07:49.150671 Calling Ollama…
+2025-12-07T05:07:53.354973 Saved analysis to: C:/ai_control\output\lv2_grid_failure_ANALYSIS_2025-12-07_05-07-53.txt
+2025-12-07T05:07:53.355419 Processing: numeric_risk_test.txt
+2025-12-07T05:07:53.355903 Calling Ollama…
+2025-12-07T05:08:02.231508 Saved analysis to: C:/ai_control\output\numeric_risk_test_ANALYSIS_2025-12-07_05-08-02.txt
+2025-12-07T05:08:02.231979 Processing: test.txt
+2025-12-07T05:08:02.232314 Calling Ollama…
+2025-12-07T05:08:06.319859 Saved analysis to: C:/ai_control\output\test_ANALYSIS_2025-12-07_05-08-06.txt
+2025-12-07T05:08:06.320214 === ALL FILES PROCESSED ===
+2025-12-07T05:10:01.596602 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:10:01.597265 Processing: grid_test.txt
+2025-12-07T05:10:01.598474 Calling Ollama…
+2025-12-07T05:10:04.370743 Saved analysis to: C:/ai_control\output\grid_test_ANALYSIS_2025-12-07_05-10-04.txt
+2025-12-07T05:10:04.371079 === ALL FILES PROCESSED ===
+2025-12-07T05:12:18.362969 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:12:18.363566 Processing: grid_test.txt
+2025-12-07T05:12:18.365453 Calling Ollama…
+2025-12-07T05:12:21.864523 Saved analysis to: C:/ai_control\output\grid_test_ANALYSIS_2025-12-07_05-12-21.txt
+2025-12-07T05:12:21.864933 === ALL FILES PROCESSED ===
+2025-12-07T05:15:14.865242 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:15:14.865728 No .txt files found in input/. Nothing to do.
+2025-12-07T05:15:56.365123 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:15:56.365674 No .txt files found in input/. Nothing to do.
+2025-12-07T05:16:23.748568 === PRAXIS CORE ENGINE START ===
+2025-12-07T05:16:23.749307 Processing: grid_test.txt
+2025-12-07T05:16:23.750918 Calling Ollama…
+2025-12-07T05:16:32.326412 Saved analysis to: C:/ai_control\output\grid_test_ANALYSIS_2025-12-07_05-16-32.txt
+2025-12-07T05:16:32.326825 === ALL FILES PROCESSED ===

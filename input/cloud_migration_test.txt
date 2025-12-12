@@ -1,0 +1,17 @@
+Scenario: Cloud Infrastructure Migration Failure
+
+A new internal report has been filed regarding a critical migration of our financial reporting database to a new cloud cluster.
+
+Initial Report (Status: HIGH UNCERTAINTY):
+
+"During the final synchronization phase, a non-critical system alert (ID: Synch-23B) was triggered, indicating a momentary 1.5 second latency spike. The system logs show that the cause was quickly corrected by the automated failover system. However, a preliminary analysis by a junior engineer suggested that the latency spike might have coincided with a single, unconfirmed packet loss of metadata tagged with 'Tier 1 Customer Transactions.'
+
+No data loss has been officially confirmed by the lead engineer, who stated the risk is 'nominal and below our acceptance threshold' (current threshold is a 10⁻⁶ probability of loss). The immediate impact is 0.
+
+Supplemental Information (Status: HIGH IMPACT POTENTIAL):
+
+If the unconfirmed packet loss did occur and contained the Tier 1 metadata, the financial cost of re-auditing and reporting to regulators (SEC / FINRA) is conservatively estimated at $50 million due to non-compliance fines and mandatory corrective action.
+
+The internal estimate for the probability of this specific packet being lost is low, calculated at approximately:
+
+2 × 10⁻⁷

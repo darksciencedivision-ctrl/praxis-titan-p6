@@ -1,0 +1,154 @@
+{
+  "numeric": [
+    {
+      "id": "R_HW_LIMIT",
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "RESOURCE",
+      "p_base": 0.6,
+      "severity": 7.0,
+      "severity_norm": 1.0,
+      "failure_class_weight": 1.0,
+      "rpn": 4.2,
+      "risk_score": 0.8
+    },
+    {
+      "id": "R_CERT_GAP",
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "ORGANIZATIONAL",
+      "p_base": 0.55,
+      "severity": 6.0,
+      "severity_norm": 1.0,
+      "failure_class_weight": 1.0,
+      "rpn": 3.3000000000000003,
+      "risk_score": 0.7749999999999999
+    },
+    {
+      "id": "R_SOC_COMM",
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "ORGANIZATIONAL",
+      "p_base": 0.5,
+      "severity": 7.0,
+      "severity_norm": 1.0,
+      "failure_class_weight": 1.0,
+      "rpn": 3.5,
+      "risk_score": 0.75
+    },
+    {
+      "id": "R_ENG_OUTPUT",
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HUMAN",
+      "p_base": 0.4,
+      "severity": 5.0,
+      "severity_norm": 1.0,
+      "failure_class_weight": 1.0,
+      "rpn": 2.0,
+      "risk_score": 0.7
+    },
+    {
+      "id": "R_SUPPORT_FAIL",
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "OPERATIONAL",
+      "p_base": 0.55,
+      "severity": 7.0,
+      "severity_norm": 1.0,
+      "failure_class_weight": 1.0,
+      "rpn": 3.8500000000000005,
+      "risk_score": 0.7749999999999999
+    }
+  ],
+  "bayes": {
+    "posterior_probs": {
+      "R_HW_LIMIT": 0.5714285714285714,
+      "R_CERT_GAP": 0.5357142857142857,
+      "R_SOC_COMM": 0.5,
+      "R_ENG_OUTPUT": 0.42857142857142855,
+      "R_SUPPORT_FAIL": 0.5357142857142857
+    },
+    "posteriors": {
+      "R_HW_LIMIT": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 4.0,
+        "beta_post": 3.0,
+        "p_base": 0.6,
+        "p_post": 0.5714285714285714,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_CERT_GAP": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.75,
+        "beta_post": 3.25,
+        "p_base": 0.55,
+        "p_post": 0.5357142857142857,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_SOC_COMM": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.5,
+        "beta_post": 3.5,
+        "p_base": 0.5,
+        "p_post": 0.5,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_ENG_OUTPUT": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.0,
+        "beta_post": 4.0,
+        "p_base": 0.4,
+        "p_post": 0.42857142857142855,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_SUPPORT_FAIL": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 3.75,
+        "beta_post": 3.25,
+        "p_base": 0.55,
+        "p_post": 0.5357142857142857,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      }
+    }
+  },
+  "ccf": {
+    "probs": {
+      "R_HW_LIMIT": 0.5714285714285714,
+      "R_CERT_GAP": 0.5357142857142857,
+      "R_SOC_COMM": 0.5,
+      "R_ENG_OUTPUT": 0.42857142857142855,
+      "R_SUPPORT_FAIL": 0.5357142857142857
+    }
+  },
+  "cascade": {
+    "final_probs": {
+      "R_HW_LIMIT": 0.5714285714285714,
+      "R_CERT_GAP": 0.5357142857142857,
+      "R_SOC_COMM": 0.5,
+      "R_ENG_OUTPUT": 0.42857142857142855,
+      "R_SUPPORT_FAIL": 0.5357142857142857
+    }
+  },
+  "ft_analytic": {
+    "p_top": 0.9736047480216576,
+    "gate_outputs": {
+      "TE_BUILDER_UNDER_CONSTRAINT": 0.9736047480216576
+    }
+  },
+  "ft_mc": {
+    "iterations": 10000,
+    "p_top_mean": 0.9739
+  },
+  "reliability": {}
+}

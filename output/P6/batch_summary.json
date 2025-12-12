@@ -1,0 +1,21 @@
+{
+  "batch_size": 2,
+  "scenarios": [
+    {
+      "hash": "a13514140a7bd7e4f7bd6806d1f73c4772986a173669515d3cdc4656f560ba79",
+      "scenario_name": "Titan K-of-N Test Scenario",
+      "scenario_path": "C:\\ai_control\\config\\scenario_example.json",
+      "system_reliability": 0.03816402760609927,
+      "top_event_id": "G_TITAN_TOP",
+      "top_event_probability": 0.9618359723939007
+    },
+    {
+      "hash": "d380482920b6442e8f37a4740543f90ff85bd83ac113422eb1d64007c19548a1",
+      "scenario_name": "Titan Alt Scenario",
+      "scenario_path": "C:\\ai_control\\config\\scenario_example_alt.json",
+      "system_reliability": 0.025395118040544284,
+      "top_event_id": "G_TITAN_TOP",
+      "top_event_probability": 0.9746048819594557
+    }
+  ]
+}

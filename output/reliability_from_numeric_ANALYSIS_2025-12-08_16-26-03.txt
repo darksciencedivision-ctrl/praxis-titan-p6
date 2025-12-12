@@ -1,0 +1,16 @@
+=== LIFECYCLE RELIABILITY FROM NUMERIC RISK ===
+Source numeric file: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_16-24-37.txt
+Assumed mission window for 'Likelihood' = 1.000 time units
+
+Domain | Risk | FailureClass | Likelihood | Severity | Lambda_est | P_fail_1T | P_fail_5T | P_fail_10T | P_fail_20T
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Technical | Regional blackout > 48 h | SPF | 0.600000 | 5.00 | 9.162907e-01 | 0.600000 | 0.989760 | 0.999895 | 1.000000
+Technical | Loss of > 40 GW load | SPF | 0.650000 | 5.00 | 1.049822e+00 | 0.650000 | 0.994748 | 0.999972 | 1.000000
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.450000 | 5.00 | 5.978370e-01 | 0.450000 | 0.949672 | 0.997467 | 0.999994
+Technical | > 20 main transformer permanent damage | CMF | 0.550000 | 5.00 | 7.985077e-01 | 0.550000 | 0.981547 | 0.999659 | 1.000000
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.700000 | 4.00 | 1.203973e+00 | 0.700000 | 0.997570 | 0.999994 | 1.000000
+Cyber | SCADA wiper on balancing authorities | CF | 0.650000 | 4.00 | 1.049822e+00 | 0.650000 | 0.994748 | 0.999972 | 1.000000
+Cyber | EMS/AGC cloud-region failure | CF | 0.550000 | 4.00 | 7.985077e-01 | 0.550000 | 0.981547 | 0.999659 | 1.000000
+Human | 40% control-room staffing loss | LF | 0.600000 | 3.00 | 9.162907e-01 | 0.600000 | 0.989760 | 0.999895 | 1.000000
+Nuclear | Emergency diesel generator start failure | CMF | 0.500000 | 4.00 | 6.931472e-01 | 0.500000 | 0.968750 | 0.999023 | 0.999999
+Market | Mutual-aid & insurance failure | LF | 0.550000 | 3.00 | 7.985077e-01 | 0.550000 | 0.981547 | 0.999659 | 1.000000

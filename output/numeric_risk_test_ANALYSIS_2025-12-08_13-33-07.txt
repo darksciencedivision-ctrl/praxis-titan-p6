@@ -1,0 +1,6 @@
+
+Technical|Transformer overload|SPF|0.450|5.00|2.250
+Technical|Substation fire|CMF|0.300|5.00|1.500
+Cyber|SCADA intrusion|CF|0.400|4.00|1.600
+Operational|Load shedding misfire|LF|0.350|3.00|1.050
+Environmental|Storm line failure|ENV|0.550|4.00|2.200

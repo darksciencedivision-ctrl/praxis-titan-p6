@@ -1,0 +1,10 @@
+=== FIRST-ORDER PROBABILISTIC RISK ASSESSMENT (PRA) ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_13-33-07.txt
+
+Domain | Risk | FailureClass | Likelihood | Severity | DeterministicRPN | PosteriorMean | PosteriorRPN
+--- | --- | --- | --- | --- | --- | --- | ---
+Technical | Cloud sync controller overload causing repeated Synch-23B events | SPF | 0.020 | 3.00 | 0.060 | 0.340 | 1.020
+Technical | Failover router misroutes Tier-1 traffic during spike | SPF | 0.010 | 5.00 | 0.050 | 0.337 | 1.683
+Data Integrity | Single Tier-1 metadata packet loss leading to undetected record omission | CF | 0.000 | 5.00 | 0.000 | 0.333 | 1.667
+Operational | Misconfigured logging hides critical Tier-1 alerts | LF | 0.100 | 4.00 | 0.400 | 0.367 | 1.467
+Regulatory | Regulatory reporting re-audit due to suspected Tier-1 data loss | CMF | 0.050 | 5.00 | 0.250 | 0.350 | 1.750

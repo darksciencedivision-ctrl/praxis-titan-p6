@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "links": [
+    {
+      "source": { "domain": "Cyber", "risk": "Sensor Tamper", "failure_class": "SPF" },
+      "target": { "domain": "Cyber", "risk": "Rootkit in Grid Control", "failure_class": "CMF" },
+      "influence": 0.60
+    },
+    {
+      "source": { "domain": "Cyber", "risk": "Rootkit in Grid Control", "failure_class": "CMF" },
+      "target": { "domain": "PowerGrid", "risk": "Collapse", "failure_class": "CMF" },
+      "influence": 0.50
+    },
+    {
+      "source": { "domain": "Telecom", "risk": "Core Routing Failure", "failure_class": "CMF" },
+      "target": { "domain": "Cloud", "risk": "Hyperscaler Region Outage", "failure_class": "CMF" },
+      "influence": 0.70
+    },
+    {
+      "source": { "domain": "Cloud", "risk": "Hyperscaler Region Outage", "failure_class": "CMF" },
+      "target": { "domain": "PowerGrid", "risk": "Collapse", "failure_class": "CMF" },
+      "influence": 0.40
+    }
+  ]
+}

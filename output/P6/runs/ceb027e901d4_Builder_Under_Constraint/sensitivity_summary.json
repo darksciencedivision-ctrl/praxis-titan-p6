@@ -1,0 +1,42 @@
+{
+  "factors": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5
+  ],
+  "baseline_p_top": 0.0,
+  "risks": [
+    {
+      "id": "R_HW_LIMIT",
+      "domain": "Computational",
+      "name": "Insufficient workstation capability",
+      "delta_p_top_max": 0.0
+    },
+    {
+      "id": "R_CERT_GAP",
+      "domain": "Training",
+      "name": "Lack of required professional certifications",
+      "delta_p_top_max": 0.0
+    },
+    {
+      "id": "R_SOC_COMM",
+      "domain": "Communication",
+      "name": "Critical system information not reaching key engineer (father)",
+      "delta_p_top_max": 0.0
+    },
+    {
+      "id": "R_ENG_OUTPUT",
+      "domain": "Performance",
+      "name": "Human subsystem producing output exceeding observer expectations",
+      "delta_p_top_max": 0.0
+    },
+    {
+      "id": "R_SUPPORT_FAIL",
+      "domain": "Operational",
+      "name": "Lack of external support causing throughput degradation",
+      "delta_p_top_max": 0.0
+    }
+  ]
+}

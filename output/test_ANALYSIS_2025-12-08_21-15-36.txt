@@ -1,0 +1,37 @@
+Based on your input, I will analyze the potential risks and breakdown of components for this scenario.
+
+1) SYSTEM BREAKDOWN
+
+| Component | Function | Key Dependencies & Physics |
+|-----------|----------|------------------------------|
+| 500/765 kV Backbone | Continental bulk transfer | 112 °F → 125 °F heat dome (Texas to New York), 200+ GW cooling load |
+| Transformer Fleet | 1,200+ large power transformers (≥100 MVA) | Oil-paper insulation, top-oil + hotspot temp, Arrhenius aging |
+| Natural Gas Pipeline Grid | 85% of all generation fuel | 11 major compressor stations, line-pack physics |
+| Six LNG terminals |
+| Nuclear Fleet | 54 operating reactors (58 GW) | Station blackout diesel generators (all same OEM, known common-cause) |
+| Geomagnetic Disturbance (GIC) | Solar coronal mass ejection (Carrington-class) | Quasi-DC currents in transformers → harmonic heating + relay mis-op |
+| State-Sponsored Cyber | Coordinated zero-day across all three major EMS vendors + pipeline PLCs | False telemetry, destructive wiper, remote breaker control |
+| Cloud + Satellite Control Plane | Starlink + AWS/ GCP us-east-1 & us-west-2 simultaneous degradation | 85% of SCADA/EMS/AGC traffic routed via satellite + public cloud |
+| Human & Organizational | Nationwide 65% workforce loss (pandemic wave + civil unrest) | No field crews, control rooms at 25% staffing |
+
+2) RISK ANALYSIS
+
+| Domain            | Risk             | FailureClass | Likelihood | Severity | Mechanism                 | Consequence                   | Current Mitigation |
+|-------------------|------------------|--------------|------------|----------|---------------------------|------------------------------|--------------------|
+| Environmental     | 125 °F (52 °C) heat dome 5 days   | ENV          | 0.85       | 5         | Extreme planetary-wave blocking  | Transformers at 160–180 °C hotspot                        | None effective       |
+| Environmental     | Carrington- level GMD (G5)        | ENV          | 0.75       | 5         | Massive harmonic heating + relay trips   | GIC blockers on <15% fleet                                              |                    |
+| Fuel              | Total loss of gas compression + 5/6 LNG terminals iced-off            | CMF         | 0.80       | 5         | Winter storm + cyber hits on compressor PLCs | 85% generation loss within 18 hours                                    | Dual-fuel only 12% of fleet                          |
+| Cyber            | Coordinated zero-day on all three major EMS + pipeline SCADA           | CF          | 0.70       | 5         | False telemetry + malicious breaker opens   | Air-gaps bypassed                                                            |                    |
+| Cyber            | Starlink + public cloud simultaneous multi-region loss                  | CF          | 0.65       | 5         | Kinetic + cyber kill of ground stations           | 85% of control traffic gone                                          | No on-prem fallback non-existent              |
+| Technical        | >400 large transformers permanent damage                                 | CMF         | 0.80       | 5         | Combined GIC + 125 °F + 150–200% overload         | 24–36 month replacement delay                                        | Spare ratio 1:120                                  |
+| Nuclear          | Station blackout >8h at ≥12 plants                                       | CMF         | 0.60       | 5         | Potential core damage                                           | Regulatory waiver in place                                                  |                    |
+| Human            | Control room + field crew <25% available                                | LF          | 0.90       | 4         | No restoration capability for 10+ days                             | None                                                                                           |                    |
+| Market           | Nationwide insurance + FEMA collapse (force majeure invoked)             | LF          | 0.85       | 4         | Compound loss ratio >200:1                                      | No capital for rebuild                                            | Standard policies                                     |
+
+3) RESEARCH QUESTIONS
+
+- What is the 95% credible interval for continental blackout lasting >14 days?
+- What is the expected number of permanently destroyed large power transformers and remaining life lost (in equivalent full-load years) at 52 °C + GIC?
+- After observing all nine initiating events, do any posterior distributions hit >0.999?
+- Which single mitigation, if magically added today, yields the largest reduction in TE_ CONTINIENTAL_ COLLAPSE probability?
+- How much does changing EDG common-cause β-factor from 0.05 → 0.30 move the nuclear core-damage top event?

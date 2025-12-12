@@ -1,0 +1,8 @@
+Domain | Risk | FailureClass | Likelihood | Severity | RPN
+--- | --- | --- | --- | --- | ---
+--- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.45 | 5 | 2.25
+Technical | Substation thermal fire | CMF | 0.30 | 5 | 1.50
+Cyber | SCADA cyber intrusion | CF | 0.40 | 4 | 1.60
+Operational | Load shedding misfire | LF | 0.35 | 3 | 1.05
+Environmental | Storm-induced line failure | ENV | 0.55 | 4 | 2.20

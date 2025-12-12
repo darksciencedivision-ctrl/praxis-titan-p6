@@ -1,0 +1,51 @@
+from __future__ import annotations
+
+from typing import Any, Dict, List, Tuple
+
+
+def apply_cascade_influence(
+    pra_rows: List[Dict[str, Any]],
+    cascade_cfg: Dict[str, Any],
+) -> Dict[str, Any]:
+    """
+    Static cascade amplification:
+    p_target_eff = 1 - (1 - p_target) * (1 - influence * p_source)
+    """
+    pra_map: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for r in pra_rows:
+        key = (r["domain"], r["risk"], r["failure_class"])
+        pra_map[key] = r
+
+    p_eff: Dict[Tuple[str, str, str], float] = {}
+    for key, r in pra_map.items():
+        p_eff[key] = float(r.get("posterior_mean_ccf", r.get("posterior_mean", 0.0)))
+
+    for link in cascade_cfg.get("links", []):
+        s_domain, s_risk, s_fc = link["source"]
+        t_domain, t_risk, t_fc = link["target"]
+        influence = float(link["influence"])
+
+        s_key = (s_domain, s_risk, s_fc)
+        t_key = (t_domain, t_risk, t_fc)
+
+        p_source = p_eff.get(s_key, 0.0)
+        p_target = p_eff.get(t_key, 0.0)
+
+        p_target_eff = 1.0 - (1.0 - p_target) * (1.0 - influence * p_source)
+        p_eff[t_key] = min(1.0, max(0.0, p_target_eff))
+
+    events_out: List[Dict[str, Any]] = []
+    for key, p in p_eff.items():
+        domain, risk, fc = key
+        events_out.append(
+            {
+                "domain": domain,
+                "risk": risk,
+                "failure_class": fc,
+                "p_effective": p,
+            }
+        )
+
+    return {
+        "events": events_out,
+    }

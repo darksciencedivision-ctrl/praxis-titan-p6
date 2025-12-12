@@ -1,0 +1,16 @@
+=== PRAxis CASCADE / INFLUENCE RESULTS ===
+PRA source: C:\ai_control\output\pra_ANALYSIS_2025-12-08_21-27-31.txt
+Cascade config: C:\ai_control\cascade_matrix.txt
+
+Domain | Risk | FailureClass | p_base | p_effective
+
+=== SKIPPED EVENTS (not in PRA) ===
+Environmental | 125 °F (52 °C) heat dome 5 days | ENV
+Environmental | Carrington-level GMD (G5) | ENV
+Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF
+Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF
+Cyber | Starlink + public cloud simultaneous multi-region loss | CF
+Technical | >400 large transformers permanent damage | CMF
+Nuclear | Station blackout >8 hours at ≥12 plants | CMF
+Human | Control room + field crew <25% available | LF
+Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF

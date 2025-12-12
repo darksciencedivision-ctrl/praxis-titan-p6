@@ -1,0 +1,86 @@
+{
+  "engine_version": "v1.1-TITAN",
+  "scenario_config_path": "config\\scenario_example.json",
+  "priors_path": "config\\risk_priors_example.json",
+  "ccf_groups_path": "config\\ccf_groups_example.json",
+  "fault_tree_path": "config\\fault_tree_bad.json",
+  "cascade_path": "config\\cascade_example.json",
+  "pseudo_n": 5.0,
+  "numeric": {
+    "rows": [
+      {
+        "domain": "PowerGrid",
+        "risk": "Regional 500 kV corridor loss",
+        "failure_class": "CMF",
+        "likelihood_scenario": 0.35,
+        "severity": 5,
+        "id": "UNKNOWN",
+        "p_s": 0.0,
+        "severity_numeric": 5.0,
+        "rpn": 0.0
+      },
+      {
+        "domain": "Gas",
+        "risk": "Compressor backbone trip",
+        "failure_class": "SPF",
+        "likelihood_scenario": 0.4,
+        "severity": 4,
+        "id": "UNKNOWN",
+        "p_s": 0.0,
+        "severity_numeric": 4.0,
+        "rpn": 0.0
+      }
+    ],
+    "basic_probs": {
+      "UNKNOWN": 0.0
+    }
+  },
+  "bayes": {
+    "posterior_probs": {
+      "UNKNOWN": 0.14285714285714285
+    },
+    "priors_used": {
+      "pseudo_n_default": {
+        "alpha": 2.0,
+        "beta": 0.0
+      }
+    },
+    "posteriors_alpha_beta": {
+      "UNKNOWN": {
+        "alpha": 1.0,
+        "beta": 6.0
+      }
+    },
+    "pseudo_n": 5.0
+  },
+  "ccf": {
+    "probs_after_ccf": {
+      "UNKNOWN": 0.14285714285714285
+    },
+    "raw_ccf_cfg": {
+      "groups": [
+        {
+          "name": "XFMR_COMMON_CAUSE",
+          "beta_factor": 0.3,
+          "members": [
+            {
+              "domain": "Technical",
+              "risk": "Transformer overload",
+              "failure_class": "SPF"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "cascade": {
+    "probs_after_cascade": {
+      "UNKNOWN": 0.14285714285714285
+    },
+    "details": {
+      "error": "run_cascade_engine() got an unexpected keyword argument 'probs'"
+    }
+  },
+  "fault_tree": {},
+  "reliability": {}
+}

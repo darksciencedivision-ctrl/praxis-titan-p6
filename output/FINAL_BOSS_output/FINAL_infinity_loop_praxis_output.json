@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "FINAL_infinity_loop",
+  "numeric_risks": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 80.0,
+      "rpn": 80.0
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "likelihood": 0.0,
+      "severity": 90.0,
+      "rpn": 0.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 75.0,
+      "rpn": 37.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 70.0,
+      "rpn": 35.0
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 80.0,
+      "rpn": 80.0,
+      "alpha_prior": 0.01,
+      "beta_prior": 99.99,
+      "alpha_post": 100.01,
+      "beta_post": 99.99,
+      "prior_mean": 0.0001,
+      "posterior_mean": 0.50005,
+      "posterior_rpn": 40.004
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "likelihood": 0.0,
+      "severity": 90.0,
+      "rpn": 0.0,
+      "alpha_prior": 99.99,
+      "beta_prior": 0.01,
+      "alpha_post": 99.99,
+      "beta_post": 100.01,
+      "prior_mean": 0.9998999999999999,
+      "posterior_mean": 0.49994999999999995,
+      "posterior_rpn": 44.99549999999999
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 75.0,
+      "rpn": 37.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 37.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 70.0,
+      "rpn": 35.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 35.0
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "alpha": 100.01,
+      "beta": 99.99,
+      "severity": 80.0
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "alpha": 99.99,
+      "beta": 100.01,
+      "severity": 90.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "alpha": 51.0,
+      "beta": 51.0,
+      "severity": 75.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "alpha": 51.0,
+      "beta": 51.0,
+      "severity": 70.0
+    }
+  ],
+  "pra": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 80.0,
+      "rpn": 80.0,
+      "alpha_prior": 0.01,
+      "beta_prior": 99.99,
+      "alpha_post": 100.01,
+      "beta_post": 99.99,
+      "prior_mean": 0.0001,
+      "posterior_mean": 0.50005,
+      "posterior_rpn": 40.004,
+      "posterior_mean_ccf": 0.50005
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "likelihood": 0.0,
+      "severity": 90.0,
+      "rpn": 0.0,
+      "alpha_prior": 99.99,
+      "beta_prior": 0.01,
+      "alpha_post": 99.99,
+      "beta_post": 100.01,
+      "prior_mean": 0.9998999999999999,
+      "posterior_mean": 0.49994999999999995,
+      "posterior_rpn": 44.99549999999999,
+      "posterior_mean_ccf": 0.49994999999999995
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 75.0,
+      "rpn": 37.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 37.5,
+      "posterior_mean_ccf": 0.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 70.0,
+      "rpn": 35.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 35.0,
+      "posterior_mean_ccf": 0.5
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 80.0,
+      "rpn": 80.0,
+      "alpha_prior": 0.01,
+      "beta_prior": 99.99,
+      "alpha_post": 100.01,
+      "beta_post": 99.99,
+      "prior_mean": 0.0001,
+      "posterior_mean": 0.50005,
+      "posterior_rpn": 40.004,
+      "posterior_mean_ccf": 0.50005,
+      "lambda_effective": 0.6932471855602786,
+      "reliability_1y": 0.49995
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "likelihood": 0.0,
+      "severity": 90.0,
+      "rpn": 0.0,
+      "alpha_prior": 99.99,
+      "beta_prior": 0.01,
+      "alpha_post": 99.99,
+      "beta_post": 100.01,
+      "prior_mean": 0.9998999999999999,
+      "posterior_mean": 0.49994999999999995,
+      "posterior_rpn": 44.99549999999999,
+      "posterior_mean_ccf": 0.49994999999999995,
+      "lambda_effective": 0.6930471855596118,
+      "reliability_1y": 0.5000500000000001
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 75.0,
+      "rpn": 37.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 37.5,
+      "posterior_mean_ccf": 0.5,
+      "lambda_effective": 0.6931471805599453,
+      "reliability_1y": 0.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 70.0,
+      "rpn": 35.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 51.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 35.0,
+      "posterior_mean_ccf": 0.5,
+      "lambda_effective": 0.6931471805599453,
+      "reliability_1y": 0.5
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Gate_A",
+        "gate": "AND",
+        "inputs": [
+          "BE_R1",
+          "BE_R2"
+        ],
+        "probability": 0.2452,
+        "ci_95_low": 0.2414290806173136,
+        "ci_95_high": 0.2489709193826864,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_B",
+        "gate": "OR",
+        "inputs": [
+          "BE_R1",
+          "BE_R2"
+        ],
+        "probability": 0.74592,
+        "ci_95_low": 0.7421040521093973,
+        "ci_95_high": 0.7497359478906027,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_Certain",
+        "gate": "OR",
+        "inputs": [
+          "BE_R2",
+          "BE_R3"
+        ],
+        "probability": 0.74906,
+        "ci_95_low": 0.7452597311738187,
+        "ci_95_high": 0.7528602688261812,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_R1": 0.50005,
+      "BE_R2": 0.49994999999999995,
+      "BE_R3": 0.5
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "Gas",
+        "risk": "Pipe Failure",
+        "failure_class": "CMF",
+        "p_effective": 0.875012501249875
+      },
+      {
+        "domain": "PowerGrid",
+        "risk": "Grid Loss",
+        "failure_class": "SPF",
+        "p_effective": 0.7500000025
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Malware",
+        "failure_class": "CMF",
+        "p_effective": 0.5
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Ransomware",
+        "failure_class": "CMF",
+        "p_effective": 0.5
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 100.0
+  }
+}

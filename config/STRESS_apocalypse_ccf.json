@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "ccf_groups": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "ccf_group": "APOCALYPSE_CORE",
+      "beta_factor": 1.0
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "ccf_group": "APOCALYPSE_CORE",
+      "beta_factor": 1.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "ccf_group": "APOCALYPSE_CORE",
+      "beta_factor": 1.0
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "ccf_group": "LOW_PROB",
+      "beta_factor": 0.0001
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "ccf_group": "LOW_PROB",
+      "beta_factor": 0.0001
+    }
+  ]
+}

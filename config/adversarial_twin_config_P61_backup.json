@@ -1,0 +1,20 @@
+{
+  "runs": 18,
+  "random_seed": 42,
+  "base_scenario": "config/scenario_example.json",
+  "modes": ["pessimistic", "optimistic", "chaotic"],
+  
+  "likelihood_scale": {
+    "min": 0.8,
+    "max": 1.5
+  },
+  "severity_shift": {
+    "min": -1.0,
+    "max": 1.0
+  },
+  
+  "likelihood_floor": 0.00001,
+  "likelihood_ceiling": 0.99999,
+  "severity_min": 1.0,
+  "severity_max": 10.0
+}

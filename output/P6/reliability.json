@@ -1,0 +1,9 @@
+{
+  "diagnostics": {
+    "warnings": []
+  },
+  "reliability": {
+    "system_reliability": 0.014663668859834389,
+    "top_event_probability": 0.9853363311401656
+  }
+}

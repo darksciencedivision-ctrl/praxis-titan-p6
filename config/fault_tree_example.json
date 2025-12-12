@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "description": "Fault tree for example_black_swan: gas + power backbone coupling.",
+  "basic_events": [
+    {
+      "id": "BE_GRID_CORRIDOR_LOSS",
+      "pra_key": [
+        "PowerGrid",
+        "Regional 500 kV corridor loss",
+        "CMF"
+      ]
+    },
+    {
+      "id": "BE_GAS_BACKBONE_TRIP",
+      "pra_key": [
+        "Gas",
+        "Compressor backbone trip",
+        "SPF"
+      ]
+    }
+  ],
+  "top_events": [
+    {
+      "id": "Regional_Blackout",
+      "gate": "AND",
+      "inputs": [
+        "BE_GRID_CORRIDOR_LOSS",
+        "BE_GAS_BACKBONE_TRIP"
+      ]
+    },
+    {
+      "id": "Any_Backbone_Failure",
+      "gate": "OR",
+      "inputs": [
+        "BE_GRID_CORRIDOR_LOSS",
+        "BE_GAS_BACKBONE_TRIP"
+      ]
+    }
+  ]
+}

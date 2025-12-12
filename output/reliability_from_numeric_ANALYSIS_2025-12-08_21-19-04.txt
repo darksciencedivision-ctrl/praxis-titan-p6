@@ -1,0 +1,14 @@
+=== RELIABILITY AND AGING FROM NUMERIC RISK ===
+Numeric source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_21-19-03.txt
+Scenario ambient (C): 52.0
+Mission window (hours): 120.0
+Domain | Risk | FailureClass | IsTransformer | MTTF_base_yrs | MTTF_heat_yrs | P_fail_base_mission | P_fail_heat_mission | Scenario_L | Implied_MTTF_yrs_nontransformer
+**Environmental** | **125 °F (52 °C) heat dome 5 days** | ENV | 0 | 0.007221 | 0.007221 | 0.850000 | 0.850000 | 0.850000 | 0.007221
+**Environmental** | **Carrington- level GMD (G5)** | ENV | 0 | 0.009881 | 0.009881 | 0.750000 | 0.750000 | 0.750000 | 0.009881
+**Fuel** | **Total loss of gas compression + 5/6 LNG terminals iced-off** | CMF | 0 | 0.008511 | 0.008511 | 0.800000 | 0.800000 | 0.800000 | 0.008511
+**Cyber** | **Coordinated zero-day on all three major EMS + pipeline SCADA** | CF | 0 | 0.011378 | 0.011378 | 0.700000 | 0.700000 | 0.700000 | 0.011378
+**Cyber** | **Starlink + public cloud simultaneous multi-region loss** | CF | 0 | 0.013049 | 0.013049 | 0.650000 | 0.650000 | 0.650000 | 0.013049
+**Technical** | **>400 large transformers permanent damage** | CMF | 1 | 40.000000 | 6.155722 | 0.000342 | 0.002223 | 0.800000 | 0.000000
+**Nuclear** | **Station blackout >8 hours at ≥12 plants** | CMF | 0 | 0.014950 | 0.014950 | 0.600000 | 0.600000 | 0.600000 | 0.014950
+**Human** | **Control room + field crew <25% available** | LF | 0 | 0.005949 | 0.005949 | 0.900000 | 0.900000 | 0.900000 | 0.005949
+**Market** | **Nationwide insurance + FEMA collapse (force majeure invoked)** | LF | 0 | 0.007221 | 0.007221 | 0.850000 | 0.850000 | 0.850000 | 0.007221

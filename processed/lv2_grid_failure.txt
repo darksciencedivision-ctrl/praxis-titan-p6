@@ -1,0 +1,1 @@
+A national power grid facing simultaneous transformer overloads, substation fires, SCADA communication loss, and emergency load shedding during a winter peak demand event.

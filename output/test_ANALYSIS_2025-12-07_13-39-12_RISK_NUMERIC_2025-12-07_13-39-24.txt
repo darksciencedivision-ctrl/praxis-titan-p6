@@ -1,0 +1,5 @@
+NUMERIC RISK TABLE
+
+| Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cloud Infrastructure Migration | Possible metadata packet loss | LF | 0.30 | 3 | 0.90 | LF (Load Failure) | 2 x 10^-7 | 5 |

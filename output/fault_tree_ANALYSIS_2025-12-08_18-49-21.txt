@@ -1,0 +1,23 @@
+=== FAULT-TREE MONTE CARLO RESULTS ===
+PRA source:   C:\ai_control\output\pra_ANALYSIS_2025-12-08_18-44-13.txt
+Config:       C:\ai_control\fault_tree_config.txt
+Simulations:  100000
+
+=== BASIC EVENTS ===
+BE_ID | Domain | Risk | FailureClass | Probability
+BE_BLACKOUT_48H | Technical | Regional blackout > 48 h | SPF | 0.607143
+BE_LOSS_40GW | Technical | Loss of > 40 GW load | SPF | 0.625000
+BE_TRANSFORMERS_20PLUS | Technical | > 20 main transformer permanent damage | CMF | 0.589286
+BE_GAS_SHORTFALL | Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.642857
+BE_SCADA_WIPER | Cyber | SCADA wiper on balancing authorities | CF | 0.607143
+BE_EMS_AGC_FAILURE | Cyber | EMS/AGC cloud-region failure | CF | 0.571429
+BE_NUCLEAR_SCRAM_FAIL | Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.464286
+BE_EDG_FAIL | Nuclear | Emergency diesel generator start failure | CMF | 0.500000
+BE_CONTROLROOM_LOSS | Human | 40% control-room staffing loss | LF | 0.571429
+
+=== TOP EVENTS ===
+TE_ID | GateType | K | Inputs | Probability | StdError
+TE_GRID_COLLAPSE | OR | - | BE_BLACKOUT_48H,BE_LOSS_40GW,BE_TRANSFORMERS_20PLUS | 0.940330 | 0.000749
+TE_NUCLEAR_SITE_LOSS | AND | - | BE_NUCLEAR_SCRAM_FAIL,BE_EDG_FAIL | 0.232400 | 0.001336
+TE_BLACK_SWAN_SATURDAY | KOFN | 2 | BE_BLACKOUT_48H,BE_LOSS_40GW,BE_TRANSFORMERS_20PLUS,BE_GAS_SHORTFALL | 0.839470 | 0.001161
+TE_OPERATIONS_DEGRADED | OR | - | BE_CONTROLROOM_LOSS,BE_SCADA_WIPER,BE_EMS_AGC_FAILURE | 0.927520 | 0.000820

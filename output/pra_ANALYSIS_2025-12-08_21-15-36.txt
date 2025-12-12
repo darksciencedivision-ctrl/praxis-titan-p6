@@ -1,0 +1,14 @@
+=== FIRST-ORDER PROBABILISTIC RISK ASSESSMENT (PRA) WITH CCF, NO RPN ===
+Numeric source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_21-15-36.txt
+Bayes source:   C:\ai_control\output\numeric_bayes_ANALYSIS_2025-12-08_21-15-36.txt
+CCF config:     C:\ai_control\ccf_groups.txt
+Domain | Risk | FailureClass | Likelihood | Severity | PriorMean | PosteriorMean | PosteriorMean_CCF | CCFGroup | BetaFactor
+Human | Control room + field crew <25% available | LF | 0.900000 | 4.00 | 0.500000 | 0.785714 | 0.785714 |  | 0.00
+Environmental | 125 °F (52 °C) heat dome 5 days | ENV | 0.850000 | 5.00 | 0.500000 | 0.750000 | 0.750000 |  | 0.00
+Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF | 0.850000 | 4.00 | 0.500000 | 0.750000 | 0.750000 |  | 0.00
+Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF | 0.800000 | 5.00 | 0.500000 | 0.725000 | 0.725000 |  | 0.00
+Technical | >400 large transformers permanent damage | CMF | 0.800000 | 5.00 | 0.500000 | 0.725000 | 0.725000 |  | 0.00
+Environmental | Carrington- level GMD (G5) | ENV | 0.750000 | 5.00 | 0.500000 | 0.678571 | 0.678571 |  | 0.00
+Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF | 0.700000 | 5.00 | 0.500000 | 0.633333 | 0.633333 |  | 0.00
+Cyber | Starlink + public cloud simultaneous multi-region loss | CF | 0.650000 | 5.00 | 0.500000 | 0.600000 | 0.600000 |  | 0.00
+Nuclear | Station blackout >8h at ≥12 plants | CMF | 0.600000 | 5.00 | 0.500000 | 0.575000 | 0.575000 |  | 0.00

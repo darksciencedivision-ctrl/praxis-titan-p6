@@ -1,0 +1,84 @@
+from __future__ import annotations
+
+import random
+from typing import Any, Dict, List, Tuple
+
+
+def _make_pra_map(pra_rows: List[Dict[str, Any]]) -> Dict[Tuple[str, str, str], Dict[str, Any]]:
+    m: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for r in pra_rows:
+        key = (r["domain"], r["risk"], r["failure_class"])
+        m[key] = r
+    return m
+
+
+def simulate_fault_tree(
+    pra_rows: List[Dict[str, Any]],
+    fault_tree_cfg: Dict[str, Any],
+    n_samples: int = 50000,
+) -> Dict[str, Any]:
+    """
+    Monte Carlo fault tree simulation for simple AND/OR trees.
+    """
+    pra_map = _make_pra_map(pra_rows)
+
+    be_probs: Dict[str, float] = {}
+    for be in fault_tree_cfg.get("basic_events", []):
+        be_id = be["id"]
+        domain, risk, failure_class = be["pra_key"]
+        key = (domain, risk, failure_class)
+        row = pra_map.get(key)
+        if row is None:
+            be_probs[be_id] = 0.0
+        else:
+            be_probs[be_id] = float(row.get("posterior_mean_ccf", row.get("posterior_mean", 0.0)))
+
+    top_results = []
+
+    for te in fault_tree_cfg.get("top_events", []):
+        te_id = te["id"]
+        gate = te["gate"].upper()
+        inputs = te["inputs"]
+
+        n_fail = 0
+        for _ in range(n_samples):
+            sample = {be_id: (random.random() < be_probs.get(be_id, 0.0)) for be_id in inputs}
+
+            if gate == "AND":
+                fail = all(sample[be_id] for be_id in inputs)
+            elif gate == "OR":
+                fail = any(sample[be_id] for be_id in inputs)
+            else:
+                raise ValueError(f"Unsupported gate type: {gate}")
+
+            if fail:
+                n_fail += 1
+
+        p_hat = n_fail / n_samples if n_samples > 0 else 0.0
+
+        if n_samples > 0:
+            import math
+            se = math.sqrt(max(p_hat * (1 - p_hat), 0.0) / n_samples)
+            ci_low = max(0.0, p_hat - 1.96 * se)
+            ci_high = min(1.0, p_hat + 1.96 * se)
+        else:
+            ci_low = 0.0
+            ci_high = 0.0
+
+        top_results.append(
+            {
+                "top_event_id": te_id,
+                "gate": gate,
+                "inputs": inputs,
+                "probability": p_hat,
+                "ci_95_low": ci_low,
+                "ci_95_high": ci_high,
+                "n_samples": n_samples,
+            }
+        )
+
+    return {
+        "top_events": top_results,
+        "basic_event_probs": be_probs,
+        "n_samples": n_samples,
+    }

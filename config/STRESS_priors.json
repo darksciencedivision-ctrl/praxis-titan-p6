@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "alpha": 0.5,
+      "beta": 0.5,
+      "severity": 10.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "alpha": 100.0,
+      "beta": 0.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "alpha": 0.01,
+      "beta": 10.0,
+      "severity": 6.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "severity": 7.0
+    }
+  ]
+}

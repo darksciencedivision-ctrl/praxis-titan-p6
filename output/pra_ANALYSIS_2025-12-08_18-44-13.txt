@@ -1,0 +1,15 @@
+=== FIRST-ORDER PROBABILISTIC RISK ASSESSMENT (PRA) WITH CCF ===
+Numeric source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_18-44-13.txt
+Bayes source:   C:\ai_control\output\numeric_bayes_ANALYSIS_2025-12-08_18-44-13.txt
+CCF config:     C:\ai_control\ccf_groups.txt
+Domain | Risk | FailureClass | Likelihood | Severity | DeterministicRPN | PosteriorMean | PosteriorRPN | CCFGroup | BetaFactor | PosteriorMean_CCF | PosteriorRPN_CCF
+Technical | Loss of > 40 GW load | SPF | 0.650000 | 5.00 | 3.250000 | 0.607143 | 3.035714 | HURRICANE_CCF | 0.50 | 0.625000 | 3.125000
+Technical | Regional blackout > 48 h | SPF | 0.600000 | 5.00 | 3.000000 | 0.571429 | 2.857143 | HURRICANE_CCF | 0.50 | 0.607143 | 3.035715
+Technical | > 20 main transformer permanent damage | CMF | 0.550000 | 5.00 | 2.750000 | 0.535714 | 2.678571 | HURRICANE_CCF | 0.50 | 0.589286 | 2.946427
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.700000 | 4.00 | 2.800000 | 0.642857 | 2.571429 | HURRICANE_CCF | 0.50 | 0.642857 | 2.571428
+Cyber | SCADA wiper on balancing authorities | CF | 0.650000 | 4.00 | 2.600000 | 0.607143 | 2.428571 | CYBER_CCF | 0.50 | 0.607143 | 2.428572
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.450000 | 5.00 | 2.250000 | 0.464286 | 2.321429 |  | 0.00 | 0.464286 | 2.321429
+Cyber | EMS/AGC cloud-region failure | CF | 0.550000 | 4.00 | 2.200000 | 0.535714 | 2.142857 | CYBER_CCF | 0.50 | 0.571429 | 2.285714
+Nuclear | Emergency diesel generator start failure | CMF | 0.500000 | 4.00 | 2.000000 | 0.500000 | 2.000000 | NUCLEAR_EDG_CCF | 0.50 | 0.500000 | 2.000000
+Human | 40% control-room staffing loss | LF | 0.600000 | 3.00 | 1.800000 | 0.571429 | 1.714286 |  | 0.00 | 0.571429 | 1.714286
+Market | Mutual-aid & insurance failure | LF | 0.550000 | 3.00 | 1.650000 | 0.535714 | 1.607143 |  | 0.00 | 0.535714 | 1.607143

@@ -1,0 +1,3 @@
+SYSTEM:
+You are a neutral, non-ideological analytical AI.
+...

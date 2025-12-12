@@ -1,0 +1,27 @@
+1) SYSTEM BREAKDOWN
+
+Component | Function | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Transformers | Voltage conversion for transmission | Electromagnetic induction | Subject to overload during peak demand
+Substations | Distribute grid power locally | Circuit protection, electrical insulation | Fire risk under high thermal stress
+Transmission Lines | Long-distance power delivery | High-voltage AC transmission | Weather and load dependent
+SCADA Systems | Grid monitoring and remote control | Digital telemetry, control algorithms | Vulnerable to cyber intrusion
+Load Shedding Systems | Demand reduction during peak load | Automated demand-response controls | Activated during grid stress states
+
+2) RISK ANALYSIS
+
+Domain | Risk | FailureClass | Likelihood | Severity | RPN
+--- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.45 | 5 | 2.25
+Technical | Substation thermal fire | CMF | 0.30 | 5 | 1.50
+Cyber | SCADA cyber intrusion | CF | 0.40 | 4 | 1.60
+Operational | Load shedding misfire | LF | 0.35 | 3 | 1.05
+Environmental | Storm-induced line failure | ENV | 0.55 | 4 | 2.20
+
+3) RESEARCH QUESTIONS
+
+1. What transformer thermal modeling improvements most accurately predict saturation failure?
+2. How does real-time AI-based load forecasting reduce peak failure probability?
+3. What SCADA intrusion detection architecture minimizes false negatives under zero-day exploits?
+4. How do cascading grid failures propagate under multi-node substation loss?
+5. What redundancy topology minimizes regional blackout probability?

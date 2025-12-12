@@ -1,0 +1,6 @@
+NUMERIC RISK TABLE
+
+| Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cloud Infrastructure Migration Failure with possible Tier-1 metadata packet loss. | 1.0 | LF | 0.30 | 3 | 0.90 | SPF | 2e-07 | 5 |
+| Immediate corrective actions triggered. | CF | LF | 0.30 | 3 | 0.90 | 0.01 | 3 | 0.03 |

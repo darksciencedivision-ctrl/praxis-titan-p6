@@ -1,0 +1,100 @@
+[RELIABILITY] === LIFECYCLE FROM NUMERIC RISK (WITH ARRHENIUS) ===
+[RELIABILITY] Using numeric risk file: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_19-30-52.txt
+[RELIABILITY] Mission window: 72.0 hours
+[RELIABILITY] Ambient (scenario): 44.4 C (heat dome)
+[RELIABILITY] Transformer Arrhenius accel factor: 3.837
+[RELIABILITY] Base transformer MTTF at 110.0 C: 40.0 years
+
+------------------------------------------------------------
+Event: Regional blackout > 48 h (SPF)
+Domain: Technical
+Scenario Likelihood (dimensionless): 0.600
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.273e-02 1/h
+[RELIABILITY] MTTF (approx): 0.009 years
+[RELIABILITY] P(fail in 72 h): 0.600000
+
+------------------------------------------------------------
+Event: Loss of > 40 GW load (SPF)
+Domain: Technical
+Scenario Likelihood (dimensionless): 0.650
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.458e-02 1/h
+[RELIABILITY] MTTF (approx): 0.008 years
+[RELIABILITY] P(fail in 72 h): 0.650000
+
+------------------------------------------------------------
+Event: Nuclear SCRAM + fail to restart < 24 h (CMF)
+Domain: Nuclear
+Scenario Likelihood (dimensionless): 0.450
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 8.303e-03 1/h
+[RELIABILITY] MTTF (approx): 0.014 years
+[RELIABILITY] P(fail in 72 h): 0.450000
+
+------------------------------------------------------------
+Event: > 20 main transformer permanent damage (CMF)
+Domain: Technical
+Scenario Likelihood (dimensionless): 0.550
+[RELIABILITY] Transformer-type event with Arrhenius aging.
+[RELIABILITY] Base failure rate λ_base: 2.854e-06 1/h
+[RELIABILITY] Accelerated failure rate λ_use: 1.095e-05 1/h
+[RELIABILITY] MTTF_base: 40.0 years
+[RELIABILITY] MTTF_under_heat_dome: 10.4 years
+[RELIABILITY] P(fail in 72 h) base: 0.000205
+[RELIABILITY] P(fail in 72 h) heat-dome: 0.000788
+
+------------------------------------------------------------
+Event: Severe gas supply shortfall (compressors + LNG) (LF)
+Domain: Fuel
+Scenario Likelihood (dimensionless): 0.700
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.672e-02 1/h
+[RELIABILITY] MTTF (approx): 0.007 years
+[RELIABILITY] P(fail in 72 h): 0.700000
+
+------------------------------------------------------------
+Event: SCADA wiper on balancing authorities (CF)
+Domain: Cyber
+Scenario Likelihood (dimensionless): 0.650
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.458e-02 1/h
+[RELIABILITY] MTTF (approx): 0.008 years
+[RELIABILITY] P(fail in 72 h): 0.650000
+
+------------------------------------------------------------
+Event: EMS/AGC cloud-region failure (CF)
+Domain: Cyber
+Scenario Likelihood (dimensionless): 0.550
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.109e-02 1/h
+[RELIABILITY] MTTF (approx): 0.010 years
+[RELIABILITY] P(fail in 72 h): 0.550000
+
+------------------------------------------------------------
+Event: 40% control-room staffing loss (LF)
+Domain: Human
+Scenario Likelihood (dimensionless): 0.600
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.273e-02 1/h
+[RELIABILITY] MTTF (approx): 0.009 years
+[RELIABILITY] P(fail in 72 h): 0.600000
+
+------------------------------------------------------------
+Event: Emergency diesel generator start failure (CMF)
+Domain: Nuclear
+Scenario Likelihood (dimensionless): 0.500
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 9.627e-03 1/h
+[RELIABILITY] MTTF (approx): 0.012 years
+[RELIABILITY] P(fail in 72 h): 0.500000
+
+------------------------------------------------------------
+Event: Mutual-aid & insurance failure (LF)
+Domain: Market
+Scenario Likelihood (dimensionless): 0.550
+[RELIABILITY] Non-transformer event; inferred exponential λ from scenario probability.
+[RELIABILITY] Inferred λ_use: 1.109e-02 1/h
+[RELIABILITY] MTTF (approx): 0.010 years
+[RELIABILITY] P(fail in 72 h): 0.550000
+

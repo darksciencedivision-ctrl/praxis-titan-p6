@@ -1,0 +1,38 @@
+from __future__ import annotations
+
+from typing import Any, Dict, List
+
+
+def compute_numeric_risks(scenario_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """
+    Convert structured 'risks' into numeric form:
+        - Likelihood in [0,1]
+        - Severity in [1,5]
+        - RPN = likelihood * severity
+    """
+    numeric_risks: List[Dict[str, Any]] = []
+
+    for row in scenario_cfg.get("risks", []):
+        domain = row["domain"]
+        risk_name = row["risk"]
+        failure_class = row["failure_class"]
+        likelihood = float(row["likelihood_scenario"])
+        severity = float(row["severity"])
+
+        if not (0.0 <= likelihood <= 1.0):
+            raise ValueError(f"Likelihood out of range for risk {risk_name}: {likelihood}")
+
+        rpn = likelihood * severity
+
+        numeric_risks.append(
+            {
+                "domain": domain,
+                "risk": risk_name,
+                "failure_class": failure_class,
+                "likelihood": likelihood,
+                "severity": severity,
+                "rpn": rpn,
+            }
+        )
+
+    return numeric_risks

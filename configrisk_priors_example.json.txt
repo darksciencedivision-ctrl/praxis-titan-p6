@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "Technical",
+      "risk": "Large transformer permanent damage",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "severity": 5.0
+    },
+    {
+      "domain": "Human",
+      "risk": "Field and control staff <25% available",
+      "failure_class": "LF",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "severity": 5.0
+    }
+  ]
+}
+

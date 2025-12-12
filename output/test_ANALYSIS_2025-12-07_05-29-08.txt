@@ -1,0 +1,19 @@
+1) SYSTEM BREAKDOWN
+
+Component | Function | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Transformers | Voltage conversion | Electromagnetic induction | Thermal overload risk
+SCADA Systems | Remote grid monitoring | Digital telemetry | Vulnerable to intrusion
+
+
+2) RISK ANALYSIS
+
+Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Power Infrastructure (Transformers, SCADA Systems) | Transformer thermal overload risk; intermittent SCADA packet loss | SPF, CMF, CF, LF | 0.95 | 3 | 2.85 | Overheating of transformer core materials under peak harmonic distortion; digital telemetry intrusion impacting real-time grid monitoring | Loss of voltage regulation and control; compromised situational awareness for operators | Increase cooling capacity on transformers; implement SCADA system intrusion detection measures
+
+
+3) RESEARCH QUESTIONS
+
+1. What are the critical thermal saturation thresholds for transformer core materials under peak harmonic distortion?
+2. How can load failure risk be minimized in transformer stations during winter demand peaks?

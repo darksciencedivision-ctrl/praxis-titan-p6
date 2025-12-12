@@ -1,0 +1,7 @@
+Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.45 | 5 | 2.25 | Thermal saturation | Local blackout | Parallel transformer banks
+Technical | Substation fire | CMF | 0.30 | 5 | 1.50 | Insulation breakdown | Equipment loss | Fire suppression
+Cyber | SCADA intrusion | CF | 0.40 | 4 | 1.60 | Network penetration | Loss of control | Intrusion detection
+Operational | Load shedding misfire | LF | 0.35 | 3 | 1.05 | Algorithm instability | Oscillating outages | Human override
+Environmental | Storm line failure | ENV | 0.55 | 4 | 2.20 | Ice and wind | Regional outage | Underground routing

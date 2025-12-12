@@ -1,0 +1,87 @@
+from __future__ import annotations
+
+from typing import Any, Dict, List, Tuple
+
+
+def _make_prior_map(priors: List[Dict[str, Any]]) -> Dict[Tuple[str, str, str], Dict[str, Any]]:
+    prior_map: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for p in priors:
+        key = (p["domain"], p["risk"], p["failure_class"])
+        prior_map[key] = p
+    return prior_map
+
+
+def bayes_update(
+    numeric_risks: List[Dict[str, Any]],
+    priors: List[Dict[str, Any]],
+    pseudo_n: float = 5.0,
+) -> List[Dict[str, Any]]:
+    """
+    Perform Beta–Binomial update for each risk row.
+    """
+    prior_map = _make_prior_map(priors)
+    out: List[Dict[str, Any]] = []
+
+    for row in numeric_risks:
+        key = (row["domain"], row["risk"], row["failure_class"])
+        prior = prior_map.get(key)
+
+        if prior is None:
+            alpha_prior = 1.0
+            beta_prior = 1.0
+            severity = float(row["severity"])
+        else:
+            alpha_prior = float(prior["alpha"])
+            beta_prior = float(prior["beta"])
+            severity = float(prior.get("severity", row["severity"]))
+
+        likelihood = float(row["likelihood"])
+        k = likelihood * pseudo_n
+        n = pseudo_n
+
+        alpha_post = alpha_prior + k
+        beta_post = beta_prior + (n - k)
+
+        prior_mean = alpha_prior / (alpha_prior + beta_prior)
+        post_mean = alpha_post / (alpha_post + beta_post)
+
+        posterior_rpn = post_mean * severity
+
+        out.append(
+            {
+                **row,
+                "alpha_prior": alpha_prior,
+                "beta_prior": beta_prior,
+                "alpha_post": alpha_post,
+                "beta_post": beta_post,
+                "prior_mean": prior_mean,
+                "posterior_mean": post_mean,
+                "posterior_rpn": posterior_rpn,
+                "severity": severity,
+            }
+        )
+
+    return out
+
+
+def update_priors_from_posterior(
+    bayes_rows: List[Dict[str, Any]]
+) -> List[Dict[str, Any]]:
+    """
+    Build new priors list from posterior results.
+    """
+    new_priors: List[Dict[str, Any]] = []
+
+    for row in bayes_rows:
+        new_priors.append(
+            {
+                "domain": row["domain"],
+                "risk": row["risk"],
+                "failure_class": row["failure_class"],
+                "alpha": row["alpha_post"],
+                "beta": row["beta_post"],
+                "severity": row["severity"],
+            }
+        )
+
+    return new_priors

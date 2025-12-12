@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: praxis_core
+Version: 0.1.0
+Summary: Private core engine for the PRAXIS risk and reliability model.
+Author-email: Samuel Lawson <darksciencedivision@gmail.com>
+License: Proprietary - commercial license required for use.
+Project-URL: Homepage, https://github.com/darksciencedivision-ctrl/Praxis-engine
+Requires-Python: >=3.9

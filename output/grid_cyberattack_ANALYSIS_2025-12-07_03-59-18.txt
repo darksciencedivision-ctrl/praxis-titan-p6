@@ -1,0 +1,34 @@
+=====================================================
+1) SYSTEM BREAKDOWN
+=====================================================
+
+Component  | Function  | Physical / Technical Principles  | Notes
+
+- Transformers  | Voltage conversion  | Magnetic induction  | 
+- Conductors  | Efficient transmission of electricity  | Minimizing resistance and maximizing conductivity  |
+- Circuit breakers  | Protection against overcurrents and short circuits  | Electromagnetic or mechanical mechanisms  |
+- Control systems  | Monitoring and controlling grid operations  | SCADA, telemetry, and remote control systems  |
+
+=====================================================
+2) RISK ANALYSIS   (MANDATORY NUMERIC TABLE)
+=====================================================
+
+Domain  | Risk  | FailureClass  | Likelihood  | Severity  | RPN  | Mechanism  | Consequence  | Mitigation
+---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---
+Technical / Engineering  | Transformer overload  | SPF  | 0.45  | 4  | 1.80  | Overcurrent during winter peak  | Local transformer failure and blackouts  | Parallel units and better protection
+Technical / Engineering  | Control system malfunction  | CMF  | 0.3  | 3  | 0.90  | Malware infection or equipment failure  | Grid instability, load shedding, or blackouts  | Regular security updates, intrusion detection systems, and backup control systems.
+
+=====================================================
+3) RESEARCH QUESTIONS
+=====================================================
+
+1. How can transformer efficiency be improved to reduce the risk of overload?
+2. Can machine learning algorithms predict control system malfunctions before they occur?
+3. What are the most effective strategies for mitigating the risks associated with cyber-physical attacks on critical infrastructure?
+4. How can grid stability be enhanced during extreme weather events, such as winter storms or heat waves?
+5. Is it possible to develop more accurate models of cascading failures in power grids to improve preventive measures?
+6. Can AI-based control systems better anticipate and respond to load fluctuations than traditional methods?
+7. What are the most effective techniques for detecting and responding to malware infections in grid control systems?
+8. How can we reduce the likelihood of equipment failure causing widespread blackouts?
+9. Are there ways to enhance the resilience of power grids against coordinated attacks on multiple components?
+10. Can advanced fault prediction models help prevent catastrophic failures, such as large-scale blackouts?

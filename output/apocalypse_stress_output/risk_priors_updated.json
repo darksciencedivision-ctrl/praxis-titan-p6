@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "alpha": 1000999.999999999,
+      "beta": 1.0009999894245993e-06,
+      "severity": 100.0
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "alpha": 1.001e-06,
+      "beta": 1000999.999999999,
+      "severity": 99.9
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "alpha": 999.0001,
+      "beta": 1.0001,
+      "severity": 95.0
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "alpha": 5001.0,
+      "beta": 999.001,
+      "severity": 90.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1001.0,
+      "severity": 85.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "alpha": 601.0,
+      "beta": 10400.0,
+      "severity": 80.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "alpha": 300.000001,
+      "beta": 700.000001,
+      "severity": 75.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "alpha": 1700.0,
+      "beta": 300.001,
+      "severity": 70.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "alpha": 1.001,
+      "beta": 1000.999,
+      "severity": 65.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "alpha": 1.000001,
+      "beta": 1000.999999,
+      "severity": 60.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "alpha": 901.0,
+      "beta": 101.0,
+      "severity": 55.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "alpha": 101.0,
+      "beta": 901.0,
+      "severity": 50.0
+    }
+  ]
+}

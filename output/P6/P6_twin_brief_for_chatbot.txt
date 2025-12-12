@@ -1,0 +1,27 @@
+PRAXIS P6 TWIN BRIEF (FOR CHATBOT ANALYSIS)
+
+Baseline:
+- Scenario: Titan K-of-N Test Scenario
+- Baseline top-event probability: 0.961836
+- Baseline system reliability:   0.038164
+
+Twin spread (all modes combined):
+- Top-event p range: 0.901940 to 0.995406 (mean 0.961880)
+- Reliability range: 0.004594 to 0.098060 (mean 0.038120)
+
+Per-mode behavior (personas):
+- Titan-Pessimist (mode=pessimistic):
+    top-event p range: 0.988084 to 0.995406 (mean 0.992299)
+    reliability range: 0.004594 to 0.011916 (mean 0.007701)
+- Titan-Optimist (mode=optimistic):
+    top-event p range: 0.901940 to 0.931169 (mean 0.916335)
+    reliability range: 0.068831 to 0.098060 (mean 0.083665)
+- Titan-Chaos (mode=chaotic):
+    top-event p range: 0.966166 to 0.990782 (mean 0.977007)
+    reliability range: 0.009218 to 0.033834 (mean 0.022993)
+
+Highest-sensitivity risks (attention targets):
+- R_GAS :: Gas | Compressor backbone trip | max |Δ top-event p| ≈ 0.035930, max |Δ reliability| ≈ 0.035930
+- R_GRID :: PowerGrid | Regional 500 kV corridor loss | max |Δ top-event p| ≈ 0.016303, max |Δ reliability| ≈ 0.016303
+
+Instruction for chatbot: Explain how robust the baseline conclusion is given the twin spread, how each persona (optimistic/pessimistic/chaotic) changes the risk picture, and why the listed attention-target risks matter most.

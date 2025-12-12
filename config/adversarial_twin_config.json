@@ -1,0 +1,14 @@
+
+{
+  "modes": {
+    "optimistic": {
+      "count": 6
+    },
+    "pessimistic": {
+      "count": 6
+    },
+    "chaotic": {
+      "count": 6
+    }
+  }
+}

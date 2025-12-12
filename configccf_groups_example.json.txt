@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "ccf_groups": [
+    {
+      "domain": "Technical",
+      "risk": "Large transformer permanent damage",
+      "failure_class": "CMF",
+      "ccf_group": "GRID_CORE",
+      "beta_factor": 0.30
+    },
+    {
+      "domain": "Human",
+      "risk": "Field and control staff <25% available",
+      "failure_class": "LF",
+      "ccf_group": "HUMAN_CORE",
+      "beta_factor": 0.20
+    }
+  ]
+}

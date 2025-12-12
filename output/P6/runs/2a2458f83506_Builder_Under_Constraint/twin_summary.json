@@ -1,0 +1,131 @@
+{
+  "baseline_p_top": 0.0,
+  "twins": [
+    {
+      "twin_id": "optimistic_01",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "optimistic_02",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "optimistic_03",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "optimistic_04",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "optimistic_05",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "optimistic_06",
+      "mode": "optimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_01",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_02",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_03",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_04",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_05",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "pessimistic_06",
+      "mode": "pessimistic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_01",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_02",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_03",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_04",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_05",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    },
+    {
+      "twin_id": "chaotic_06",
+      "mode": "chaotic",
+      "p_top": 0.0,
+      "reliability": null,
+      "delta_p_top": 0.0
+    }
+  ]
+}

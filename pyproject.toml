@@ -1,0 +1,21 @@
+[project]
+name = "praxis-core"
+version = "1.0.0"
+description = "Local, file-driven PRA engine for compound infrastructure catastrophes."
+authors = [{ name = "Samuel Lawson" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+praxis-core = "praxis_core.cli:main"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,36 @@
+=====================================================
+1) SYSTEM BREAKDOWN
+=====================================================
+
+Component  | Function  | Physical / Technical Principles  | Notes
+
+- Transformer overload  | Overcurrent protection  | Physical mechanism: overheating due to excessive current  |
+- Substation fires  | Fire suppression systems  | Physical mechanism: short-circuit heating of insulators  |
+- SCADA communication loss  | Redundant communication channels  | Technical principle: signal interference or equipment failure  |
+- Emergency load shedding  | Load-shedding protocols  | Technical principle: selective blackouts to maintain grid stability  |
+
+=====================================================
+2) RISK ANALYSIS   (MANDATORY NUMERIC TABLE)
+=====================================================
+
+Domain  | Risk  | FailureClass  | Likelihood  | Severity  | RPN  | Mechanism  | Consequence  | Mitigation
+---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---
+Technical / Engineering  | Transformer overload  | SPF  | 0.45  | 4  | 1.80  | Overcurrent during winter peak  | Local transformer failure and blackouts  | Parallel units and better protection
+Technical / Engineering  | Substation fires  | SPF  | 0.10  | 3  | 0.30  | Short-circuit heating of insulators during winter peak  | Local substation fire and damage to infrastructure  | Improved insulation materials and fire suppression systems
+Technical / Engineering  | SCADA communication loss  | CF  | 0.05  | 2  | 0.10  | Signal interference or equipment failure during winter peak  | Partial or complete loss of grid monitoring and control  | Redundant communication channels and backup systems
+Technical / Engineering  | Emergency load shedding  | SPF  | 0.20  | 5  | 1.00  | Inadequate load-shedding protocols during winter peak  | Widespread blackouts and reduced grid stability  | Improved load-shedding protocols and real-time monitoring
+
+=====================================================
+3) RESEARCH QUESTIONS
+=====================================================
+
+1. How can transformer overload risk be reduced through improved insulation materials and better protection systems?
+2. What are the most effective fire suppression methods for substation fires during winter peak demand events?
+3. Can redundant communication channels be further optimized to prevent SCADA communication loss during high-demand periods?
+4. Are current load-shedding protocols adequate for maintaining grid stability during emergency situations, or do we need more advanced algorithms?
+5. How can we improve models of transformer and substation performance under extreme load conditions?
+6. What factors contribute most significantly to the likelihood of a widespread power outage due to communication loss or inadequate load shedding?
+7. Can we develop better fault prediction methods for transformers and other critical grid components?
+8. Is it possible to create more advanced emergency response protocols that can mitigate the impact of power outages during winter peak demand events?
+9. How might we improve system stability in the face of simultaneous component failures, such as transformer overloads and substation fires?
+10. Can we reduce catastrophic risk by implementing new technologies or infrastructure upgrades?

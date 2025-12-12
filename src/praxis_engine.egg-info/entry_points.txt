@@ -1,0 +1,3 @@
+[console_scripts]
+praxis-analyst = praxis_analyst.cli:main
+praxis-core = praxis_core.cli:main

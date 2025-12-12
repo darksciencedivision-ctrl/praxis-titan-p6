@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "STRESS_apocalypse",
+  "risks": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "likelihood_scenario": 0.999999999999,
+      "severity": 100.0
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "likelihood_scenario": 1e-12,
+      "severity": 99.9
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.999,
+      "severity": 95.0
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.001,
+      "severity": 90.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.0,
+      "severity": 85.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.6,
+      "severity": 80.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.3,
+      "severity": 75.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.7,
+      "severity": 70.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "likelihood_scenario": 1e-6,
+      "severity": 65.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "likelihood_scenario": 1e-9,
+      "severity": 60.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "likelihood_scenario": 0.9,
+      "severity": 55.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "likelihood_scenario": 0.1,
+      "severity": 50.0
+    }
+  ]
+}
