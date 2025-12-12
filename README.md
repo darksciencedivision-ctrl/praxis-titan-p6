@@ -1,3 +1,135 @@
+RAXIS TITAN Custom Research & Attribution License (PRCAL) v1.0
+
+Copyright (c) 2025
+Samuel Lawson
+All rights reserved.
+
+1. Purpose
+
+This license governs the use, modification, and distribution of the PRAXIS TITAN software and associated materials (the “Software”).
+
+The Software is released to support research, education, analysis, and non-commercial experimentation in probabilistic risk modeling and complex systems analysis.
+
+This license is intentionally more restrictive than permissive open-source licenses in order to protect authorship, attribution, and downstream misuse.
+
+2. Permissions Granted
+
+Subject to the terms below, permission is hereby granted to any individual or organization to:
+
+Use the Software for personal, academic, or internal research purposes
+
+Study and inspect the source code
+
+Modify the Software for non-commercial research or learning
+
+Run analyses and generate outputs for private or academic use
+
+Reference the Software in academic or technical publications, with attribution
+
+3. Attribution Requirement
+
+Any use, publication, presentation, or derivative work that includes or is based on this Software must clearly attribute:
+
+“PRAXIS TITAN by Samuel Lawson”
+
+Attribution must appear in:
+
+README files
+
+Academic papers
+
+Presentations
+
+Reports
+
+Documentation
+
+Public descriptions of derived tools
+
+Removing, obscuring, or misrepresenting authorship is strictly prohibited.
+
+4. Restrictions
+
+You may NOT, without explicit written permission from the author:
+
+Sell, license, sublicense, or commercially distribute the Software
+
+Offer the Software as part of a paid product, service, SaaS, or consulting deliverable
+
+Repackage the Software under a different name or brand
+
+Claim authorship or co-authorship of the original Software
+
+Use the Software for autonomous control of real-world systems
+
+Deploy the Software in safety-critical, life-critical, or mission-critical operational environments
+
+Train or fine-tune proprietary AI models using the Software or its outputs
+
+5. Derivative Works
+
+You may create derivative works only for non-commercial purposes, provided that:
+
+This license is retained in full
+
+Attribution to the original author is preserved
+
+Derivative works are clearly marked as modified
+
+You do not imply endorsement by the original author
+
+Derivative works must not be relicensed under more permissive terms.
+
+6. No Warranty
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+
+MERCHANTABILITY
+
+FITNESS FOR A PARTICULAR PURPOSE
+
+ACCURACY
+
+COMPLETENESS
+
+NON-INFRINGEMENT
+
+The entire risk as to the quality and performance of the Software is with the user.
+
+7. Limitation of Liability
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM:
+
+USE OF THE SOFTWARE
+
+MISUSE OF THE SOFTWARE
+
+INTERPRETATION OF RESULTS
+
+DECISIONS MADE BASED ON OUTPUTS
+
+This includes, but is not limited to, financial loss, system failure, personal injury, or downstream consequences.
+
+8. Termination
+
+Any violation of the terms of this license automatically terminates the permissions granted herein.
+
+Upon termination, you must immediately cease all use, modification, and distribution of the Software.
+
+9. Contact & Commercial Licensing
+
+Commercial licensing, enterprise use, or special permissions may be available.
+
+Contact:
+
+Samuel Lawson
+GitHub: https://github.com/darksciencedivision-ctrl
+
+10. Acceptance
+
+By using, copying, modifying, or distributing this Software, you acknowledge that you have read, understood, and agreed to the terms of this license.
+
+End of License
 PRAXIS TITAN P6.1
 
 Offline Probabilistic Risk Analysis Engine for Complex Systems
