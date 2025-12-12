@@ -1,0 +1,48 @@
+from __future__ import annotations
+
+from typing import Any, Dict, List, Tuple
+
+
+def apply_ccf_beta_factor(
+    bayes_rows: List[Dict[str, Any]],
+    ccf_groups: List[Dict[str, Any]],
+) -> List[Dict[str, Any]]:
+    """
+    Apply β-factor common-cause correction within each group.
+    """
+    ccf_map: Dict[Tuple[str, str, str], Dict[str, Any]] = {}
+    for g in ccf_groups:
+        key = (g["domain"], g["risk"], g["failure_class"])
+        ccf_map[key] = g
+
+    groups: Dict[str, List[Dict[str, Any]]] = {}
+    for row in bayes_rows:
+        key = (row["domain"], row["risk"], row["failure_class"])
+        cfg = ccf_map.get(key)
+        if cfg is None:
+            group_id = f"__self_{row['domain']}_{row['risk']}"
+            beta_factor = 0.0
+        else:
+            group_id = str(cfg["ccf_group"])
+            beta_factor = float(cfg["beta_factor"])
+
+        row_copy = dict(row)
+        row_copy["_ccf_group"] = group_id
+        row_copy["_beta_factor"] = beta_factor
+        groups.setdefault(group_id, []).append(row_copy)
+
+    out: List[Dict[str, Any]] = []
+    for _, rows in groups.items():
+        max_p = max(r["posterior_mean"] for r in rows)
+        for r in rows:
+            beta = r["_beta_factor"]
+            p_i = r["posterior_mean"]
+            p_ccf = (1.0 - beta) * p_i + beta * max_p
+
+            r_out = dict(r)
+            r_out["posterior_mean_ccf"] = p_ccf
+            r_out.pop("_ccf_group", None)
+            r_out.pop("_beta_factor", None)
+            out.append(r_out)
+
+    return out

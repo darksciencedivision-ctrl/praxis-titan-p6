@@ -1,0 +1,18 @@
+{
+  "version": "v1.1-titan",
+  "numeric": {
+    "basic_probs": {},
+    "rows": []
+  },
+  "bayes": {
+    "posterior_probs": {},
+    "posterior_rows": []
+  },
+  "ccf": {
+    "probs": {},
+    "pra_rows": []
+  },
+  "cascade": {},
+  "fault_tree": {},
+  "reliability": {}
+}

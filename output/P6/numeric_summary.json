@@ -1,0 +1,33 @@
+{
+  "diagnostics": {
+    "input_count": 2,
+    "warnings": [],
+    "zero_values": 0
+  },
+  "numeric_output": {
+    "R_GAS": {
+      "domain": "Gas",
+      "failure_class": "SPF",
+      "failure_class_weight": 1.0,
+      "id": "R_GAS",
+      "p_base": 0.675,
+      "risk": "Compressor backbone trip",
+      "risk_score": 0.7775000000000001,
+      "rpn": 2.7,
+      "severity": 4.0,
+      "severity_norm": 0.8
+    },
+    "R_GRID": {
+      "domain": "PowerGrid",
+      "failure_class": "CMF",
+      "failure_class_weight": 1.25,
+      "id": "R_GRID",
+      "p_base": 0.4,
+      "risk": "Regional 500 kV corridor loss",
+      "risk_score": 0.75,
+      "rpn": 2.0,
+      "severity": 5.0,
+      "severity_norm": 1.0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+1) SYSTEM BREAKDOWN:
+**Component | Function | Physical / Technical Principles | Notes**
+"Transformers | Voltage conversion | Electromagnetic induction | Thermal overload risk"
+"SCADA Systems | Remote grid monitoring | Digital telemetry | Vulnerable to intrusion"
+
+2) RISK ANALYSIS:
+**Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation**
+"Power Infrastructure | Transformer failure due to thermal overload | SPF | 0.7 | 4 | 2.8 | Overheating degrades insulation, leading to short-circuit or fire risk | Replacement after x hours of operation, preventive maintenance"
+
+3) RESEARCH QUESTIONS:
+1. How can the efficiency of SCADA systems be improved while maintaining cybersecurity? 
+2. What are the risks and benefits of integrating AI control systems into grid infrastructure?

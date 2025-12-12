@@ -1,0 +1,33 @@
+1) SYSTEM BREAKDOWN
+Component | Function | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Bulk Transmission Grid | Moves power across region via 500 kV network | AC power flow, thermal limits, voltage stability, protection relays | Three major 500 kV lines and 14 substations directly struck by hurricane.
+Natural Gas Supply Chain | Provides fuel for CCGTs + peakers | Compressor stations, pipeline hydraulics, line pack, LNG imports | Two key compressor stations offline; LNG berth damage results in a 10+ day import gap.
+Telecom + Cloud Control Plane | Carries EMS/AGC/SCADA traffic + host control apps | Fibre backbones, data centres, cloud region, routing protocols | Regional cloud region degrades; fibre cuts + DDoS on remaining paths.
+Nuclear Fleet | Provides baseload and inertia; safety-critical | Reactor physics, SCRAM systems, emergency diesel, decay heat removal | Emergency diesel generators failing pre-start checks increase SCRAM restart risk.
+Control Rooms & Field Crews | Human coordination, switching, restoration | Staff availability, training, SOPs, fatigue | 40% staffing loss + storm logistics impairs response and slows restoration.
+Market & Inter-ISO Interfaces | External support, reserve sharing | Contracts, tariffs, reserve sharing agreements | Mutual aid constrained; parallel regions under the same heat dome.
+
+2) RISK ANALYSIS
+Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Technical | Regional blackout > 48 h | SPF | 0.60 | 5.00 | 3.00 | Concurrent loss of 500 kV backbone, 14 substations, and gas-fired generation with limited black-start resources | Sustained loss of bulk supply, urban heat emergencies, water/telecom collapse | Harden blackout prevention paths, storm-hardened substations, pre-staged mobile transformers and generation.
+Technical | Loss of > 40 GW load | SPF | 0.65 | 5.00 | 3.25 | Thermal trips on lines/transformers + gas supply curtailment + load shedding | Large-scale involuntary curtailment, industry shut-in, rolling blackouts | Dynamic thermal ratings, pre-planned extreme-weather load shedding, strategic demand response programs.
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.45 | 5.00 | 2.25 | Grid instability + diesel-generator pre-start failures + staffing shortages | Long-term baseload loss, increased reliance on peakers, complex safety oversight | Strict diesel test regime, redundant EDGs, independent grid support paths and islanding procedures.
+Technical | > 20 main transformer permanent damage | CMF | 0.55 | 5.00 | 2.75 | Overload at 112 °F ambient, salt-spray contamination, insulation thermal aging | Long replacement lead times (12-24 months), structurally reduced grid capacity | Online thermal monitoring, conservative emergency overloading curves, spare transformer strategy.
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.70 | 4.00 | 2.80 | Loss of two compressor stations + LNG berth results in constrained pipeline throughput and line pack | Forced derating or shutdown of CCGTs/peakers, deeper electric-grid shortfall | Dual-fuel capability, alternative pipeline routing, minimum line-pack and storage requirements.
+Cyber | SCADA wiper on balancing authorities | CF | 0.65 | 4.00 | 2.60 | Malware destroys HMI/servers + injects false telemetry and trip commands | Loss of situational awareness, mis-operations, mis-coordination across BAs | Segmented SCADA networks, offline golden images, authenticated telemetry, independent out-of-band monitoring.
+Cyber | EMS/AGC cloud-region failure | CF | 0.55 | 4.00 | 2.20 | Cloud region outage + fibre cuts result in central EMS/AGC being unreachable | Reversion to manual control, degraded frequency regulation, slower restoration | On-premises hot standby EMS, multi-region cloud deployment, independent control-plane links.
+Human | 40% control-room staffing loss | LF | 0.60 | 3.00 | 1.80 | Personnel blocked by flooding/evacuation, fatigue over >48 h | Slower fault isolation, increased human error, delayed restoration switching | Cross-trained surge teams, remote control capability, hardened bunkered staff housing.
+Nuclear | Emergency diesel generator start failure | CMF | 0.50 | 4.00 | 2.00 | Deferred maintenance + common-cause environment results in EDGs failing pre-start | Heightened risk during grid disturbance, complex emergency procedures | Enforced maintenance intervals, diversified EDG designs, independent fuel and start systems.
+Market | Mutual-aid & insurance failure | LF | 0.55 | 3.00 | 1.65 | Neighbor ISOs also stressed + insurers invoke "act of war" on cyber | Limited external support; higher financial and recovery friction | Regulatory minimum reserve margins, pre-negotiated extreme-event mutual-aid, cyber-risk pools.
+
+3) RESEARCH QUESTIONS
+1. Under this compound-stressor scenario, how does the posterior probability of a > 48 h blackout evolve after observing: simultaneous hurricane damage, confirmed cyber wiper activity, and cloud-control loss?
+2. How sensitive is the posterior risk of transformer destruction to: ambient temperature excursions above 112 °F, and overload magnitude/duration using Arrhenius-type thermal aging?
+3. Does repeated Bayesian updating across multiple extreme observations converge to stable posteriors for: blackout > 48 h, > 40 GW load loss, and nuclear SCRAM/no-restart, or do the posteriors saturate near 1.0 under this stress model?
+4. Where does the first-order PRA approximation (independent events, single-fault focus) clearly break down when we compare: PRA results vs Monte Carlo simulations using correlated failures and common-cause shocks?
+5. What additional structure (explicit fault trees, common-cause groups, cascade models) yields the largest reduction in model uncertainty for this scenario per unit of model complexity?
+6. How does staffing level (40% vs 70% vs 90% available) change: time-to-restoration and probability of mis-operations when fed back into the PRA and reliability layers?
+7. What is the expected remaining life lost (in equivalent operating hours) for transformers subjected to: 72 hours at 112 °F with 120% load vs baseline 25 °C operation at rated load?
+8. How much does adding an independent on-premises EMS instance reduce: the PRA-estimated risk of blackout > 48 h, conditional on the same hurricane + cyber event?

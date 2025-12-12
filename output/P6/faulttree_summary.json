@@ -1,0 +1,17 @@
+{
+  "diagnostics": {
+    "basic_event_count": 2,
+    "gates_count": 4,
+    "warnings": []
+  },
+  "node_probabilities": {
+    "G_AND_BOTH": 0.3697545557230387,
+    "G_OR_ALL": 0.8474660682769612,
+    "G_TITAN_K_OF_N": 0.8474660682769612,
+    "G_TITAN_TOP": 0.9853363311401656,
+    "R_GAS": 0.6341437440000001,
+    "R_GRID": 0.5830768799999999
+  },
+  "top_event_id": "G_TITAN_TOP",
+  "top_event_probability": 0.9853363311401656
+}

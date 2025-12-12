@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "basic_events": [
+    {
+      "id": "BE_GRID_COLLAPSE",
+      "pra_key": ["PowerGrid", "Collapse", "CMF"]
+    },
+    {
+      "id": "BE_SUBSTATION_FIRE",
+      "pra_key": ["Power", "Substation Fire", "SPF"]
+    },
+    {
+      "id": "BE_GAS_PIPELINE",
+      "pra_key": ["Gas", "Pipeline Rupture", "CMF"]
+    },
+    {
+      "id": "BE_LNG_TERMINAL",
+      "pra_key": ["Gas", "LNG Terminal Explosion", "SPF"]
+    },
+    {
+      "id": "BE_CLOUD_OUTAGE",
+      "pra_key": ["Cloud", "Hyperscaler Region Outage", "CMF"]
+    },
+    {
+      "id": "BE_TELECOM_CORE",
+      "pra_key": ["Telecom", "Core Routing Failure", "CMF"]
+    },
+    {
+      "id": "BE_CYBER_ROOTKIT",
+      "pra_key": ["Cyber", "Rootkit in Grid Control", "CMF"]
+    },
+    {
+      "id": "BE_SENSOR_TAMPER",
+      "pra_key": ["Cyber", "Sensor Tamper", "SPF"]
+    }
+  ],
+  "top_events": [
+    {
+      "id": "Gate_GridBackbone",
+      "gate": "AND",
+      "inputs": ["BE_GRID_COLLAPSE", "BE_TELECOM_CORE"]
+    },
+    {
+      "id": "Gate_GasChain",
+      "gate": "OR",
+      "inputs": ["BE_GAS_PIPELINE", "BE_LNG_TERMINAL"]
+    },
+    {
+      "id": "Gate_ControlPlane",
+      "gate": "OR",
+      "inputs": [
+        "BE_CYBER_ROOTKIT",
+        "BE_SENSOR_TAMPER",
+        "BE_CLOUD_OUTAGE"
+      ]
+    },
+    {
+      "id": "TE_OMEGA_GlobalMeshFailure",
+      "gate": "AND",
+      "inputs": [
+        "BE_GRID_COLLAPSE",
+        "BE_TELECOM_CORE",
+        "BE_GAS_PIPELINE",
+        "BE_LNG_TERMINAL",
+        "BE_CYBER_ROOTKIT",
+        "BE_SENSOR_TAMPER",
+        "BE_CLOUD_OUTAGE"
+      ]
+    }
+  ],
+  "n_samples": 50000
+}

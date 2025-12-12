@@ -1,0 +1,986 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "STRESS_apocalypse",
+  "numeric_risks": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "likelihood": 0.999999999999,
+      "severity": 100.0,
+      "rpn": 99.9999999999
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "likelihood": 1e-12,
+      "severity": 99.9,
+      "rpn": 9.99e-11
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "likelihood": 0.999,
+      "severity": 95.0,
+      "rpn": 94.905
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "likelihood": 0.001,
+      "severity": 90.0,
+      "rpn": 0.09
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 85.0,
+      "rpn": 0.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "likelihood": 0.6,
+      "severity": 80.0,
+      "rpn": 48.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "likelihood": 0.3,
+      "severity": 75.0,
+      "rpn": 22.5
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "likelihood": 0.7,
+      "severity": 70.0,
+      "rpn": 49.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "likelihood": 1e-06,
+      "severity": 65.0,
+      "rpn": 6.5e-05
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "likelihood": 1e-09,
+      "severity": 60.0,
+      "rpn": 6.000000000000001e-08
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "likelihood": 0.9,
+      "severity": 55.0,
+      "rpn": 49.5
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "likelihood": 0.1,
+      "severity": 50.0,
+      "rpn": 5.0
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "likelihood": 0.999999999999,
+      "severity": 100.0,
+      "rpn": 99.9999999999,
+      "alpha_prior": 1000000.0,
+      "beta_prior": 1e-06,
+      "alpha_post": 1000999.999999999,
+      "beta_post": 1.0009999894245993e-06,
+      "prior_mean": 0.999999999999,
+      "posterior_mean": 0.9999999999989999,
+      "posterior_rpn": 99.99999999989998
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "likelihood": 1e-12,
+      "severity": 99.9,
+      "rpn": 9.99e-11,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1000000.0,
+      "alpha_post": 1.001e-06,
+      "beta_post": 1000999.999999999,
+      "prior_mean": 9.99999999999e-13,
+      "posterior_mean": 9.99999999999001e-13,
+      "posterior_rpn": 9.98999999999002e-11
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "likelihood": 0.999,
+      "severity": 95.0,
+      "rpn": 94.905,
+      "alpha_prior": 0.0001,
+      "beta_prior": 0.0001,
+      "alpha_post": 999.0001,
+      "beta_post": 1.0001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9989999002000199,
+      "posterior_rpn": 94.9049905190019
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "likelihood": 0.001,
+      "severity": 90.0,
+      "rpn": 0.09,
+      "alpha_prior": 5000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 5001.0,
+      "beta_post": 999.001,
+      "prior_mean": 0.99999980000004,
+      "posterior_mean": 0.8334998610833565,
+      "posterior_rpn": 75.01498749750209
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 85.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 1001.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000998003992015968,
+      "posterior_rpn": 0.08483033932135728
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "likelihood": 0.6,
+      "severity": 80.0,
+      "rpn": 48.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 10000.0,
+      "alpha_post": 601.0,
+      "beta_post": 10400.0,
+      "prior_mean": 9.999000099990002e-05,
+      "posterior_mean": 0.05463139714571403,
+      "posterior_rpn": 4.370511771657123
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "likelihood": 0.3,
+      "severity": 75.0,
+      "rpn": 22.5,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1e-06,
+      "alpha_post": 300.000001,
+      "beta_post": 700.000001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.3000000004,
+      "posterior_rpn": 22.500000030000002
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "likelihood": 0.7,
+      "severity": 70.0,
+      "rpn": 49.0,
+      "alpha_prior": 1000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 1700.0,
+      "beta_post": 300.001,
+      "prior_mean": 0.9999990000010001,
+      "posterior_mean": 0.8499995750002125,
+      "posterior_rpn": 59.499970250014876
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "likelihood": 1e-06,
+      "severity": 65.0,
+      "rpn": 6.5e-05,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.001,
+      "beta_post": 1000.999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000999001996007984,
+      "posterior_rpn": 0.06493512974051896
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "likelihood": 1e-09,
+      "severity": 60.0,
+      "rpn": 6.000000000000001e-08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.000001,
+      "beta_post": 1000.999999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.00099800499001996,
+      "posterior_rpn": 0.059880299401197594
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "likelihood": 0.9,
+      "severity": 55.0,
+      "rpn": 49.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 901.0,
+      "beta_post": 101.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.8992015968063872,
+      "posterior_rpn": 49.4560878243513
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "likelihood": 0.1,
+      "severity": 50.0,
+      "rpn": 5.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 101.0,
+      "beta_post": 901.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.10079840319361277,
+      "posterior_rpn": 5.039920159680639
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "alpha": 1000999.999999999,
+      "beta": 1.0009999894245993e-06,
+      "severity": 100.0
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "alpha": 1.001e-06,
+      "beta": 1000999.999999999,
+      "severity": 99.9
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "alpha": 999.0001,
+      "beta": 1.0001,
+      "severity": 95.0
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "alpha": 5001.0,
+      "beta": 999.001,
+      "severity": 90.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1001.0,
+      "severity": 85.0
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "alpha": 601.0,
+      "beta": 10400.0,
+      "severity": 80.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "alpha": 300.000001,
+      "beta": 700.000001,
+      "severity": 75.0
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "alpha": 1700.0,
+      "beta": 300.001,
+      "severity": 70.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "alpha": 1.001,
+      "beta": 1000.999,
+      "severity": 65.0
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "alpha": 1.000001,
+      "beta": 1000.999999,
+      "severity": 60.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "alpha": 901.0,
+      "beta": 101.0,
+      "severity": 55.0
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "alpha": 101.0,
+      "beta": 901.0,
+      "severity": 50.0
+    }
+  ],
+  "pra": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "likelihood": 0.999999999999,
+      "severity": 100.0,
+      "rpn": 99.9999999999,
+      "alpha_prior": 1000000.0,
+      "beta_prior": 1e-06,
+      "alpha_post": 1000999.999999999,
+      "beta_post": 1.0009999894245993e-06,
+      "prior_mean": 0.999999999999,
+      "posterior_mean": 0.9999999999989999,
+      "posterior_rpn": 99.99999999989998,
+      "posterior_mean_ccf": 0.9999999999989999
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "likelihood": 0.999,
+      "severity": 95.0,
+      "rpn": 94.905,
+      "alpha_prior": 0.0001,
+      "beta_prior": 0.0001,
+      "alpha_post": 999.0001,
+      "beta_post": 1.0001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9989999002000199,
+      "posterior_rpn": 94.9049905190019,
+      "posterior_mean_ccf": 0.9999999999989999
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 85.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 1001.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000998003992015968,
+      "posterior_rpn": 0.08483033932135728,
+      "posterior_mean_ccf": 0.9999999999989999
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "likelihood": 1e-12,
+      "severity": 99.9,
+      "rpn": 9.99e-11,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1000000.0,
+      "alpha_post": 1.001e-06,
+      "beta_post": 1000999.999999999,
+      "prior_mean": 9.99999999999e-13,
+      "posterior_mean": 9.99999999999001e-13,
+      "posterior_rpn": 9.98999999999002e-11,
+      "posterior_mean_ccf": 9.980149890199599e-08
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "likelihood": 1e-09,
+      "severity": 60.0,
+      "rpn": 6.000000000000001e-08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.000001,
+      "beta_post": 1000.999999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.00099800499001996,
+      "posterior_rpn": 0.059880299401197594,
+      "posterior_mean_ccf": 0.00099800499001996
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "likelihood": 0.001,
+      "severity": 90.0,
+      "rpn": 0.09,
+      "alpha_prior": 5000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 5001.0,
+      "beta_post": 999.001,
+      "prior_mean": 0.99999980000004,
+      "posterior_mean": 0.8334998610833565,
+      "posterior_rpn": 75.01498749750209,
+      "posterior_mean_ccf": 0.8334998610833565
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "likelihood": 0.6,
+      "severity": 80.0,
+      "rpn": 48.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 10000.0,
+      "alpha_post": 601.0,
+      "beta_post": 10400.0,
+      "prior_mean": 9.999000099990002e-05,
+      "posterior_mean": 0.05463139714571403,
+      "posterior_rpn": 4.370511771657123,
+      "posterior_mean_ccf": 0.05463139714571403
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "likelihood": 0.3,
+      "severity": 75.0,
+      "rpn": 22.5,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1e-06,
+      "alpha_post": 300.000001,
+      "beta_post": 700.000001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.3000000004,
+      "posterior_rpn": 22.500000030000002,
+      "posterior_mean_ccf": 0.3000000004
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "likelihood": 0.7,
+      "severity": 70.0,
+      "rpn": 49.0,
+      "alpha_prior": 1000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 1700.0,
+      "beta_post": 300.001,
+      "prior_mean": 0.9999990000010001,
+      "posterior_mean": 0.8499995750002125,
+      "posterior_rpn": 59.499970250014876,
+      "posterior_mean_ccf": 0.8499995750002125
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "likelihood": 1e-06,
+      "severity": 65.0,
+      "rpn": 6.5e-05,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.001,
+      "beta_post": 1000.999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000999001996007984,
+      "posterior_rpn": 0.06493512974051896,
+      "posterior_mean_ccf": 0.000999001996007984
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "likelihood": 0.9,
+      "severity": 55.0,
+      "rpn": 49.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 901.0,
+      "beta_post": 101.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.8992015968063872,
+      "posterior_rpn": 49.4560878243513,
+      "posterior_mean_ccf": 0.8992015968063872
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "likelihood": 0.1,
+      "severity": 50.0,
+      "rpn": 5.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 101.0,
+      "beta_post": 901.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.10079840319361277,
+      "posterior_rpn": 5.039920159680639,
+      "posterior_mean_ccf": 0.10079840319361277
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "GlobalPower",
+      "risk": "Total Grid Meltdown",
+      "failure_class": "CATACLYSM",
+      "likelihood": 0.999999999999,
+      "severity": 100.0,
+      "rpn": 99.9999999999,
+      "alpha_prior": 1000000.0,
+      "beta_prior": 1e-06,
+      "alpha_post": 1000999.999999999,
+      "beta_post": 1.0009999894245993e-06,
+      "prior_mean": 0.999999999999,
+      "posterior_mean": 0.9999999999989999,
+      "posterior_rpn": 99.99999999989998,
+      "posterior_mean_ccf": 0.9999999999989999,
+      "lambda_effective": 27.63093221929763,
+      "reliability_1y": 1.0000889005823404e-12
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Chain Reaction Overload",
+      "failure_class": "CMF",
+      "likelihood": 0.999,
+      "severity": 95.0,
+      "rpn": 94.905,
+      "alpha_prior": 0.0001,
+      "beta_prior": 0.0001,
+      "alpha_post": 999.0001,
+      "beta_post": 1.0001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9989999002000199,
+      "posterior_rpn": 94.9049905190019,
+      "posterior_mean_ccf": 0.9999999999989999,
+      "lambda_effective": 27.63093221929763,
+      "reliability_1y": 1.0000889005823404e-12
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "AI Rogue Takeover",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 85.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 1001.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000998003992015968,
+      "posterior_rpn": 0.08483033932135728,
+      "posterior_mean_ccf": 0.9999999999989999,
+      "lambda_effective": 27.63093221929763,
+      "reliability_1y": 1.0000889005823404e-12
+    },
+    {
+      "domain": "GlobalPower",
+      "risk": "Quantum Surge Anomaly",
+      "failure_class": "EXOTIC",
+      "likelihood": 1e-12,
+      "severity": 99.9,
+      "rpn": 9.99e-11,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1000000.0,
+      "alpha_post": 1.001e-06,
+      "beta_post": 1000999.999999999,
+      "prior_mean": 9.99999999999e-13,
+      "posterior_mean": 9.99999999999001e-13,
+      "posterior_rpn": 9.98999999999002e-11,
+      "posterior_mean_ccf": 9.980149890199599e-08,
+      "lambda_effective": 9.980150393411412e-08,
+      "reliability_1y": 0.999999900198501
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Asteroid Impact",
+      "failure_class": "COSMIC",
+      "likelihood": 1e-09,
+      "severity": 60.0,
+      "rpn": 6.000000000000001e-08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.000001,
+      "beta_post": 1000.999999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.00099800499001996,
+      "posterior_rpn": 0.059880299401197594,
+      "posterior_mean_ccf": 0.00099800499001996,
+      "lambda_effective": 0.0009985033285905694,
+      "reliability_1y": 0.99900199500998
+    },
+    {
+      "domain": "Nuclear",
+      "risk": "Coolant System Breach",
+      "failure_class": "SPF",
+      "likelihood": 0.001,
+      "severity": 90.0,
+      "rpn": 0.09,
+      "alpha_prior": 5000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 5001.0,
+      "beta_post": 999.001,
+      "prior_mean": 0.99999980000004,
+      "posterior_mean": 0.8334998610833565,
+      "posterior_rpn": 75.01498749750209,
+      "posterior_mean_ccf": 0.8334998610833565,
+      "lambda_effective": 1.7927591352277914,
+      "reliability_1y": 0.1665001389166435
+    },
+    {
+      "domain": "CyberGlobal",
+      "risk": "Zero-Day Pandemic",
+      "failure_class": "SPF",
+      "likelihood": 0.6,
+      "severity": 80.0,
+      "rpn": 48.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 10000.0,
+      "alpha_post": 601.0,
+      "beta_post": 10400.0,
+      "prior_mean": 9.999000099990002e-05,
+      "posterior_mean": 0.05463139714571403,
+      "posterior_rpn": 4.370511771657123,
+      "posterior_mean_ccf": 0.05463139714571403,
+      "lambda_effective": 0.056180371609971726,
+      "reliability_1y": 0.9453686028542859
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Engineered Plague Release",
+      "failure_class": "CMF",
+      "likelihood": 0.3,
+      "severity": 75.0,
+      "rpn": 22.5,
+      "alpha_prior": 1e-06,
+      "beta_prior": 1e-06,
+      "alpha_post": 300.000001,
+      "beta_post": 700.000001,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.3000000004,
+      "posterior_rpn": 22.500000030000002,
+      "posterior_mean_ccf": 0.3000000004,
+      "lambda_effective": 0.3566749445101611,
+      "reliability_1y": 0.6999999995999999
+    },
+    {
+      "domain": "BioHazard",
+      "risk": "Lab Containment Failure",
+      "failure_class": "SPF",
+      "likelihood": 0.7,
+      "severity": 70.0,
+      "rpn": 49.0,
+      "alpha_prior": 1000.0,
+      "beta_prior": 0.001,
+      "alpha_post": 1700.0,
+      "beta_post": 300.001,
+      "prior_mean": 0.9999990000010001,
+      "posterior_mean": 0.8499995750002125,
+      "posterior_rpn": 59.499970250014876,
+      "posterior_mean_ccf": 0.8499995750002125,
+      "lambda_effective": 1.8971171515579786,
+      "reliability_1y": 0.1500004249997875
+    },
+    {
+      "domain": "GeoCatastrophe",
+      "risk": "Supervolcano Eruption",
+      "failure_class": "NATURAL",
+      "likelihood": 1e-06,
+      "severity": 65.0,
+      "rpn": 6.5e-05,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.001,
+      "beta_post": 1000.999,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.000999001996007984,
+      "posterior_rpn": 0.06493512974051896,
+      "posterior_mean_ccf": 0.000999001996007984,
+      "lambda_effective": 0.0009995013310875394,
+      "reliability_1y": 0.999000998003992
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Hyperinflation Spiral",
+      "failure_class": "SYSTEMIC",
+      "likelihood": 0.9,
+      "severity": 55.0,
+      "rpn": 49.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 901.0,
+      "beta_post": 101.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.8992015968063872,
+      "posterior_rpn": 49.4560878243513,
+      "posterior_mean_ccf": 0.8992015968063872,
+      "lambda_effective": 2.2946327648035507,
+      "reliability_1y": 0.10079840319361277
+    },
+    {
+      "domain": "EconCollapse",
+      "risk": "Market Quantum Crash",
+      "failure_class": "ALGO",
+      "likelihood": 0.1,
+      "severity": 50.0,
+      "rpn": 5.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 101.0,
+      "beta_post": 901.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.10079840319361277,
+      "posterior_rpn": 5.039920159680639,
+      "posterior_mean_ccf": 0.10079840319361277,
+      "lambda_effective": 0.1062480240364722,
+      "reliability_1y": 0.8992015968063872
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Gate_NuclearChain",
+        "gate": "OR",
+        "inputs": [
+          "BE_NUC_OVERLOAD",
+          "BE_NUC_BREACH"
+        ],
+        "probability": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_CyberDominance",
+        "gate": "AND",
+        "inputs": [
+          "BE_CYBER_AI",
+          "BE_CYBER_ZERO"
+        ],
+        "probability": 0.05412,
+        "ci_95_low": 0.052136793283871,
+        "ci_95_high": 0.056103206716129006,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_BioOutbreak",
+        "gate": "OR",
+        "inputs": [
+          "BE_BIO_PLAGUE",
+          "BE_BIO_LAB"
+        ],
+        "probability": 0.89422,
+        "ci_95_low": 0.8915241542451744,
+        "ci_95_high": 0.8969158457548256,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_GeoDoom",
+        "gate": "AND",
+        "inputs": [
+          "BE_GEO_VOLCANO",
+          "BE_GEO_ASTEROID"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_EconMeltdown",
+        "gate": "OR",
+        "inputs": [
+          "BE_ECON_INFLATION",
+          "BE_ECON_CRASH"
+        ],
+        "probability": 0.91166,
+        "ci_95_low": 0.9091724820878352,
+        "ci_95_high": 0.9141475179121649,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_APOCALYPSE_NOW",
+        "gate": "OR",
+        "inputs": [
+          "BE_GP_MELTDOWN",
+          "BE_NUC_OVERLOAD",
+          "BE_NUC_BREACH",
+          "BE_CYBER_AI",
+          "BE_CYBER_ZERO",
+          "BE_BIO_PLAGUE",
+          "BE_BIO_LAB",
+          "BE_GEO_VOLCANO",
+          "BE_GEO_ASTEROID",
+          "BE_ECON_INFLATION",
+          "BE_ECON_CRASH"
+        ],
+        "probability": 1.0,
+        "ci_95_low": 1.0,
+        "ci_95_high": 1.0,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_LOW_PROB_CLUSTER",
+        "gate": "AND",
+        "inputs": [
+          "BE_GP_QUANTUM",
+          "BE_GEO_ASTEROID"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_GP_MELTDOWN": 0.9999999999989999,
+      "BE_GP_QUANTUM": 9.980149890199599e-08,
+      "BE_NUC_OVERLOAD": 0.9999999999989999,
+      "BE_NUC_BREACH": 0.8334998610833565,
+      "BE_CYBER_AI": 0.9999999999989999,
+      "BE_CYBER_ZERO": 0.05463139714571403,
+      "BE_BIO_PLAGUE": 0.3000000004,
+      "BE_BIO_LAB": 0.8499995750002125,
+      "BE_GEO_VOLCANO": 0.000999001996007984,
+      "BE_GEO_ASTEROID": 0.00099800499001996,
+      "BE_ECON_INFLATION": 0.8992015968063872,
+      "BE_ECON_CRASH": 0.10079840319361277
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "GlobalPower",
+        "risk": "Total Grid Meltdown",
+        "failure_class": "CATACLYSM",
+        "p_effective": 0.9999999999995
+      },
+      {
+        "domain": "Nuclear",
+        "risk": "Chain Reaction Overload",
+        "failure_class": "CMF",
+        "p_effective": 1.0
+      },
+      {
+        "domain": "CyberGlobal",
+        "risk": "AI Rogue Takeover",
+        "failure_class": "CMF",
+        "p_effective": 0.999999999999999
+      },
+      {
+        "domain": "GlobalPower",
+        "risk": "Quantum Surge Anomaly",
+        "failure_class": "EXOTIC",
+        "p_effective": 9.980149890199599e-08
+      },
+      {
+        "domain": "GeoCatastrophe",
+        "risk": "Asteroid Impact",
+        "failure_class": "COSMIC",
+        "p_effective": 0.00099800499001996
+      },
+      {
+        "domain": "Nuclear",
+        "risk": "Coolant System Breach",
+        "failure_class": "SPF",
+        "p_effective": 0.8334998610833565
+      },
+      {
+        "domain": "CyberGlobal",
+        "risk": "Zero-Day Pandemic",
+        "failure_class": "SPF",
+        "p_effective": 0.05463139714571403
+      },
+      {
+        "domain": "BioHazard",
+        "risk": "Engineered Plague Release",
+        "failure_class": "CMF",
+        "p_effective": 0.9999999999999993
+      },
+      {
+        "domain": "BioHazard",
+        "risk": "Lab Containment Failure",
+        "failure_class": "SPF",
+        "p_effective": 0.8499995750002125
+      },
+      {
+        "domain": "GeoCatastrophe",
+        "risk": "Supervolcano Eruption",
+        "failure_class": "NATURAL",
+        "p_effective": 0.0009990019960079977
+      },
+      {
+        "domain": "EconCollapse",
+        "risk": "Hyperinflation Spiral",
+        "failure_class": "SYSTEMIC",
+        "p_effective": 0.899201596907085
+      },
+      {
+        "domain": "EconCollapse",
+        "risk": "Market Quantum Crash",
+        "failure_class": "ALGO",
+        "p_effective": 0.10079840319361277
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 1000.0
+  }
+}

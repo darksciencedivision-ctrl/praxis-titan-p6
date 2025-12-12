@@ -1,0 +1,131 @@
+{
+  "baseline_p_top": 0.9736047480216576,
+  "twins": [
+    {
+      "twin_id": "optimistic_01",
+      "mode": "optimistic",
+      "p_top": 0.9621223820121555,
+      "reliability": null,
+      "delta_p_top": -0.011482366009502143
+    },
+    {
+      "twin_id": "optimistic_02",
+      "mode": "optimistic",
+      "p_top": 0.9622917194626507,
+      "reliability": null,
+      "delta_p_top": -0.011313028559006955
+    },
+    {
+      "twin_id": "optimistic_03",
+      "mode": "optimistic",
+      "p_top": 0.9566456258240943,
+      "reliability": null,
+      "delta_p_top": -0.016959122197563348
+    },
+    {
+      "twin_id": "optimistic_04",
+      "mode": "optimistic",
+      "p_top": 0.9586985786727226,
+      "reliability": null,
+      "delta_p_top": -0.014906169348935072
+    },
+    {
+      "twin_id": "optimistic_05",
+      "mode": "optimistic",
+      "p_top": 0.9580708429945668,
+      "reliability": null,
+      "delta_p_top": -0.015533905027090844
+    },
+    {
+      "twin_id": "optimistic_06",
+      "mode": "optimistic",
+      "p_top": 0.9638045545700451,
+      "reliability": null,
+      "delta_p_top": -0.009800193451612538
+    },
+    {
+      "twin_id": "pessimistic_01",
+      "mode": "pessimistic",
+      "p_top": 0.9949875932415994,
+      "reliability": null,
+      "delta_p_top": 0.021382845219941715
+    },
+    {
+      "twin_id": "pessimistic_02",
+      "mode": "pessimistic",
+      "p_top": 0.9935489706509889,
+      "reliability": null,
+      "delta_p_top": 0.019944222629331265
+    },
+    {
+      "twin_id": "pessimistic_03",
+      "mode": "pessimistic",
+      "p_top": 0.9919122314867754,
+      "reliability": null,
+      "delta_p_top": 0.01830748346511779
+    },
+    {
+      "twin_id": "pessimistic_04",
+      "mode": "pessimistic",
+      "p_top": 0.9922720704883914,
+      "reliability": null,
+      "delta_p_top": 0.01866732246673375
+    },
+    {
+      "twin_id": "pessimistic_05",
+      "mode": "pessimistic",
+      "p_top": 0.9965621871056755,
+      "reliability": null,
+      "delta_p_top": 0.022957439084017817
+    },
+    {
+      "twin_id": "pessimistic_06",
+      "mode": "pessimistic",
+      "p_top": 0.9902422085164745,
+      "reliability": null,
+      "delta_p_top": 0.016637460494816847
+    },
+    {
+      "twin_id": "chaotic_01",
+      "mode": "chaotic",
+      "p_top": 0.9815873866030189,
+      "reliability": null,
+      "delta_p_top": 0.007982638581361279
+    },
+    {
+      "twin_id": "chaotic_02",
+      "mode": "chaotic",
+      "p_top": 0.990421025863743,
+      "reliability": null,
+      "delta_p_top": 0.016816277842085392
+    },
+    {
+      "twin_id": "chaotic_03",
+      "mode": "chaotic",
+      "p_top": 0.9846754698203644,
+      "reliability": null,
+      "delta_p_top": 0.011070721798706717
+    },
+    {
+      "twin_id": "chaotic_04",
+      "mode": "chaotic",
+      "p_top": 0.9890775937807367,
+      "reliability": null,
+      "delta_p_top": 0.015472845759079035
+    },
+    {
+      "twin_id": "chaotic_05",
+      "mode": "chaotic",
+      "p_top": 0.9792470052675336,
+      "reliability": null,
+      "delta_p_top": 0.00564225724587597
+    },
+    {
+      "twin_id": "chaotic_06",
+      "mode": "chaotic",
+      "p_top": 0.9796070070549632,
+      "reliability": null,
+      "delta_p_top": 0.006002259033305535
+    }
+  ]
+}

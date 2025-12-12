@@ -1,0 +1,14 @@
+=== BAYESIAN RISK UPDATE ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_16-39-47.txt
+
+Domain|Risk|FailureClass|PriorMean|ObservedLikelihood|PosteriorMean|Severity|PosteriorRPN
+Technical|Regional blackout > 48 h|SPF|0.100|0.600|0.350|5.00|1.750
+Technical|Loss of > 40 GW load|SPF|0.100|0.650|0.375|5.00|1.875
+Nuclear|Nuclear SCRAM + fail to restart < 24 h|CMF|0.100|0.450|0.275|5.00|1.375
+Technical|> 20 main transformer permanent damage|CMF|0.100|0.550|0.325|5.00|1.625
+Fuel|Severe gas supply shortfall (compressors + LNG)|LF|0.100|0.700|0.400|4.00|1.600
+Cyber|SCADA wiper on balancing authorities|CF|0.100|0.650|0.375|4.00|1.500
+Cyber|EMS/AGC cloud-region failure|CF|0.100|0.550|0.325|4.00|1.300
+Human|40% control-room staffing loss|LF|0.100|0.600|0.350|3.00|1.050
+Nuclear|Emergency diesel generator start failure|CMF|0.100|0.500|0.300|4.00|1.200
+Market|Mutual-aid & insurance failure|LF|0.100|0.550|0.325|3.00|0.975

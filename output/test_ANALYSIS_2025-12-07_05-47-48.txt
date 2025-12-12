@@ -1,0 +1,19 @@
+1) SYSTEM BREAKDOWN
+
+| Component | Function | Physical / Technical Principles | Notes |
+|---|---|---|---|
+| Transformers | Voltage conversion | Electromagnetic induction | Thermal overload risk |
+| SCADA Systems | Remote grid monitoring | Digital telemetry | Vulnerable to intrusion |
+
+2) RISK ANALYSIS
+
+Domain  | Risk   | FailureClass | Likelihood | Severity | RPN | Mechanism     | Consequence | Mitigation
+---   | ---    | ---          | ---        | ---      | ---         | ---          | ---
+Infrastructure  | Load failure, Cyber failure, Single-Point Failure | SPF, CMF, CF, LF | 0.9       | 4        | 3.6        | Equipment overload risk, Remote system compromise threat   | Improved load shedding protocols, Regular software updates |
+Grid dynamics | Overloaded transformers, Cascading failures | SPF     | 0.85      | 5        | 2.25     | Transformer thermal saturation risk, System-wide instability risk | Grid resilience optimization, Better transformer design |
+
+3) RESEARCH QUESTIONS
+
+1. What is the maximum load a transformer can handle without risking overload or failure?
+2. How do transformers' performance and lifespan change under different levels of harmonic distortion?
+3. What are the critical factors determining the vulnerability of SCADA systems to intrusion attacks?

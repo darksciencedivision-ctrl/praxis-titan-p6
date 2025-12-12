@@ -1,0 +1,19 @@
+1) SYSTEM BREAKDOWN (TABLE)
+| Component                | Description                                                                                           |
+|--------------------------|------------------------------------------------------------------------------------------------------|
+| Electrical Grid          | National power distribution network                                                                                                                                                     |
+| Extreme Winter Demand   | Increased power consumption due to cold weather and higher demand for heating                        |
+
+2) RISK ANALYSIS (NUMERIC WITH RPN)
+| Risk Event                | Likelihood (0-1)  | Severity (1-5) | RPN = L × S                                                                                            |
+|----------------------------|-------------------|-----------------|------------------------------------------------------------------------------------------------------------------------|
+| Grid Overload             | 0.85               | 4                   | 3.40                                                                                                                                                                          |
+| Power Outages            | 0.70               | 3                   | 2.10                                                                                                                                                                          |
+| Blackouts                | 0.45               | 5 (highest)        | 2.25                                                                                             |
+| System Failure           | 0.30               | 4                   | 1.20                                                                                                                                                                          |
+| Environmental Impact     | 0.15               | 3 (medium)         | 0.45                                                                                    |
+
+3) RESEARCH QUESTIONS (NUMBERED)
+1) What measures can be taken to prevent grid overload during extreme winter demand?
+2) How do power outages and blackouts impact the electrical grid's overall performance?
+3) Are there any potential environmental concerns related to the electrical grid's operation during periods of high demand?

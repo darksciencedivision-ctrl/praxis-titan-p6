@@ -1,0 +1,18 @@
+{
+  "edges": [
+    {
+      "from": "R_GAS",
+      "to": "R_GRID",
+      "weight": 0.25
+    },
+    {
+      "from": "R_GRID",
+      "to": "R_GAS",
+      "weight": 0.10
+    }
+  ],
+  "mode": "iterative",
+  "max_iterations": 8,
+  "damping": 0.80,
+  "tolerance": 0.0001
+}

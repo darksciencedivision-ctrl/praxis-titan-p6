@@ -1,0 +1,25 @@
+# PRAxis Fault-Tree Config – Perfect Storm 2032
+
+[BASIC_EVENTS]
+BE1 | Environmental | 125 °F (52 °C) heat dome 5 days | ENV
+BE2 | Environmental | Carrington-level GMD (G5) | ENV
+BE3 | Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF
+BE4 | Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF
+BE5 | Cyber | Starlink + public cloud simultaneous multi-region loss | CF
+BE6 | Technical | >400 large transformers permanent damage | CMF
+BE7 | Nuclear | Station blackout >8 hours at ≥12 plants | CMF
+BE8 | Human | Control room + field crew <25% available | LF
+BE9 | Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF
+
+[TOP_EVENTS]
+# Heat + fuel + cyber all true → continental collapse
+TE_CONTINENTAL_COLLAPSE   | AND  | - | BE1,BE3,BE4
+
+# Any 3 of 4 high-impact drivers → transformer fleet collapse
+TE_TRANSFORMER_APOCALYPSE | KOFN | 3 | BE1,BE2,BE3,BE6
+
+# 4-of-4 (nuclear SBO + heat + gas + human collapse)
+TE_NUCLEAR_CASCADE        | KOFN | 4 | BE7,BE1,BE3,BE8
+
+# Societal collapse approximated as OR of key BEs
+TE_TOTAL_SOCIETAL         | OR   | - | BE1,BE3,BE4,BE6,BE7,BE8,BE9

@@ -1,0 +1,16 @@
+**System Breakdown**
+Component | Function  | Physical / Technical Principles | Notes
+--- | --- | --- | ---
+Transformers  | Voltage conversion | Electromagnetic induction | Thermal overload risk
+SCADA Systems  | Remote grid monitoring | Digital telemetry | Vulnerable to intrusion
+
+**Risk Analysis**
+Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+Power Engineering  | Transformer thermal overload risk  | SPF  | 0.1  | 4  | 0.4  | Overheating due to load imbalance or harmonics | System trips, damage to transformer core | Install more robust transformers, balance loads
+Cyber-Physical Systems  | SCADA system intrusion vulnerability | CF  | 0.2  | 3  | 0.6  | Malicious control commands | Misaligned grid operation, potential equipment damage or failure | Implement cybersecurity protocols, separate control networks
+
+**Research Questions**
+1. What is the thermal saturation threshold for transformer core materials under peak harmonic distortion?
+2. How does load imbalance affect grid stability and risk of transformer overload?
+3. Can machine learning algorithms improve SCADA system intrusion detection efficiency?

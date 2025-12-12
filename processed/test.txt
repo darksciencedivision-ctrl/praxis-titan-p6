@@ -1,0 +1,3 @@
+
+Analyze the electrical grid under extreme winter demand.
+Provide numeric RPN table only.

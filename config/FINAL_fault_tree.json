@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "basic_events": [
+    {
+      "id": "BE_R1",
+      "pra_key": ["Gas", "Pipe Failure", "CMF"]
+    },
+    {
+      "id": "BE_R2",
+      "pra_key": ["PowerGrid", "Grid Loss", "SPF"]
+    },
+    {
+      "id": "BE_R3",
+      "pra_key": ["Cyber", "Malware", "CMF"]
+    }
+  ],
+  "top_events": [
+    {
+      "id": "Gate_A",
+      "gate": "AND",
+      "inputs": ["BE_R1", "BE_R2"]
+    },
+    {
+      "id": "Gate_B",
+      "gate": "OR",
+      "inputs": ["BE_R1", "BE_R2"]
+    },
+    {
+      "id": "TE_Certain",
+      "gate": "OR",
+      "inputs": ["BE_R2", "BE_R3"]
+    }
+  ],
+  "n_samples": 50000
+}

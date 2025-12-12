@@ -1,0 +1,29 @@
+=====================================================
+1) SYSTEM BREAKDOWN  (TABLE)
+=====================================================
+Component | Function  | Physical / Technical Principles | Failure Modes | Notes
+Load Management System | Manage peak demand | Load flow control, power system stability | Overloading, harmonic distortion, impedance rise | Improve with advanced load forecasting and demand response programs.
+Transformer Protection | Protect grid from transformer damage | Thermal saturation, insulation breakdown, overcurrent protection | Overheating, insulation failure, internal short circuit | Enhance with distributed monitoring and adaptive protection schemes.
+Emergency Load Shedding | Ensure grid resilience during extreme events | Cascading failures, common-mode failures | Uncontrolled load shedding, blackouts | Strengthen resiliency through diversified energy sources and smart grid technologies.
+
+=====================================================
+2) RISK ANALYSIS  (TABLE WITH NUMERIC RPN)
+=====================================================
+Domain  | Risk   | FailureClass | Likelihood | Severity | RPN    | Mechanism         | Consequence | Mitigation
+Load Management System | Load overloading risk | SPF   | 0.05      | 3        | 0.15     Overloading due to inaccurate demand predictions, causing power system instability. | Blackouts, equipment damage | Improve load forecasting models and implement demand response programs.
+Transformer Protection | Transformer overheating risk | SPF   | 0.03      | 4        | 0.12     Thermal saturation under high loads or extended periods of stress. | Equipment damage, potential grid outages | Implement advanced monitoring systems and adaptive protection schemes.
+Emergency Load Shedding | Uncontrolled load shedding risk | CMF   | 0.01      | 5        | 0.05     Cascading failures in the event of severe grid disturbances, potentially leading to widespread blackouts. | Widespread power outages, economic losses | Diversify energy sources and enhance smart grid technologies for improved resilience.
+
+=====================================================
+3) RESEARCH QUESTIONS (10 ITEMS)
+=====================================================
+1. What is the optimal size and distribution of energy storage systems in a continental power grid during winter peak demand?
+2. How can advanced load forecasting models be developed to improve the accuracy of load management predictions?
+3. Can distributed monitoring systems enhance transformer protection effectiveness by detecting early signs of failure modes?
+4. How do smart grid technologies contribute to emergency load shedding resiliency during extreme events?
+5. What are the potential benefits and drawbacks of implementing diversified energy sources, such as renewable or distributed generation, in a continental power grid during winter peak demand?
+6. Can improved transformer protection schemes reduce the likelihood of equipment damage and grid outages?
+7. How do advanced load response programs help manage peak demand without compromising system stability?
+8. What is the impact of cascading failures on the effectiveness of emergency load shedding strategies?
+9. Are there specific physical or technical principles that can be applied to enhance power system stability during winter peak demand scenarios?
+10. Can better understanding of harmonic distortion and impedance rise phenomena improve transformer protection and grid resilience?

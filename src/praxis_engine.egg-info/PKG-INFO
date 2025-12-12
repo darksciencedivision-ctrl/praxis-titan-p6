@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: praxis-engine
+Version: 1.0.0
+Summary: PRAXIS: local probabilistic risk and reliability engine for compound infrastructure catastrophes.
+Author: Samuel Lawson
+Requires-Python: >=3.10

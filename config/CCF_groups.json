@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "group_id": "CCF_POWER_GAS",
+      "description": "Coupled PowerGrid + Gas compression backbone trip",
+      "beta_factor": 0.30,
+      "members": ["R_GRID", "R_GAS"]
+    }
+  ],
+  "default_beta": 0.0
+}

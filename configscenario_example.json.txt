@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "Perfect_Storm_2032",
+  "description": "Multi-domain catastrophe involving hurricane landfall, heat dome, gas compression failure, and SCADA compromise.",
+
+  "risks": [
+    {
+      "domain": "Technical",
+      "risk": "Large transformer permanent damage",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.72,
+      "severity": 5.0
+    },
+    {
+      "domain": "Human",
+      "risk": "Field and control staff <25% available",
+      "failure_class": "LF",
+      "likelihood_scenario": 0.78,
+      "severity": 5.0
+    }
+  ],
+
+  "environmental_factors": {
+    "ambient_temp_c": 45,
+    "heat_dome_days": 5,
+    "storm_category": 4
+  }
+}

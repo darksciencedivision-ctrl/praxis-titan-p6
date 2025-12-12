@@ -1,0 +1,2 @@
+
+A winter peak-demand scenario in a continental power grid where AI supervises load management, transformer protection, and emergency load shedding.

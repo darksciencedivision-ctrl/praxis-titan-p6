@@ -1,0 +1,36 @@
+{
+  "description": "Minimal two-risk scenario for K-of-N fault tree verification.",
+  "risks": [
+    {
+      "domain": "PowerGrid",
+      "failure_class": "CMF",
+      "id": "R_GRID",
+      "likelihood": 0.5123650816738539,
+      "risk": "Regional 500 kV corridor loss",
+      "severity": 5.322290472689243,
+      "twin_info": {
+        "base_likelihood": 0.4,
+        "base_severity": 5.0,
+        "mode": "chaotic",
+        "scale_applied": 1.2809127041846347,
+        "shift_applied": 0.32229047268924305
+      }
+    },
+    {
+      "domain": "Gas",
+      "failure_class": "SPF",
+      "id": "R_GAS",
+      "likelihood": 0.45402527591587677,
+      "risk": "Compressor backbone trip",
+      "severity": 3.8749039874862365,
+      "twin_info": {
+        "base_likelihood": 0.45,
+        "base_severity": 4.0,
+        "mode": "chaotic",
+        "scale_applied": 1.0089450575908372,
+        "shift_applied": -0.12509601251376345
+      }
+    }
+  ],
+  "scenario_name": "Titan K-of-N Test Scenario - TwinRun_15 (chaotic)"
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "groups": [
+    {
+      "group_id": "Backbone_Energy",
+      "beta_factor": 0.95,
+      "members": [
+        { "domain": "PowerGrid", "risk": "Collapse", "failure_class": "CMF" },
+        { "domain": "Gas", "risk": "Pipeline Rupture", "failure_class": "CMF" },
+        { "domain": "Gas", "risk": "LNG Terminal Explosion", "failure_class": "SPF" }
+      ]
+    },
+    {
+      "group_id": "Digital_Mesh",
+      "beta_factor": 0.90,
+      "members": [
+        { "domain": "Cyber", "risk": "Rootkit in Grid Control", "failure_class": "CMF" },
+        { "domain": "Cloud", "risk": "Hyperscaler Region Outage", "failure_class": "CMF" },
+        { "domain": "Telecom", "risk": "Core Routing Failure", "failure_class": "CMF" }
+      ]
+    }
+  ]
+}

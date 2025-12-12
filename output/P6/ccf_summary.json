@@ -1,0 +1,29 @@
+{
+  "ccf_output": {
+    "R_GAS": {
+      "beta_factor": 0.3,
+      "domain": "Gas",
+      "failure_class": "",
+      "group_id": "CCF_POWER_GAS",
+      "id": "R_GAS",
+      "p_effective": 0.5875,
+      "p_effective_ccf": 0.5875,
+      "risk": "Compressor backbone trip"
+    },
+    "R_GRID": {
+      "beta_factor": 0.3,
+      "domain": "PowerGrid",
+      "failure_class": "",
+      "group_id": "CCF_POWER_GAS",
+      "id": "R_GRID",
+      "p_effective": 0.4,
+      "p_effective_ccf": 0.45624999999999993,
+      "risk": "Regional 500 kV corridor loss"
+    }
+  },
+  "diagnostics": {
+    "groups_count": 1,
+    "input_count": 2,
+    "warnings": []
+  }
+}

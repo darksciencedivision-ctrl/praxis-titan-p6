@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "STRESS_global_blackout",
+  "numeric_risks": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 10.0,
+      "rpn": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.01,
+      "severity": 8.0,
+      "rpn": 0.08
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 7.0,
+      "rpn": 0.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.2,
+      "severity": 5.0,
+      "rpn": 1.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "likelihood": 0.1,
+      "severity": 6.0,
+      "rpn": 0.6000000000000001
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 10.0,
+      "rpn": 10.0,
+      "alpha_prior": 0.5,
+      "beta_prior": 0.5,
+      "alpha_post": 50.5,
+      "beta_post": 0.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9901960784313726,
+      "posterior_rpn": 9.901960784313726
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.01,
+      "severity": 8.0,
+      "rpn": 0.08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.5,
+      "beta_post": 50.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.028846153846153848,
+      "posterior_rpn": 0.23076923076923078
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 100.0,
+      "beta_prior": 0.0,
+      "alpha_post": 125.0,
+      "beta_post": 25.0,
+      "prior_mean": 1.0,
+      "posterior_mean": 0.8333333333333334,
+      "posterior_rpn": 7.5
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 26.0,
+      "beta_post": 26.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 4.5
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 7.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.019230769230769232,
+      "posterior_rpn": 0.13461538461538464
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.2,
+      "severity": 5.0,
+      "rpn": 1.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 11.0,
+      "beta_post": 41.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.21153846153846154,
+      "posterior_rpn": 1.0576923076923077
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "likelihood": 0.1,
+      "severity": 6.0,
+      "rpn": 0.6000000000000001,
+      "alpha_prior": 0.01,
+      "beta_prior": 10.0,
+      "alpha_post": 5.01,
+      "beta_post": 55.0,
+      "prior_mean": 0.000999000999000999,
+      "posterior_mean": 0.08348608565239127,
+      "posterior_rpn": 0.5009165139143477
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "alpha": 50.5,
+      "beta": 0.5,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "alpha": 1.5,
+      "beta": 50.5,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "alpha": 125.0,
+      "beta": 25.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "alpha": 26.0,
+      "beta": 26.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 51.0,
+      "severity": 7.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "alpha": 11.0,
+      "beta": 41.0,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "alpha": 5.01,
+      "beta": 55.0,
+      "severity": 6.0
+    }
+  ],
+  "pra": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 10.0,
+      "rpn": 10.0,
+      "alpha_prior": 0.5,
+      "beta_prior": 0.5,
+      "alpha_post": 50.5,
+      "beta_post": 0.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9901960784313726,
+      "posterior_rpn": 9.901960784313726,
+      "posterior_mean_ccf": 0.9901960784313726
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.01,
+      "severity": 8.0,
+      "rpn": 0.08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.5,
+      "beta_post": 50.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.028846153846153848,
+      "posterior_rpn": 0.23076923076923078,
+      "posterior_mean_ccf": 0.028846153846153848
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 100.0,
+      "beta_prior": 0.0,
+      "alpha_post": 125.0,
+      "beta_post": 25.0,
+      "prior_mean": 1.0,
+      "posterior_mean": 0.8333333333333334,
+      "posterior_rpn": 7.5,
+      "posterior_mean_ccf": 0.8333333333333334
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 26.0,
+      "beta_post": 26.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 4.5,
+      "posterior_mean_ccf": 0.8300000000000001
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 7.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.019230769230769232,
+      "posterior_rpn": 0.13461538461538464,
+      "posterior_mean_ccf": 0.019230769230769232
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.2,
+      "severity": 5.0,
+      "rpn": 1.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 11.0,
+      "beta_post": 41.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.21153846153846154,
+      "posterior_rpn": 1.0576923076923077,
+      "posterior_mean_ccf": 0.21153846153846154
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "likelihood": 0.1,
+      "severity": 6.0,
+      "rpn": 0.6000000000000001,
+      "alpha_prior": 0.01,
+      "beta_prior": 10.0,
+      "alpha_post": 5.01,
+      "beta_post": 55.0,
+      "prior_mean": 0.000999000999000999,
+      "posterior_mean": 0.08348608565239127,
+      "posterior_rpn": 0.5009165139143477,
+      "posterior_mean_ccf": 0.08348608565239127
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 1.0,
+      "severity": 10.0,
+      "rpn": 10.0,
+      "alpha_prior": 0.5,
+      "beta_prior": 0.5,
+      "alpha_post": 50.5,
+      "beta_post": 0.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.9901960784313726,
+      "posterior_rpn": 9.901960784313726,
+      "posterior_mean_ccf": 0.9901960784313726,
+      "lambda_effective": 4.624972813284274,
+      "reliability_1y": 0.00980392156862742
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.01,
+      "severity": 8.0,
+      "rpn": 0.08,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.5,
+      "beta_post": 50.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.028846153846153848,
+      "posterior_rpn": 0.23076923076923078,
+      "posterior_mean_ccf": 0.028846153846153848,
+      "lambda_effective": 0.029270382300113224,
+      "reliability_1y": 0.9711538461538461
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 100.0,
+      "beta_prior": 0.0,
+      "alpha_post": 125.0,
+      "beta_post": 25.0,
+      "prior_mean": 1.0,
+      "posterior_mean": 0.8333333333333334,
+      "posterior_rpn": 7.5,
+      "posterior_mean_ccf": 0.8333333333333334,
+      "lambda_effective": 1.7917594692280552,
+      "reliability_1y": 0.16666666666666663
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "likelihood": 0.5,
+      "severity": 9.0,
+      "rpn": 4.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 26.0,
+      "beta_post": 26.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 4.5,
+      "posterior_mean_ccf": 0.8300000000000001,
+      "lambda_effective": 1.7719568419318756,
+      "reliability_1y": 0.16999999999999993
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "likelihood": 0.0,
+      "severity": 7.0,
+      "rpn": 0.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 1.0,
+      "beta_post": 51.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.019230769230769232,
+      "posterior_rpn": 0.13461538461538464,
+      "posterior_mean_ccf": 0.019230769230769232,
+      "lambda_effective": 0.019418085857101627,
+      "reliability_1y": 0.9807692307692307
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.2,
+      "severity": 5.0,
+      "rpn": 1.0,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 11.0,
+      "beta_post": 41.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.21153846153846154,
+      "posterior_rpn": 1.0576923076923077,
+      "posterior_mean_ccf": 0.21153846153846154,
+      "lambda_effective": 0.23767165187711958,
+      "reliability_1y": 0.7884615384615384
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "likelihood": 0.1,
+      "severity": 6.0,
+      "rpn": 0.6000000000000001,
+      "alpha_prior": 0.01,
+      "beta_prior": 10.0,
+      "alpha_post": 5.01,
+      "beta_post": 55.0,
+      "prior_mean": 0.000999000999000999,
+      "posterior_mean": 0.08348608565239127,
+      "posterior_rpn": 0.5009165139143477,
+      "posterior_mean_ccf": 0.08348608565239127,
+      "lambda_effective": 0.08717802976895053,
+      "reliability_1y": 0.9165139143476088
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Gate_A",
+        "gate": "AND",
+        "inputs": [
+          "BE_R1",
+          "BE_R2"
+        ],
+        "probability": 0.02854,
+        "ci_95_low": 0.02708047843862833,
+        "ci_95_high": 0.02999952156137167,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_B",
+        "gate": "OR",
+        "inputs": [
+          "BE_R4",
+          "BE_R5"
+        ],
+        "probability": 0.8308,
+        "ci_95_low": 0.8275136070333083,
+        "ci_95_high": 0.8340863929666916,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_GlobalBlackout",
+        "gate": "AND",
+        "inputs": [
+          "BE_R1",
+          "BE_R2",
+          "BE_R4"
+        ],
+        "probability": 0.02376,
+        "ci_95_low": 0.022425026679249057,
+        "ci_95_high": 0.025094973320750943,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_R1": 0.9901960784313726,
+      "BE_R2": 0.028846153846153848,
+      "BE_R4": 0.8300000000000001,
+      "BE_R5": 0.019230769230769232
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "PowerGrid",
+        "risk": "Collapse",
+        "failure_class": "CMF",
+        "p_effective": 0.9901960784313726
+      },
+      {
+        "domain": "Power",
+        "risk": "Substation Fire",
+        "failure_class": "SPF",
+        "p_effective": 0.028846153846153848
+      },
+      {
+        "domain": "Gas",
+        "risk": "Pipeline Rupture",
+        "failure_class": "CMF",
+        "p_effective": 0.8333333333333334
+      },
+      {
+        "domain": "Gas",
+        "risk": "Compressor Fault",
+        "failure_class": "SPF",
+        "p_effective": 0.8300000000000001
+      },
+      {
+        "domain": "Cyber",
+        "risk": "DDoS Attack",
+        "failure_class": "CMF",
+        "p_effective": 0.019230769230769232
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Sensor Tamper",
+        "failure_class": "SPF",
+        "p_effective": 0.21153846153846154
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Software Crash",
+        "failure_class": "CMF",
+        "p_effective": 0.21920064604617184
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 50.0
+  }
+}

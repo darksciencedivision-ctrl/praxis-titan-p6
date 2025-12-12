@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "ccf_groups": [
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "ccf_group": "MalwareGroup",
+      "beta_factor": 0.99999999
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "ccf_group": "MalwareGroup",
+      "beta_factor": 0.00000001
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "ccf_group": "GridCCF",
+      "beta_factor": 1.0
+    }
+  ]
+}
+

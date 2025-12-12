@@ -1,0 +1,35 @@
+=====================================================
+1) SYSTEM BREAKDOWN
+=====================================================
+
+Component  | Function  | Physical / Technical Principles  | Notes
+
+- Transformers  | Voltage conversion  | Magnetic induction  | 
+- Circuit breakers  | Protection against overload  | Electromagnetic force  | 
+- Power lines  | Transmission of electricity  | Insulation and conductor materials  |
+- Control centers  | System monitoring and control  | Computer hardware and software  |
+
+=====================================================
+2) RISK ANALYSIS   (MANDATORY NUMERIC TABLE)
+=====================================================
+
+Domain  | Risk  | FailureClass  | Likelihood  | Severity  | RPN  | Mechanism  | Consequence  | Mitigation
+---  | ---  | ---  | ---  | ---  | ---  | ---  | ---  | ---
+Technical / Engineering  | Transformer overload  | SPF  | 0.45  | 4  | 1.80  | Overcurrent during winter peak  | Local transformer failure and blackouts  | Parallel units and better protection
+Technical / Engineering  | Circuit breaker malfunction  | SPF  | 0.3  | 3  | 0.90  | Malfunction due to electromagnetic interference or wear  | Localized power outage  | Regular maintenance and replacement, shielding from EM interference |
+Technical / Engineering  | Power line damage  | SPF  | 0.2  | 5  | 1.00  | Tree strikes, weather-related events, or sabotage  | Widespread blackouts and system instability  | Improved infrastructure resilience, regular tree trimming, better materials |
+
+=====================================================
+3) RESEARCH QUESTIONS
+=====================================================
+
+1. How can machine learning algorithms improve the accuracy of transformer overload prediction?
+2. Can advanced control systems mitigate the impact of coordinated cyber-attacks on power grids?
+3. What are the most effective strategies for preventing cascading blackouts during major events or cyber-attacks?
+4. How can new materials and designs enhance the durability and resilience of power lines?
+5. Can better understanding of electromagnetic interference help prevent circuit breaker malfunctions?
+6. How do different system architectures affect the overall stability and reliability of a national power grid?
+7. What are the most critical failure modes for control centers, and how can they be mitigated?
+8. How can we improve fault prediction models to anticipate potential failures in the power grid more accurately?
+9. Can advanced monitoring systems detect anomalies in power usage patterns that could indicate a cyber-attack?
+10. What innovative technologies or solutions can help reduce catastrophic risks associated with power grid failures?

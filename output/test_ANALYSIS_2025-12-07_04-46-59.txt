@@ -1,0 +1,19 @@
+To analyze the electrical grid under extreme winter demand, I will consider the following factors:
+
+1. FailureClass: Short-circuits (SC), opens circuits (OC), contactor failures (CF), motor failures (MF), or lightning strikes (LS).
+2. Likelihood: I will assign a value between 0.0 and 1.0 to represent the probability of each failure class occurring.
+3. Severity: I will assign a value between 1 and 5, with 1 being minimal impact and 5 being severe consequences.
+
+Based on these factors, I can compute the Risk Priority Number (RPN) for each failure class by multiplying its likelihood and severity.
+
+Here is the RPN table:
+
+FailureClass | Likelihood | Severity | RPN
+-------------|------------|----------|-----
+SC            | 0.95        |   4      | 38
+OC            | 0.85        |   3      | 25.5
+CF            | 0.75        |   2      | 15
+MF            | 0.60        |   1      | 7.2
+LS            | 0.05        |   4      | 2
+
+Note: These values are for illustrative purposes only and should not be taken as definitive predictions of risk.

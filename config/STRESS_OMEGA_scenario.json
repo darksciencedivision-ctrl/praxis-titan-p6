@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "STRESS_OMEGA_mesh",
+  "risks": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.85,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.40,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.70,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.65,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.60,
+      "severity": 8.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.30,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.75,
+      "severity": 9.0
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.70,
+      "severity": 8.0
+    }
+  ]
+}

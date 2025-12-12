@@ -1,0 +1,30 @@
+{
+  "scenario_name": "Titan_Test_Scenario",
+  "description": "Minimal test scenario for PRAXIS v1.1 Titan core.",
+  "risks": [
+    {
+      "id": "R1",
+      "domain": "PowerGrid",
+      "risk": "Transformer overload during peak heat",
+      "failure_class": "SPF",
+      "likelihood": 0.45,
+      "severity": 5
+    },
+    {
+      "id": "R2",
+      "domain": "Cyber",
+      "risk": "Malware disables SCADA control",
+      "failure_class": "LF",
+      "likelihood": 0.30,
+      "severity": 4
+    },
+    {
+      "id": "R3",
+      "domain": "Gas",
+      "risk": "Compressor station trip",
+      "failure_class": "SPF",
+      "likelihood": 0.25,
+      "severity": 4
+    }
+  ]
+}

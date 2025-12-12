@@ -1,0 +1,156 @@
+==============================
+PRAXIS P6 ADVERSARIAL TWIN REPORT
+==============================
+
+Base scenario: Titan K-of-N Test Scenario
+Baseline top event p ≈ 0.961836, reliability ≈ 0.038164
+
+Twin runs (sorted by worst reliability first):
+- Titan K-of-N Test Scenario - TwinRun_4 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_04_pessimistic.json
+  Top event p: 0.995406 (Δ vs base: +0.033570)
+  Reliability: 0.004594 (Δ vs base: -0.033570)
+  Hash: 80c78e2c81a355ec93816e11d48a8d6b08438dfd10d99eadc293db1fa7095fc8
+
+- Titan K-of-N Test Scenario - TwinRun_10 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_10_pessimistic.json
+  Top event p: 0.993842 (Δ vs base: +0.032006)
+  Reliability: 0.006158 (Δ vs base: -0.032006)
+  Hash: c4ee82264804434c8a7778a5114904a6d5f672766a6448717c4de4770c7cddd5
+
+- Titan K-of-N Test Scenario - TwinRun_7 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_07_pessimistic.json
+  Top event p: 0.993486 (Δ vs base: +0.031650)
+  Reliability: 0.006514 (Δ vs base: -0.031650)
+  Hash: 1771f275ff9a13503f8dd6f1472b9fdad5017eb43e1b6076349637b5d76c349c
+
+- Titan K-of-N Test Scenario - TwinRun_13 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_13_pessimistic.json
+  Top event p: 0.992229 (Δ vs base: +0.030394)
+  Reliability: 0.007771 (Δ vs base: -0.030394)
+  Hash: adb9dd7aea6d3a7c69e2933f4e55f96da85b39d30ac63d3d54e36460eec22d65
+
+- Titan K-of-N Test Scenario - TwinRun_3 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_03_chaotic.json
+  Top event p: 0.990782 (Δ vs base: +0.028946)
+  Reliability: 0.009218 (Δ vs base: -0.028946)
+  Hash: 3775a9d4718b2e7b718919d6e3d4c3aee59d91870cd417fb15fce39330b5d7ac
+
+- Titan K-of-N Test Scenario - TwinRun_16 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_16_pessimistic.json
+  Top event p: 0.990743 (Δ vs base: +0.028907)
+  Reliability: 0.009257 (Δ vs base: -0.028907)
+  Hash: ff453aa1c646a0720d819d64ad4348cdbdce0a41a154adec1b8ba42cb5cf0016
+
+- Titan K-of-N Test Scenario - TwinRun_1 (pessimistic)
+  Mode: pessimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_01_pessimistic.json
+  Top event p: 0.988084 (Δ vs base: +0.026248)
+  Reliability: 0.011916 (Δ vs base: -0.026248)
+  Hash: 9c55b3f164255900b1c9fd813b76f3c416111bb12399a51ef199c3889c2743b8
+
+- Titan K-of-N Test Scenario - TwinRun_6 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_06_chaotic.json
+  Top event p: 0.984442 (Δ vs base: +0.022606)
+  Reliability: 0.015558 (Δ vs base: -0.022606)
+  Hash: 66aa771ed3bbe5dfc1dba256cfa2050b4132521f875eb46a457a1c00ef5838dc
+
+- Titan K-of-N Test Scenario - TwinRun_12 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_12_chaotic.json
+  Top event p: 0.977630 (Δ vs base: +0.015795)
+  Reliability: 0.022370 (Δ vs base: -0.015795)
+  Hash: d878392715e7dcbe0b29766abc1e2a7e3c8d18b6d2677b8e23dcc5436f3ab0be
+
+- Titan K-of-N Test Scenario - TwinRun_18 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_18_chaotic.json
+  Top event p: 0.973140 (Δ vs base: +0.011304)
+  Reliability: 0.026860 (Δ vs base: -0.011304)
+  Hash: 8a3e760cfd0fb9dafa2cdef70d0d9de489d10a978d656bb501a4efbf0de424b1
+
+- Titan K-of-N Test Scenario - TwinRun_15 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_15_chaotic.json
+  Top event p: 0.969880 (Δ vs base: +0.008044)
+  Reliability: 0.030120 (Δ vs base: -0.008044)
+  Hash: 5504475d7c493534f40b9dcbb0b498ce9f0ea5c1467f72a1324673607e34b576
+
+- Titan K-of-N Test Scenario - TwinRun_9 (chaotic)
+  Mode: chaotic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_09_chaotic.json
+  Top event p: 0.966166 (Δ vs base: +0.004330)
+  Reliability: 0.033834 (Δ vs base: -0.004330)
+  Hash: b2cf676aa1049b2c09f0f346a3919d31e7a4800c01aea260be47edae16b57aa8
+
+- Titan K-of-N Test Scenario - TwinRun_8 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_08_optimistic.json
+  Top event p: 0.931169 (Δ vs base: -0.030667)
+  Reliability: 0.068831 (Δ vs base: +0.030667)
+  Hash: 35a54ea59171ee5d08d1dc41ff94e3b9e5226c030944daa72beec3669865734d
+
+- Titan K-of-N Test Scenario - TwinRun_17 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_17_optimistic.json
+  Top event p: 0.924589 (Δ vs base: -0.037247)
+  Reliability: 0.075411 (Δ vs base: +0.037247)
+  Hash: 4cdcd9b31556ad9ef88ef8ae65d712eea7e69b1ff31a67095ea22d4f7f471f35
+
+- Titan K-of-N Test Scenario - TwinRun_2 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_02_optimistic.json
+  Top event p: 0.920346 (Δ vs base: -0.041490)
+  Reliability: 0.079654 (Δ vs base: +0.041490)
+  Hash: 443380517a72f2ad7b8b2e9d3151d7b4f7ab040921effb9b5b31685ed4c88fc0
+
+- Titan K-of-N Test Scenario - TwinRun_14 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_14_optimistic.json
+  Top event p: 0.911485 (Δ vs base: -0.050351)
+  Reliability: 0.088515 (Δ vs base: +0.050351)
+  Hash: 6f65d708ee96bf902bc622ffb10697bb13fc6f3c18a10d1f08e3f00b8487db2c
+
+- Titan K-of-N Test Scenario - TwinRun_5 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_05_optimistic.json
+  Top event p: 0.908479 (Δ vs base: -0.053357)
+  Reliability: 0.091521 (Δ vs base: +0.053357)
+  Hash: 4bb8d2ed86124551f0ae204d74e94f9e1800e785870cb2a065a958275bd7b189
+
+- Titan K-of-N Test Scenario - TwinRun_11 (optimistic)
+  Mode: optimistic
+  Scenario path: C:\ai_control\output\P6\twin_scenarios\scenario_twin_11_optimistic.json
+  Top event p: 0.901940 (Δ vs base: -0.059896)
+  Reliability: 0.098060 (Δ vs base: +0.059896)
+  Hash: 4b0715f5e490ecd12f9cb5f6d1cb0e5ce336ecbe08882fb57199483fb4a3f8a1
+
+Aggregate twin statistics (all modes):
+  Top event p: min=0.901940, max=0.995406, mean=0.961880
+  Reliability: min=0.004594, max=0.098060, mean=0.038120
+
+Per-mode aggregates:
+- Titan-Pessimist (mode=pessimistic):
+    top-event p: min=0.988084, max=0.995406, mean=0.992299
+    reliability: min=0.004594, max=0.011916, mean=0.007701
+- Titan-Optimist (mode=optimistic):
+    top-event p: min=0.901940, max=0.931169, mean=0.916335
+    reliability: min=0.068831, max=0.098060, mean=0.083665
+- Titan-Chaos (mode=chaotic):
+    top-event p: min=0.966166, max=0.990782, mean=0.977007
+    reliability: min=0.009218, max=0.033834, mean=0.022993
+
+Risk sensitivity (per-risk, likelihood sweeps):
+- R_GRID :: PowerGrid | Regional 500 kV corridor loss | max |Δ p_top| ≈ 0.016303, max |Δ reliability| ≈ 0.016303
+- R_GAS :: Gas | Compressor backbone trip | max |Δ p_top| ≈ 0.035930, max |Δ reliability| ≈ 0.035930
+
+Attention targets (highest sensitivity):
+- R_GAS :: Gas | Compressor backbone trip | max |Δ p_top| ≈ 0.035930, max |Δ reliability| ≈ 0.035930
+- R_GRID :: PowerGrid | Regional 500 kV corridor loss | max |Δ p_top| ≈ 0.016303, max |Δ reliability| ≈ 0.016303

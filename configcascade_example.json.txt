@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "links": [
+    {
+      "source": ["Technical", "Large transformer permanent damage", "CMF"],
+      "target": ["Human", "Field and control staff <25% available", "LF"],
+      "influence": 0.25
+    }
+  ]
+}

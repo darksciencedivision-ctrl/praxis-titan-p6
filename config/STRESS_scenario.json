@@ -1,0 +1,54 @@
+{
+  "scenario_id": "STRESS_global_blackout",
+  "risks": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood_scenario": 1.0,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.01,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.5,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.5,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.0,
+      "severity": 7.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood_scenario": 0.2,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "likelihood_scenario": 0.1,
+      "severity": 6.0
+    }
+  ]
+}

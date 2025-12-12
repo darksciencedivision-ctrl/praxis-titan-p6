@@ -1,0 +1,661 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "STRESS_OMEGA_mesh",
+  "numeric_risks": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 0.85,
+      "severity": 10.0,
+      "rpn": 8.5
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 8.0,
+      "rpn": 3.2
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 9.0,
+      "rpn": 6.3
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 9.0,
+      "rpn": 5.8500000000000005
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "likelihood": 0.6,
+      "severity": 8.0,
+      "rpn": 4.8
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.3,
+      "severity": 5.0,
+      "rpn": 1.5
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "likelihood": 0.75,
+      "severity": 9.0,
+      "rpn": 6.75
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 8.0,
+      "rpn": 5.6
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 0.85,
+      "severity": 10.0,
+      "rpn": 8.5,
+      "alpha_prior": 30.0,
+      "beta_prior": 3.0,
+      "alpha_post": 115.0,
+      "beta_post": 18.0,
+      "prior_mean": 0.9090909090909091,
+      "posterior_mean": 0.8646616541353384,
+      "posterior_rpn": 8.646616541353383
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 8.0,
+      "rpn": 3.2,
+      "alpha_prior": 1.0,
+      "beta_prior": 40.0,
+      "alpha_post": 41.0,
+      "beta_post": 100.0,
+      "prior_mean": 0.024390243902439025,
+      "posterior_mean": 0.2907801418439716,
+      "posterior_rpn": 2.326241134751773
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 9.0,
+      "rpn": 6.3,
+      "alpha_prior": 15.0,
+      "beta_prior": 4.0,
+      "alpha_post": 85.0,
+      "beta_post": 34.0,
+      "prior_mean": 0.7894736842105263,
+      "posterior_mean": 0.7142857142857143,
+      "posterior_rpn": 6.428571428571429
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 9.0,
+      "rpn": 5.8500000000000005,
+      "alpha_prior": 2.0,
+      "beta_prior": 2.0,
+      "alpha_post": 67.0,
+      "beta_post": 37.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6442307692307693,
+      "posterior_rpn": 5.798076923076923
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "likelihood": 0.6,
+      "severity": 8.0,
+      "rpn": 4.8,
+      "alpha_prior": 0.5,
+      "beta_prior": 40.0,
+      "alpha_post": 60.5,
+      "beta_post": 80.0,
+      "prior_mean": 0.012345679012345678,
+      "posterior_mean": 0.4306049822064057,
+      "posterior_rpn": 3.4448398576512456
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.3,
+      "severity": 5.0,
+      "rpn": 1.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 3.0,
+      "alpha_post": 31.0,
+      "beta_post": 73.0,
+      "prior_mean": 0.25,
+      "posterior_mean": 0.2980769230769231,
+      "posterior_rpn": 1.4903846153846154
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "likelihood": 0.75,
+      "severity": 9.0,
+      "rpn": 6.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 30.0,
+      "alpha_post": 76.0,
+      "beta_post": 55.0,
+      "prior_mean": 0.03225806451612903,
+      "posterior_mean": 0.5801526717557252,
+      "posterior_rpn": 5.221374045801526
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 8.0,
+      "rpn": 5.6,
+      "alpha_prior": 3.0,
+      "beta_prior": 20.0,
+      "alpha_post": 73.0,
+      "beta_post": 50.0,
+      "prior_mean": 0.13043478260869565,
+      "posterior_mean": 0.5934959349593496,
+      "posterior_rpn": 4.747967479674797
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "alpha": 115.0,
+      "beta": 18.0,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "alpha": 41.0,
+      "beta": 100.0,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "alpha": 85.0,
+      "beta": 34.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "alpha": 67.0,
+      "beta": 37.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "alpha": 60.5,
+      "beta": 80.0,
+      "severity": 8.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "alpha": 31.0,
+      "beta": 73.0,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "alpha": 76.0,
+      "beta": 55.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "alpha": 73.0,
+      "beta": 50.0,
+      "severity": 8.0
+    }
+  ],
+  "pra": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 0.85,
+      "severity": 10.0,
+      "rpn": 8.5,
+      "alpha_prior": 30.0,
+      "beta_prior": 3.0,
+      "alpha_post": 115.0,
+      "beta_post": 18.0,
+      "prior_mean": 0.9090909090909091,
+      "posterior_mean": 0.8646616541353384,
+      "posterior_rpn": 8.646616541353383,
+      "posterior_mean_ccf": 0.8646616541353384
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 8.0,
+      "rpn": 3.2,
+      "alpha_prior": 1.0,
+      "beta_prior": 40.0,
+      "alpha_post": 41.0,
+      "beta_post": 100.0,
+      "prior_mean": 0.024390243902439025,
+      "posterior_mean": 0.2907801418439716,
+      "posterior_rpn": 2.326241134751773,
+      "posterior_mean_ccf": 0.2907801418439716
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 9.0,
+      "rpn": 6.3,
+      "alpha_prior": 15.0,
+      "beta_prior": 4.0,
+      "alpha_post": 85.0,
+      "beta_post": 34.0,
+      "prior_mean": 0.7894736842105263,
+      "posterior_mean": 0.7142857142857143,
+      "posterior_rpn": 6.428571428571429,
+      "posterior_mean_ccf": 0.7142857142857143
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 9.0,
+      "rpn": 5.8500000000000005,
+      "alpha_prior": 2.0,
+      "beta_prior": 2.0,
+      "alpha_post": 67.0,
+      "beta_post": 37.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6442307692307693,
+      "posterior_rpn": 5.798076923076923,
+      "posterior_mean_ccf": 0.6442307692307693
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "likelihood": 0.6,
+      "severity": 8.0,
+      "rpn": 4.8,
+      "alpha_prior": 0.5,
+      "beta_prior": 40.0,
+      "alpha_post": 60.5,
+      "beta_post": 80.0,
+      "prior_mean": 0.012345679012345678,
+      "posterior_mean": 0.4306049822064057,
+      "posterior_rpn": 3.4448398576512456,
+      "posterior_mean_ccf": 0.4306049822064057
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.3,
+      "severity": 5.0,
+      "rpn": 1.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 3.0,
+      "alpha_post": 31.0,
+      "beta_post": 73.0,
+      "prior_mean": 0.25,
+      "posterior_mean": 0.2980769230769231,
+      "posterior_rpn": 1.4903846153846154,
+      "posterior_mean_ccf": 0.2980769230769231
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "likelihood": 0.75,
+      "severity": 9.0,
+      "rpn": 6.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 30.0,
+      "alpha_post": 76.0,
+      "beta_post": 55.0,
+      "prior_mean": 0.03225806451612903,
+      "posterior_mean": 0.5801526717557252,
+      "posterior_rpn": 5.221374045801526,
+      "posterior_mean_ccf": 0.5801526717557252
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 8.0,
+      "rpn": 5.6,
+      "alpha_prior": 3.0,
+      "beta_prior": 20.0,
+      "alpha_post": 73.0,
+      "beta_post": 50.0,
+      "prior_mean": 0.13043478260869565,
+      "posterior_mean": 0.5934959349593496,
+      "posterior_rpn": 4.747967479674797,
+      "posterior_mean_ccf": 0.5934959349593496
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "likelihood": 0.85,
+      "severity": 10.0,
+      "rpn": 8.5,
+      "alpha_prior": 30.0,
+      "beta_prior": 3.0,
+      "alpha_post": 115.0,
+      "beta_post": 18.0,
+      "prior_mean": 0.9090909090909091,
+      "posterior_mean": 0.8646616541353384,
+      "posterior_rpn": 8.646616541353383,
+      "posterior_mean_ccf": 0.8646616541353384,
+      "lambda_effective": 1.9999773703255892,
+      "reliability_1y": 0.13533834586466165
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 8.0,
+      "rpn": 3.2,
+      "alpha_prior": 1.0,
+      "beta_prior": 40.0,
+      "alpha_post": 41.0,
+      "beta_post": 100.0,
+      "prior_mean": 0.024390243902439025,
+      "posterior_mean": 0.2907801418439716,
+      "posterior_rpn": 2.326241134751773,
+      "posterior_mean_ccf": 0.2907801418439716,
+      "lambda_effective": 0.34358970439007686,
+      "reliability_1y": 0.7092198581560284
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 9.0,
+      "rpn": 6.3,
+      "alpha_prior": 15.0,
+      "beta_prior": 4.0,
+      "alpha_post": 85.0,
+      "beta_post": 34.0,
+      "prior_mean": 0.7894736842105263,
+      "posterior_mean": 0.7142857142857143,
+      "posterior_rpn": 6.428571428571429,
+      "posterior_mean_ccf": 0.7142857142857143,
+      "lambda_effective": 1.252762968495368,
+      "reliability_1y": 0.2857142857142857
+    },
+    {
+      "domain": "Gas",
+      "risk": "LNG Terminal Explosion",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 9.0,
+      "rpn": 5.8500000000000005,
+      "alpha_prior": 2.0,
+      "beta_prior": 2.0,
+      "alpha_post": 67.0,
+      "beta_post": 37.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6442307692307693,
+      "posterior_rpn": 5.798076923076923,
+      "posterior_mean_ccf": 0.6442307692307693,
+      "lambda_effective": 1.0334729864971484,
+      "reliability_1y": 0.3557692307692307
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Rootkit in Grid Control",
+      "failure_class": "CMF",
+      "likelihood": 0.6,
+      "severity": 8.0,
+      "rpn": 4.8,
+      "alpha_prior": 0.5,
+      "beta_prior": 40.0,
+      "alpha_post": 60.5,
+      "beta_post": 80.0,
+      "prior_mean": 0.012345679012345678,
+      "posterior_mean": 0.4306049822064057,
+      "posterior_rpn": 3.4448398576512456,
+      "posterior_mean_ccf": 0.4306049822064057,
+      "lambda_effective": 0.5631808540999189,
+      "reliability_1y": 0.5693950177935942
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "likelihood": 0.3,
+      "severity": 5.0,
+      "rpn": 1.5,
+      "alpha_prior": 1.0,
+      "beta_prior": 3.0,
+      "alpha_post": 31.0,
+      "beta_post": 73.0,
+      "prior_mean": 0.25,
+      "posterior_mean": 0.2980769230769231,
+      "posterior_rpn": 1.4903846153846154,
+      "posterior_mean_ccf": 0.2980769230769231,
+      "lambda_effective": 0.3539314579929816,
+      "reliability_1y": 0.7019230769230769
+    },
+    {
+      "domain": "Cloud",
+      "risk": "Hyperscaler Region Outage",
+      "failure_class": "CMF",
+      "likelihood": 0.75,
+      "severity": 9.0,
+      "rpn": 6.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 30.0,
+      "alpha_post": 76.0,
+      "beta_post": 55.0,
+      "prior_mean": 0.03225806451612903,
+      "posterior_mean": 0.5801526717557252,
+      "posterior_rpn": 5.221374045801526,
+      "posterior_mean_ccf": 0.5801526717557252,
+      "lambda_effective": 0.8678641379686806,
+      "reliability_1y": 0.41984732824427484
+    },
+    {
+      "domain": "Telecom",
+      "risk": "Core Routing Failure",
+      "failure_class": "CMF",
+      "likelihood": 0.7,
+      "severity": 8.0,
+      "rpn": 5.6,
+      "alpha_prior": 3.0,
+      "beta_prior": 20.0,
+      "alpha_post": 73.0,
+      "beta_post": 50.0,
+      "prior_mean": 0.13043478260869565,
+      "posterior_mean": 0.5934959349593496,
+      "posterior_rpn": 4.747967479674797,
+      "posterior_mean_ccf": 0.5934959349593496,
+      "lambda_effective": 0.9001613499442714,
+      "reliability_1y": 0.4065040650406504
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Gate_GridBackbone",
+        "gate": "AND",
+        "inputs": [
+          "BE_GRID_COLLAPSE",
+          "BE_TELECOM_CORE"
+        ],
+        "probability": 0.51376,
+        "ci_95_low": 0.509378966695685,
+        "ci_95_high": 0.5181410333043149,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_GasChain",
+        "gate": "OR",
+        "inputs": [
+          "BE_GAS_PIPELINE",
+          "BE_LNG_TERMINAL"
+        ],
+        "probability": 0.90082,
+        "ci_95_low": 0.8981999949339432,
+        "ci_95_high": 0.9034400050660567,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_ControlPlane",
+        "gate": "OR",
+        "inputs": [
+          "BE_CYBER_ROOTKIT",
+          "BE_SENSOR_TAMPER",
+          "BE_CLOUD_OUTAGE"
+        ],
+        "probability": 0.83182,
+        "ci_95_low": 0.8285415171034024,
+        "ci_95_high": 0.8350984828965976,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_OMEGA_GlobalMeshFailure",
+        "gate": "AND",
+        "inputs": [
+          "Gate_GridBackbone",
+          "Gate_GasChain",
+          "Gate_ControlPlane"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_GRID_COLLAPSE": 0.8646616541353384,
+      "BE_SUBSTATION_FIRE": 0.2907801418439716,
+      "BE_GAS_PIPELINE": 0.7142857142857143,
+      "BE_LNG_TERMINAL": 0.6442307692307693,
+      "BE_CLOUD_OUTAGE": 0.5801526717557252,
+      "BE_TELECOM_CORE": 0.5934959349593496,
+      "BE_CYBER_ROOTKIT": 0.4306049822064057,
+      "BE_SENSOR_TAMPER": 0.2980769230769231
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "PowerGrid",
+        "risk": "Collapse",
+        "failure_class": "CMF",
+        "p_effective": 0.8646616541353384
+      },
+      {
+        "domain": "Power",
+        "risk": "Substation Fire",
+        "failure_class": "SPF",
+        "p_effective": 0.2907801418439716
+      },
+      {
+        "domain": "Gas",
+        "risk": "Pipeline Rupture",
+        "failure_class": "CMF",
+        "p_effective": 0.7142857142857143
+      },
+      {
+        "domain": "Gas",
+        "risk": "LNG Terminal Explosion",
+        "failure_class": "SPF",
+        "p_effective": 0.6442307692307693
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Rootkit in Grid Control",
+        "failure_class": "CMF",
+        "p_effective": 0.4306049822064057
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Sensor Tamper",
+        "failure_class": "SPF",
+        "p_effective": 0.2980769230769231
+      },
+      {
+        "domain": "Cloud",
+        "risk": "Hyperscaler Region Outage",
+        "failure_class": "CMF",
+        "p_effective": 0.5801526717557252
+      },
+      {
+        "domain": "Telecom",
+        "risk": "Core Routing Failure",
+        "failure_class": "CMF",
+        "p_effective": 0.5934959349593496
+      },
+      {
+        "domain": "domain",
+        "risk": "risk",
+        "failure_class": "failure_class",
+        "p_effective": 0.0
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 100.0
+  }
+}

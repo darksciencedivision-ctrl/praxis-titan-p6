@@ -1,0 +1,20 @@
+=== BAYESIAN RISK UPDATE ===
+Source file: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-07_05-08-02.txt
+
+1) PRIOR + POSTERIOR RISK TABLE
+
+Domain | Risk | FailureClass | PriorMean | ObservedLikelihood | PosteriorMean | Severity | PosteriorRPN
+--- | --- | --- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.100 | 0.450 | 0.132 | 5.00 | 0.659
+Technical | Substation fire | CMF | 0.050 | 0.300 | 0.062 | 5.00 | 0.310
+Cyber | SCADA intrusion | CF | 0.050 | 0.400 | 0.067 | 4.00 | 0.267
+Operational | Load shedding misfire | LF | 0.100 | 0.350 | 0.123 | 3.00 | 0.368
+Environmental | Storm line failure | ENV | 0.100 | 0.550 | 0.141 | 4.00 | 0.564
+
+2) RAW NUMERIC TABLE (FROM ANALYSIS)
+
+Technical | Transformer overload | SPF | 0.450 | 5.00 | 2.250
+Technical | Substation fire | CMF | 0.300 | 5.00 | 1.500
+Cyber | SCADA intrusion | CF | 0.400 | 4.00 | 1.600
+Operational | Load shedding misfire | LF | 0.350 | 3.00 | 1.050
+Environmental | Storm line failure | ENV | 0.550 | 4.00 | 2.200

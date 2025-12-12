@@ -1,0 +1,45 @@
+﻿from __future__ import annotations
+
+import json
+from pathlib import Path
+from typing import Any, Dict, List
+
+
+def load_json(path: str | Path) -> Dict[str, Any]:
+    path = Path(path)
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def save_json(data: Dict[str, Any], path: str | Path) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+def load_scenario_config(path: str | Path) -> Dict[str, Any]:
+    cfg = load_json(path)
+
+    if "scenario_id" not in cfg:
+        raise ValueError("scenario_config must contain 'scenario_id'")
+    if "risks" not in cfg or not isinstance(cfg["risks"], list):
+        raise ValueError("scenario_config must contain a 'risks' list")
+
+    return cfg
+
+
+def load_priors(path: str | Path) -> List[Dict[str, Any]]:
+    data = load_json(path)
+    priors = data.get("priors", [])
+    if not isinstance(priors, list):
+        raise ValueError("priors JSON must contain a 'priors' list")
+    return priors
+
+
+def load_ccf_groups(path: str | Path) -> List[Dict[str, Any]]:
+    data = load_json(path)
+    groups = data.get("ccf_groups", [])
+    if not isinstance(groups, list):
+        raise ValueError("ccf_groups JSON must contain a 'ccf_groups' list")
+    return groups

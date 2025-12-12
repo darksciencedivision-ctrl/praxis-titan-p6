@@ -1,0 +1,17 @@
+=== PRAxis CASCADE / INFLUENCE RESULTS ===
+PRA source: C:\ai_control\output\pra_ANALYSIS_2025-12-08_21-15-36.txt
+Cascade config: C:\ai_control\cascade_matrix.txt
+
+Domain | Risk | FailureClass | p_base | p_effective
+
+=== SKIPPED EVENTS (not in PRA) ===
+Technical | Regional blackout > 48 h | SPF
+Technical | Loss of > 40 GW load | SPF
+Technical | > 20 main transformer permanent damage | CMF
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF
+Cyber | SCADA wiper on balancing authorities | CF
+Cyber | EMS/AGC cloud-region failure | CF
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF
+Nuclear | Emergency diesel generator start failure | CMF
+Human | 40% control-room staffing loss | LF
+Market | Mutual-aid & insurance failure | LF

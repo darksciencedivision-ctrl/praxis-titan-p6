@@ -1,0 +1,27 @@
+{
+  "cascade_output": {
+    "R_GAS": {
+      "domain": "Gas",
+      "failure_class": "",
+      "id": "R_GAS",
+      "p_ccf": 0.5875,
+      "p_final": 0.6341437440000001,
+      "risk": "Compressor backbone trip"
+    },
+    "R_GRID": {
+      "domain": "PowerGrid",
+      "failure_class": "",
+      "id": "R_GRID",
+      "p_ccf": 0.45624999999999993,
+      "p_final": 0.5830768799999999,
+      "risk": "Regional 500 kV corridor loss"
+    }
+  },
+  "diagnostics": {
+    "edges_count": 2,
+    "input_count": 2,
+    "iterations_used": 5,
+    "mode": "iterative",
+    "warnings": []
+  }
+}

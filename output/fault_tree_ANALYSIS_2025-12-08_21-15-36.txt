@@ -1,0 +1,24 @@
+=== PRAxis FAULT-TREE MONTE CARLO ===
+PRA source: C:\ai_control\output\pra_ANALYSIS_2025-12-08_21-15-36.txt
+Reliability source: C:\ai_control\output\reliability_from_numeric_ANALYSIS_2025-12-08_21-15-36.txt
+Fault-tree config: C:\ai_control\fault_tree_config.txt
+Simulations: 100000
+
+=== BASIC EVENTS (BE probabilities after overrides) ===
+BE_ID | Domain | Risk | FailureClass | Probability
+BE_BLACKOUT_48H | Technical | Regional blackout > 48 h | SPF | 0.000000
+BE_LOSS_40GW | Technical | Loss of > 40 GW load | SPF | 0.000000
+BE_TRANSFORMERS_20PLUS | Technical | > 20 main transformer permanent damage | CMF | 0.000000
+BE_GAS_SHORTFALL | Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.000000
+BE_SCADA_WIPER | Cyber | SCADA wiper on balancing authorities | CF | 0.000000
+BE_EMS_AGC_FAILURE | Cyber | EMS/AGC cloud-region failure | CF | 0.000000
+BE_NUCLEAR_SCRAM_FAIL | Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.000000
+BE_EDG_FAIL | Nuclear | Emergency diesel generator start failure | CMF | 0.000000
+BE_CONTROLROOM_LOSS | Human | 40% control-room staffing loss | LF | 0.000000
+
+=== TOP EVENTS (Monte Carlo results, 95% CI) ===
+TE_ID | GateType | K | p_hat | StdErr | CI_low_95 | CI_high_95
+TE_GRID_COLLAPSE | OR | - | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_NUCLEAR_SITE_LOSS | AND | - | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_BLACK_SWAN_SATURDAY | KOFN | 2 | 0.000000 | 0.000000 | 0.000000 | 0.000000
+TE_OPERATIONS_DEGRADED | OR | - | 0.000000 | 0.000000 | 0.000000 | 0.000000

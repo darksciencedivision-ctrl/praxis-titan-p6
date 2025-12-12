@@ -1,0 +1,36 @@
+{
+  "basic_events": [
+    {
+      "id": "R_GRID",
+      "pra_key": ["PowerGrid", "Regional 500 kV corridor loss", "CMF"]
+    },
+    {
+      "id": "R_GAS",
+      "pra_key": ["Gas", "Compressor backbone trip", "CMF"]
+    }
+  ],
+  "gates": [
+    {
+      "id": "G_OR_ALL",
+      "type": "OR",
+      "inputs": ["R_GRID", "R_GAS"]
+    },
+    {
+      "id": "G_AND_BOTH",
+      "type": "AND",
+      "inputs": ["R_GRID", "R_GAS"]
+    },
+    {
+      "id": "G_TITAN_K_OF_N",
+      "type": "K_OF_N",
+      "k": 1,
+      "inputs": ["R_GRID", "R_GAS"]
+    },
+    {
+      "id": "G_TITAN_TOP",
+      "type": "OR",
+      "inputs": ["G_OR_ALL", "G_AND_BOTH", "G_TITAN_K_OF_N"]
+    }
+  ],
+  "top_event": "G_TITAN_TOP"
+}

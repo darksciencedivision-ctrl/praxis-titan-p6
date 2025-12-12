@@ -1,0 +1,11 @@
+=== LIFECYCLE RELIABILITY FROM NUMERIC RISK ===
+Source numeric file: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-07_05-08-02.txt
+Assumed mission window for 'Likelihood' = 1.000 time units
+
+Domain | Risk | FailureClass | Likelihood | Severity | Lambda_est | P_fail_1T | P_fail_5T | P_fail_10T | P_fail_20T
+--- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Technical | Transformer overload | SPF | 0.450000 | 5.00 | 5.978370e-01 | 0.450000 | 0.949672 | 0.997467 | 0.999994
+Technical | Substation fire | CMF | 0.300000 | 5.00 | 3.566749e-01 | 0.300000 | 0.831930 | 0.971752 | 0.999202
+Cyber | SCADA intrusion | CF | 0.400000 | 4.00 | 5.108256e-01 | 0.400000 | 0.922240 | 0.993953 | 0.999963
+Operational | Load shedding misfire | LF | 0.350000 | 3.00 | 4.307829e-01 | 0.350000 | 0.883971 | 0.986537 | 0.999819
+Environmental | Storm line failure | ENV | 0.550000 | 4.00 | 7.985077e-01 | 0.550000 | 0.981547 | 0.999659 | 1.000000

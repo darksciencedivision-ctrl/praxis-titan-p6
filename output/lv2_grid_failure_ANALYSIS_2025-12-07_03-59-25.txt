@@ -1,0 +1,36 @@
+=====================================================
+1) SYSTEM BREAKDOWN
+=====================================================
+
+Component  | Function  | Physical / Technical Principles  | Notes
+
+- Transformer overload: Overcurrent protection is designed to trip the transformer when it exceeds its capacity.
+- Substation fires: Proper maintenance and fire suppression systems can help prevent fires, but they are not foolproof.
+- SCADA communication loss: Redundant communication channels and robust protocols can improve communication reliability.
+- Emergency load shedding: Load-shedding plans should be regularly updated and tested to ensure that critical loads are prioritized.
+
+=====================================================
+2) RISK ANALYSIS   (MANDATORY NUMERIC TABLE)
+=====================================================
+
+Domain  | Risk         | FailureClass | Likelihood | Severity | RPN  | Mechanism                  | Consequence                 | Mitigation
+---    | ---          | ---           | ---        | ---      | ---  | ---                        | ---                         | ---
+Technical / Engineering | Transformer overload | SPF       | 0.45     | 4       | 1.80 | Overcurrent during winter peak demand event | Local transformer failure and blackouts | Parallel units and better protection
+Power System Stability | Substation fires | SPF       | 0.10     | 3       | 0.30  | Fires causing equipment damage or loss of service | Localized power outages, potential for widespread impact if multiple substations are affected | Proper maintenance and fire suppression systems
+Communication | SCADA communication loss | CF        | 0.05     | 2       | 0.10  | Communication breakdown during a crisis event | Miscommunication among control rooms, delayed response to issues | Redundant communication channels and robust protocols
+Emergency Response | Ineffective load shedding plan | SPF       | 0.01     | 5       | 0.05  | Incorrect prioritization of loads or failure to shed correctly | Widespread power outages, potential for prolonged downtime | Regularly updated and tested load-shedding plans
+
+=====================================================
+3) RESEARCH QUESTIONS
+=====================================================
+
+1. How can overcurrent protection systems be improved to prevent unnecessary transformer tripping during peak demand events?
+2. What factors contribute to substation fires, and how can they be mitigated through better design or maintenance practices?
+3. Can communication protocols be enhanced to improve resilience against SCADA communication loss during crisis events?
+4. How can load-shedding plans be optimized to prioritize critical loads and minimize the impact of power outages?
+5. What are the most significant risks associated with power system stability, and how can they be mitigated through improved engineering or control strategies?
+6. Can machine learning algorithms be developed to more accurately predict equipment failures and facilitate preventative maintenance?
+7. How can renewable energy integration be optimized to minimize impacts on grid stability during peak demand events?
+8. What are the most effective methods for detecting and responding to power system disturbances, such as blackouts or cascading failures?
+9. Can advanced modeling techniques improve our understanding of power system dynamics and help identify vulnerabilities in the grid?
+10. How can emergency response plans be improved to ensure a coordinated and effective response to major power system incidents?

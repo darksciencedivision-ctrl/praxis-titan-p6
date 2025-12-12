@@ -1,0 +1,47 @@
+{
+  "priors_path": null,
+  "pseudo_n": 10,
+
+  "ccf_groups": [
+    {
+      "beta": 0.3,
+      "members": ["R1", "R3"]
+    }
+  ],
+
+  "cascade_edges": [
+    {
+      "source": "R1",
+      "target": "R2",
+      "influence": 0.5
+    },
+    {
+      "source": "R2",
+      "target": "R1",
+      "influence": 0.4
+    }
+  ],
+
+  "fault_tree": {
+    "top_event": "TE_GRID_COLLAPSE",
+    "gates": {
+      "G1": {
+        "type": "AND",
+        "inputs": ["R1", "R2"]
+      },
+      "G2": {
+        "type": "KOFN",
+        "k": 1,
+        "inputs": ["R3"]
+      },
+      "TE_GRID_COLLAPSE": {
+        "type": "OR",
+        "inputs": ["G1", "G2"]
+      }
+    }
+  },
+
+  "reliability_horizons": [1.0, 5.0, 10.0],
+  "ft_mc_samples": 20000,
+  "ft_mc_seed": 123
+}

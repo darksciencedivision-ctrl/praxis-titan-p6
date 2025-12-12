@@ -1,0 +1,10 @@
+Domain | Risk | FailureClass | Likelihood | Severity | RPN
+Environmental | 125 °F (52 °C) heat dome 5 days | ENV | 0.850000 | 5.00 | 4.250000
+Environmental | Carrington- level GMD (G5) | ENV | 0.750000 | 5.00 | 3.750000
+Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF | 0.800000 | 5.00 | 4.000000
+Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF | 0.700000 | 5.00 | 3.500000
+Cyber | Starlink + public cloud simultaneous multi-region loss | CF | 0.650000 | 5.00 | 3.250000
+Technical | >400 large transformers permanent damage | CMF | 0.800000 | 5.00 | 4.000000
+Nuclear | Station blackout >8h at ≥12 plants | CMF | 0.600000 | 5.00 | 3.000000
+Human | Control room + field crew <25% available | LF | 0.900000 | 4.00 | 3.600000
+Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF | 0.850000 | 4.00 | 3.400000

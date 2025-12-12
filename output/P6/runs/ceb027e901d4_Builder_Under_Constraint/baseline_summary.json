@@ -1,0 +1,146 @@
+{
+  "numeric": [
+    {
+      "id": "R_HW_LIMIT",
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "p_base": 1e-05,
+      "severity": 0.9,
+      "severity_norm": 0.18,
+      "failure_class_weight": 1.0,
+      "rpn": 9e-06,
+      "risk_score": 0.25400500000000004
+    },
+    {
+      "id": "R_CERT_GAP",
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "p_base": 1e-05,
+      "severity": 0.85,
+      "severity_norm": 0.16999999999999998,
+      "failure_class_weight": 0.9,
+      "rpn": 8.5e-06,
+      "risk_score": 0.23100500000000002
+    },
+    {
+      "id": "R_SOC_COMM",
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "p_base": 1e-05,
+      "severity": 0.8,
+      "severity_norm": 0.16,
+      "failure_class_weight": 1.0,
+      "rpn": 8.000000000000001e-06,
+      "risk_score": 0.248005
+    },
+    {
+      "id": "R_ENG_OUTPUT",
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "p_base": 1e-05,
+      "severity": 0.95,
+      "severity_norm": 0.19,
+      "failure_class_weight": 1.0,
+      "rpn": 9.5e-06,
+      "risk_score": 0.257005
+    },
+    {
+      "id": "R_SUPPORT_FAIL",
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "p_base": 1e-05,
+      "severity": 0.9,
+      "severity_norm": 0.18,
+      "failure_class_weight": 0.9,
+      "rpn": 9e-06,
+      "risk_score": 0.23400500000000002
+    }
+  ],
+  "bayes": {
+    "posterior_probs": {
+      "R_HW_LIMIT": 0.14286428571428572,
+      "R_CERT_GAP": 0.14286428571428572,
+      "R_SOC_COMM": 0.14286428571428572,
+      "R_ENG_OUTPUT": 0.14286428571428572,
+      "R_SUPPORT_FAIL": 0.14286428571428572
+    },
+    "posteriors": {
+      "R_HW_LIMIT": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 1.00005,
+        "beta_post": 5.99995,
+        "p_base": 1e-05,
+        "p_post": 0.14286428571428572,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_CERT_GAP": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 1.00005,
+        "beta_post": 5.99995,
+        "p_base": 1e-05,
+        "p_post": 0.14286428571428572,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_SOC_COMM": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 1.00005,
+        "beta_post": 5.99995,
+        "p_base": 1e-05,
+        "p_post": 0.14286428571428572,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_ENG_OUTPUT": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 1.00005,
+        "beta_post": 5.99995,
+        "p_base": 1e-05,
+        "p_post": 0.14286428571428572,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      },
+      "R_SUPPORT_FAIL": {
+        "alpha_prior": 1.0,
+        "beta_prior": 1.0,
+        "alpha_post": 1.00005,
+        "beta_post": 5.99995,
+        "p_base": 1e-05,
+        "p_post": 0.14286428571428572,
+        "n_eff_prior": 2.0,
+        "n_eff_post": 7.0
+      }
+    }
+  },
+  "ccf": {
+    "probs": {
+      "R_HW_LIMIT": 0.14286428571428572,
+      "R_CERT_GAP": 0.14286428571428572,
+      "R_SOC_COMM": 0.14286428571428572,
+      "R_ENG_OUTPUT": 0.14286428571428572,
+      "R_SUPPORT_FAIL": 0.14286428571428572
+    }
+  },
+  "cascade": {
+    "final_probs": {
+      "R_HW_LIMIT": 0.14286428571428572,
+      "R_CERT_GAP": 0.14286428571428572,
+      "R_SOC_COMM": 0.14286428571428572,
+      "R_ENG_OUTPUT": 0.14286428571428572,
+      "R_SUPPORT_FAIL": 0.14286428571428572
+    }
+  },
+  "ft_analytic": {},
+  "ft_mc": {},
+  "reliability": {}
+}

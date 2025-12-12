@@ -1,0 +1,13 @@
+=== BAYESIAN RISK UPDATE (BETA-BINOMIAL) ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_18-33-09.txt
+Domain | Risk | FailureClass | AlphaPrior | BetaPrior | ObservedLikelihood | AlphaPost | BetaPost | PriorMean | PosteriorMean | Severity | PosteriorRPN
+Technical | Regional blackout > 48 h | SPF | 1.000000 | 1.000000 | 0.600000 | 4.000000 | 3.000000 | 0.500000 | 0.571429 | 5.00 | 2.857143
+Technical | Loss of > 40 GW load | SPF | 1.000000 | 1.000000 | 0.650000 | 4.250000 | 2.750000 | 0.500000 | 0.607143 | 5.00 | 3.035714
+Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 1.000000 | 1.000000 | 0.450000 | 3.250000 | 3.750000 | 0.500000 | 0.464286 | 5.00 | 2.321429
+Technical | > 20 main transformer permanent damage | CMF | 1.000000 | 1.000000 | 0.550000 | 3.750000 | 3.250000 | 0.500000 | 0.535714 | 5.00 | 2.678571
+Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 1.000000 | 1.000000 | 0.700000 | 4.500000 | 2.500000 | 0.500000 | 0.642857 | 4.00 | 2.571429
+Cyber | SCADA wiper on balancing authorities | CF | 1.000000 | 1.000000 | 0.650000 | 4.250000 | 2.750000 | 0.500000 | 0.607143 | 4.00 | 2.428571
+Cyber | EMS/AGC cloud-region failure | CF | 1.000000 | 1.000000 | 0.550000 | 3.750000 | 3.250000 | 0.500000 | 0.535714 | 4.00 | 2.142857
+Human | 40% control-room staffing loss | LF | 1.000000 | 1.000000 | 0.600000 | 4.000000 | 3.000000 | 0.500000 | 0.571429 | 3.00 | 1.714286
+Nuclear | Emergency diesel generator start failure | CMF | 1.000000 | 1.000000 | 0.500000 | 3.500000 | 3.500000 | 0.500000 | 0.500000 | 4.00 | 2.000000
+Market | Mutual-aid & insurance failure | LF | 1.000000 | 1.000000 | 0.550000 | 3.750000 | 3.250000 | 0.500000 | 0.535714 | 3.00 | 1.607143

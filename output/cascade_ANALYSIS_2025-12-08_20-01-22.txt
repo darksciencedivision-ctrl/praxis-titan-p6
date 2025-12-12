@@ -1,0 +1,15 @@
+=== CASCADE / INFLUENCE ANALYSIS ===
+PRA source:   C:\ai_control\output\pra_ANALYSIS_2025-12-08_20-01-22.txt
+Config:       C:\ai_control\cascade_matrix.txt
+
+EventID | Domain | Risk | FailureClass | p_base | influence_added | p_effective
+E1 | Technical | Regional blackout > 48 h | SPF | 0.607143 | 0.476786 | 1.000000
+E2 | Technical | Loss of > 40 GW load | SPF | 0.625000 | 0.160714 | 0.785714
+E3 | Technical | > 20 main transformer permanent damage | CMF | 0.589286 | 0.253571 | 0.842857
+E4 | Fuel | Severe gas supply shortfall (compressors + LNG) | LF | 0.642857 | 0.000000 | 0.642857
+E5 | Cyber | SCADA wiper on balancing authorities | CF | 0.607143 | 0.000000 | 0.607143
+E6 | Cyber | EMS/AGC cloud-region failure | CF | 0.571429 | 0.000000 | 0.571429
+E7 | Nuclear | Nuclear SCRAM + fail to restart < 24 h | CMF | 0.464286 | 0.000000 | 0.464286
+E8 | Nuclear | Emergency diesel generator start failure | CMF | 0.500000 | 0.000000 | 0.500000
+E9 | Human | 40% control-room staffing loss | LF | 0.571429 | 0.235714 | 0.807143
+E10 | Market | Mutual-aid & insurance failure | LF | 0.535714 | 0.060714 | 0.596428

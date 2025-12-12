@@ -1,0 +1,83 @@
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any, Dict
+
+from .io import (
+    load_scenario_config,
+    load_priors,
+    load_ccf_groups,
+    load_json,
+    save_json,
+)
+from .numeric import compute_numeric_risks
+from .bayes import bayes_update, update_priors_from_posterior
+from .pra import apply_ccf_beta_factor
+from .reliability import attach_reliability
+from .fault_tree import simulate_fault_tree
+from .cascade import apply_cascade_influence
+from .reporting import generate_text_report
+
+
+def run_scenario(
+    scenario_config_path: str | Path,
+    priors_path: str | Path,
+    ccf_groups_path: str | Path,
+    fault_tree_path: str | Path,
+    cascade_path: str | Path,
+    out_dir: str | Path,
+    pseudo_n: float = 5.0,
+    write_report: bool = True,
+) -> Dict[str, Any]:
+    """
+    High-level orchestrator for PRAXIS-Core.
+    """
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    scenario_cfg = load_scenario_config(scenario_config_path)
+    priors_list = load_priors(priors_path)
+    ccf_groups = load_ccf_groups(ccf_groups_path)
+    fault_tree_cfg = load_json(fault_tree_path)
+    cascade_cfg = load_json(cascade_path)
+
+    numeric_risks = compute_numeric_risks(scenario_cfg)
+
+    bayes_rows = bayes_update(numeric_risks, priors_list, pseudo_n=pseudo_n)
+    new_priors = update_priors_from_posterior(bayes_rows)
+
+    pra_rows = apply_ccf_beta_factor(bayes_rows, ccf_groups)
+
+    rel_rows = attach_reliability(pra_rows, config=None)
+
+    fault_tree_results = simulate_fault_tree(rel_rows, fault_tree_cfg)
+
+    cascade_results = apply_cascade_influence(rel_rows, cascade_cfg)
+
+    praxis_output: Dict[str, Any] = {
+        "schema_version": "1.0",
+        "scenario_id": scenario_cfg["scenario_id"],
+        "numeric_risks": numeric_risks,
+        "bayes": bayes_rows,
+        "priors_updated": new_priors,
+        "pra": pra_rows,
+        "reliability": rel_rows,
+        "fault_tree": fault_tree_results,
+        "cascades": cascade_results,
+        "metadata": {
+            "praxis_core_version": "1.0.0",
+            "pseudo_n": pseudo_n,
+        },
+    }
+
+    out_json_path = out_dir / f"{scenario_cfg['scenario_id']}_praxis_output.json"
+    save_json(praxis_output, out_json_path)
+
+    new_priors_path = out_dir / "risk_priors_updated.json"
+    save_json({"schema_version": "1.0", "priors": new_priors}, new_priors_path)
+
+    if write_report:
+        report_path = out_dir / f"{scenario_cfg['scenario_id']}_report.md"
+        generate_text_report(praxis_output, report_path)
+
+    return praxis_output

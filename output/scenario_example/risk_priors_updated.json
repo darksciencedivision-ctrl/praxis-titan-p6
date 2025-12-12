@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "alpha": 2.75,
+      "beta": 4.25,
+      "severity": 5.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "alpha": 3.0,
+      "beta": 4.0,
+      "severity": 4.0
+    }
+  ]
+}

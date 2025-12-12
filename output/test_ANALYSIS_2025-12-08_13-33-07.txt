@@ -1,0 +1,11 @@
+=====================================================
+2) RISK ANALYSIS
+=====================================================
+
+Domain | Risk | FailureClass | Likelihood | Severity | RPN
+--- | --- | --- | --- | --- | ---
+Technical | Cloud sync controller overload causing repeated Synch-23B events | SPF | 0.0200 | 3 | 0.060
+Technical | Failover router misroutes Tier-1 traffic during spike            | SPF | 0.0100 | 5 | 0.050
+Data Integrity | Single Tier-1 metadata packet loss leading to undetected record omission | CF | 0.0000002 | 5 | 0.000001
+Operational | Misconfigured logging hides critical Tier-1 alerts            | LF | 0.1000 | 4 | 0.400
+Regulatory | Regulatory reporting re-audit due to suspected Tier-1 data loss | CMF | 0.0500 | 5 | 0.250

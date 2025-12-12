@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Collapse",
+      "failure_class": "CMF",
+      "alpha": 50.5,
+      "beta": 0.5,
+      "severity": 10.0
+    },
+    {
+      "domain": "Power",
+      "risk": "Substation Fire",
+      "failure_class": "SPF",
+      "alpha": 1.5,
+      "beta": 50.5,
+      "severity": 8.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Pipeline Rupture",
+      "failure_class": "CMF",
+      "alpha": 125.0,
+      "beta": 25.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor Fault",
+      "failure_class": "SPF",
+      "alpha": 26.0,
+      "beta": 26.0,
+      "severity": 9.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "DDoS Attack",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 51.0,
+      "severity": 7.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Sensor Tamper",
+      "failure_class": "SPF",
+      "alpha": 11.0,
+      "beta": 41.0,
+      "severity": 5.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Software Crash",
+      "failure_class": "CMF",
+      "alpha": 5.01,
+      "beta": 55.0,
+      "severity": 6.0
+    }
+  ]
+}

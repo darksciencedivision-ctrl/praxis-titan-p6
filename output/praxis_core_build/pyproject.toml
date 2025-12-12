@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "praxis_core"
+version = "0.1.0"
+description = "Private core engine for the PRAXIS risk and reliability model."
+authors = [
+  { name = "Samuel Lawson", email = "darksciencedivision@gmail.com" }
+]
+requires-python = ">=3.9"
+license = { text = "Proprietary - commercial license required for use." }
+
+[project.urls]
+Homepage = "https://github.com/darksciencedivision-ctrl/Praxis-engine"
+
+[tool.setuptools]
+packages = ["praxis_core"]

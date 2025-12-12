@@ -1,0 +1,9 @@
+NUMERIC RISK TABLE
+
+| Domain | Risk | FailureClass | Likelihood | Severity | RPN | Mechanism | Consequence | Mitigation |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Network transport layer | 0.01 | LF | 0.30 | 3 | 0.90 | SPF | 0.005 | 1 |
+| Database replication system | 0.02 | LF | 0.30 | 3 | 0.90 | CMF | 0.015 | 2 |
+| Failover controller | 0.03 | LF | 0.30 | 3 | 0.90 | CF | 0.001 | 3 |
+| Transaction metadata store | 0.04 | LF | 0.30 | 3 | 0.90 | SPF | 0.002 | 4 |
+| Cloud routing fabric | 0.05 | LF | 0.30 | 3 | 0.90 | LF | 0.004 | 5 |

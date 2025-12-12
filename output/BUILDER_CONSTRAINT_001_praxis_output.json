@@ -1,0 +1,441 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "BUILDER_CONSTRAINT_001",
+  "numeric_risks": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 0.9,
+      "rpn": 0.5850000000000001
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "likelihood": 0.7,
+      "severity": 0.85,
+      "rpn": 0.595
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "likelihood": 0.6,
+      "severity": 0.8,
+      "rpn": 0.48
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "likelihood": 0.3,
+      "severity": 0.95,
+      "rpn": 0.285
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "likelihood": 0.5,
+      "severity": 0.9,
+      "rpn": 0.45
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 0.9,
+      "rpn": 0.5850000000000001,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.25,
+      "beta_post": 2.75,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6071428571428571,
+      "posterior_rpn": 0.5464285714285714
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "likelihood": 0.7,
+      "severity": 0.85,
+      "rpn": 0.595,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.5,
+      "beta_post": 2.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6428571428571429,
+      "posterior_rpn": 0.5464285714285715
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "likelihood": 0.6,
+      "severity": 0.8,
+      "rpn": 0.48,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.0,
+      "beta_post": 3.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5714285714285714,
+      "posterior_rpn": 0.45714285714285713
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "likelihood": 0.3,
+      "severity": 0.95,
+      "rpn": 0.285,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.5,
+      "beta_post": 4.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.35714285714285715,
+      "posterior_rpn": 0.3392857142857143
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "likelihood": 0.5,
+      "severity": 0.9,
+      "rpn": 0.45,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.5,
+      "beta_post": 3.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 0.45
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "alpha": 4.25,
+      "beta": 2.75,
+      "severity": 0.9
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "alpha": 4.5,
+      "beta": 2.5,
+      "severity": 0.85
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "alpha": 4.0,
+      "beta": 3.0,
+      "severity": 0.8
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "alpha": 2.5,
+      "beta": 4.5,
+      "severity": 0.95
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "alpha": 3.5,
+      "beta": 3.5,
+      "severity": 0.9
+    }
+  ],
+  "pra": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 0.9,
+      "rpn": 0.5850000000000001,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.25,
+      "beta_post": 2.75,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6071428571428571,
+      "posterior_rpn": 0.5464285714285714,
+      "posterior_mean_ccf": 0.6071428571428571
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "likelihood": 0.7,
+      "severity": 0.85,
+      "rpn": 0.595,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.5,
+      "beta_post": 2.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6428571428571429,
+      "posterior_rpn": 0.5464285714285715,
+      "posterior_mean_ccf": 0.6428571428571429
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "likelihood": 0.6,
+      "severity": 0.8,
+      "rpn": 0.48,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.0,
+      "beta_post": 3.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5714285714285714,
+      "posterior_rpn": 0.45714285714285713,
+      "posterior_mean_ccf": 0.5714285714285714
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "likelihood": 0.3,
+      "severity": 0.95,
+      "rpn": 0.285,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.5,
+      "beta_post": 4.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.35714285714285715,
+      "posterior_rpn": 0.3392857142857143,
+      "posterior_mean_ccf": 0.35714285714285715
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "likelihood": 0.5,
+      "severity": 0.9,
+      "rpn": 0.45,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.5,
+      "beta_post": 3.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 0.45,
+      "posterior_mean_ccf": 0.5
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "likelihood": 0.65,
+      "severity": 0.9,
+      "rpn": 0.5850000000000001,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.25,
+      "beta_post": 2.75,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6071428571428571,
+      "posterior_rpn": 0.5464285714285714,
+      "posterior_mean_ccf": 0.6071428571428571,
+      "lambda_effective": -0.3928571428571429,
+      "reliability_1y": 1.4812067732465832
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "likelihood": 0.7,
+      "severity": 0.85,
+      "rpn": 0.595,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.5,
+      "beta_post": 2.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.6428571428571429,
+      "posterior_rpn": 0.5464285714285715,
+      "posterior_mean_ccf": 0.6428571428571429,
+      "lambda_effective": -0.3571428571428571,
+      "reliability_1y": 1.4292400324179777
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "likelihood": 0.6,
+      "severity": 0.8,
+      "rpn": 0.48,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 4.0,
+      "beta_post": 3.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5714285714285714,
+      "posterior_rpn": 0.45714285714285713,
+      "posterior_mean_ccf": 0.5714285714285714,
+      "lambda_effective": -0.4285714285714286,
+      "reliability_1y": 1.53506300925521
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "likelihood": 0.3,
+      "severity": 0.95,
+      "rpn": 0.285,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.5,
+      "beta_post": 4.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.35714285714285715,
+      "posterior_rpn": 0.3392857142857143,
+      "posterior_mean_ccf": 0.35714285714285715,
+      "lambda_effective": -0.6428571428571428,
+      "reliability_1y": 1.9019071442186488
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "likelihood": 0.5,
+      "severity": 0.9,
+      "rpn": 0.45,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.5,
+      "beta_post": 3.5,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.5,
+      "posterior_rpn": 0.45,
+      "posterior_mean_ccf": 0.5,
+      "lambda_effective": -0.5,
+      "reliability_1y": 1.6487212707001282
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Gate_A",
+        "gate": "AND",
+        "inputs": [
+          "BE_R1",
+          "BE_R2"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Gate_B",
+        "gate": "OR",
+        "inputs": [
+          "BE_R1",
+          "BE_R2"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "TE_Certain",
+        "gate": "OR",
+        "inputs": [
+          "BE_R2",
+          "BE_R3"
+        ],
+        "probability": 0.0,
+        "ci_95_low": 0.0,
+        "ci_95_high": 0.0,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_R1": 0.0,
+      "BE_R2": 0.0,
+      "BE_R3": 0.0
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "Computational",
+        "risk": "Insufficient workstation capability",
+        "failure_class": "SPF",
+        "p_effective": 0.6071428571428571
+      },
+      {
+        "domain": "Training",
+        "risk": "Lack of required professional certifications",
+        "failure_class": "LF",
+        "p_effective": 0.6428571428571429
+      },
+      {
+        "domain": "Communication",
+        "risk": "Critical system information not reaching key engineer (father)",
+        "failure_class": "CCF",
+        "p_effective": 0.5714285714285714
+      },
+      {
+        "domain": "Performance",
+        "risk": "Human subsystem producing output exceeding observer expectations",
+        "failure_class": "HF",
+        "p_effective": 0.35714285714285715
+      },
+      {
+        "domain": "Operational",
+        "risk": "Lack of external support causing throughput degradation",
+        "failure_class": "LF",
+        "p_effective": 0.5
+      },
+      {
+        "domain": "PowerGrid",
+        "risk": "Grid Loss",
+        "failure_class": "SPF",
+        "p_effective": 0.0
+      },
+      {
+        "domain": "Gas",
+        "risk": "Pipe Failure",
+        "failure_class": "CMF",
+        "p_effective": 0.0
+      },
+      {
+        "domain": "Cyber",
+        "risk": "Ransomware",
+        "failure_class": "CMF",
+        "p_effective": 0.0
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 5.0
+  }
+}

@@ -1,0 +1,25 @@
+1) SYSTEM BREAKDOWN:
+Transformers: Function - Voltage conversion for transmission. Physical/Tech Principles - Electromagnetic induction, thermal limits.
+Substations: Function - Distribute grid power locally. Physical/Tech Principles - Circuit protection, electrical insulation.
+Transmission Lines: Function - Long-distance power delivery. Physical/Tech Principles - High-voltage AC transmission.
+SCADA Systems: Function - Grid monitoring and remote control. Physical/Tech Principles - Digital telemetry, control algorithms.
+Load Shedding Systems: Function - Demand reduction during peak load. Physical/Tech Principles - Automated demand-response controls.
+
+2) RISK ANALYSIS:
+Domain: Risk - Transformer overload. FailureClass - SPF. Likelihood - 0.45. Severity - 5. RPN - 2.25. Mechanism - Thermal saturation during demand surge. Consequence - Localized blackouts, transformer damage.
+Domain: Risk - Substation thermal fire. FailureClass - CMF. Likelihood - 0.30. Severity - 5. RPN - 1.50. Mechanism - Insulation breakdown under heat load. Consequence - Equipment destruction, service interruption.
+Domain: Risk - SCADA cyber intrusion. FailureClass - CF. Likelihood - 0.40. Severity - 4. RPN - 1.60. Mechanism - Malware or network penetration. Consequence - Loss of grid monitoring and control.
+Domain: Risk - Load shedding misfire. FailureClass - LF. Likelihood - 0.35. Severity - 3. RPN - 1.05. Mechanism - Algorithm instability under rapid load shifts. Consequence - Unnecessary outages, system oscillation.
+Domain: Risk - Storm-induced line failure. FailureClass - CF. Likelihood - 0.55. Severity - 4. RPN - 2.20. Mechanism - Wind, ice, lightning strike. Consequence - Cascading regional outages.
+
+3) RESEARCH QUESTIONS:
+1. What transformer thermal modeling improvements most accurately predict saturation failure?
+2. How does real-time AI-based load forecasting reduce peak failure probability?
+3. What SCADA intrusion detection architecture minimizes false negatives under zero-day exploits?
+4. How do cascading grid failures propagate under multi-node substation loss?
+5. What is the recovery time distribution after transformer burn-through events?
+6. How does adaptive reinforcement learning perform under grid oscillation states?
+7. What meteorological thresholds most strongly correlate to transmission collapse?
+8. What redundancy topology minimizes regional blackout probability?
+9. How do delayed sensor updates affect AI dispatch stability?
+10. What is the optimal human-override latency threshold during AI-controlled load shedding?

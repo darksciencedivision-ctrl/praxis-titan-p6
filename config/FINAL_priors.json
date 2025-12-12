@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "Gas",
+      "risk": "Pipe Failure",
+      "failure_class": "CMF",
+      "alpha": 0.01,
+      "beta": 99.99,
+      "severity": 80.0
+    },
+    {
+      "domain": "PowerGrid",
+      "risk": "Grid Loss",
+      "failure_class": "SPF",
+      "alpha": 99.99,
+      "beta": 0.01,
+      "severity": 90.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Malware",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "severity": 75.0
+    },
+    {
+      "domain": "Cyber",
+      "risk": "Ransomware",
+      "failure_class": "CMF",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "severity": 70.0
+    }
+  ]
+}

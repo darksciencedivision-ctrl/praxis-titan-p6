@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "example_black_swan",
+  "numeric_risks": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "likelihood": 0.35,
+      "severity": 5.0,
+      "rpn": 1.75
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 4.0,
+      "rpn": 1.6
+    }
+  ],
+  "bayes": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "likelihood": 0.35,
+      "severity": 5.0,
+      "rpn": 1.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.75,
+      "beta_post": 4.25,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.39285714285714285,
+      "posterior_rpn": 1.9642857142857142
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 4.0,
+      "rpn": 1.6,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.0,
+      "beta_post": 4.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.42857142857142855,
+      "posterior_rpn": 1.7142857142857142
+    }
+  ],
+  "priors_updated": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "alpha": 2.75,
+      "beta": 4.25,
+      "severity": 5.0
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "alpha": 3.0,
+      "beta": 4.0,
+      "severity": 4.0
+    }
+  ],
+  "pra": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "likelihood": 0.35,
+      "severity": 5.0,
+      "rpn": 1.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.75,
+      "beta_post": 4.25,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.39285714285714285,
+      "posterior_rpn": 1.9642857142857142,
+      "posterior_mean_ccf": 0.39285714285714285
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 4.0,
+      "rpn": 1.6,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.0,
+      "beta_post": 4.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.42857142857142855,
+      "posterior_rpn": 1.7142857142857142,
+      "posterior_mean_ccf": 0.42857142857142855
+    }
+  ],
+  "reliability": [
+    {
+      "domain": "PowerGrid",
+      "risk": "Regional 500 kV corridor loss",
+      "failure_class": "CMF",
+      "likelihood": 0.35,
+      "severity": 5.0,
+      "rpn": 1.75,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 2.75,
+      "beta_post": 4.25,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.39285714285714285,
+      "posterior_rpn": 1.9642857142857142,
+      "posterior_mean_ccf": 0.39285714285714285,
+      "lambda_effective": 0.49899116611898775,
+      "reliability_1y": 0.6071428571428572
+    },
+    {
+      "domain": "Gas",
+      "risk": "Compressor backbone trip",
+      "failure_class": "SPF",
+      "likelihood": 0.4,
+      "severity": 4.0,
+      "rpn": 1.6,
+      "alpha_prior": 1.0,
+      "beta_prior": 1.0,
+      "alpha_post": 3.0,
+      "beta_post": 4.0,
+      "prior_mean": 0.5,
+      "posterior_mean": 0.42857142857142855,
+      "posterior_rpn": 1.7142857142857142,
+      "posterior_mean_ccf": 0.42857142857142855,
+      "lambda_effective": 0.5596157879354228,
+      "reliability_1y": 0.5714285714285714
+    }
+  ],
+  "fault_tree": {
+    "top_events": [
+      {
+        "top_event_id": "Regional_Blackout",
+        "gate": "AND",
+        "inputs": [
+          "BE_GRID_CORRIDOR_LOSS",
+          "BE_GAS_BACKBONE_TRIP"
+        ],
+        "probability": 0.16956,
+        "ci_95_low": 0.16627082558800466,
+        "ci_95_high": 0.17284917441199532,
+        "n_samples": 50000
+      },
+      {
+        "top_event_id": "Any_Backbone_Failure",
+        "gate": "OR",
+        "inputs": [
+          "BE_GRID_CORRIDOR_LOSS",
+          "BE_GAS_BACKBONE_TRIP"
+        ],
+        "probability": 0.65224,
+        "ci_95_low": 0.648065402608184,
+        "ci_95_high": 0.6564145973918161,
+        "n_samples": 50000
+      }
+    ],
+    "basic_event_probs": {
+      "BE_GRID_CORRIDOR_LOSS": 0.39285714285714285,
+      "BE_GAS_BACKBONE_TRIP": 0.42857142857142855
+    },
+    "n_samples": 50000
+  },
+  "cascades": {
+    "events": [
+      {
+        "domain": "PowerGrid",
+        "risk": "Regional 500 kV corridor loss",
+        "failure_class": "CMF",
+        "p_effective": 0.5619897959183673
+      },
+      {
+        "domain": "Gas",
+        "risk": "Compressor backbone trip",
+        "failure_class": "SPF",
+        "p_effective": 0.5409693877551021
+      }
+    ]
+  },
+  "metadata": {
+    "praxis_core_version": "1.0.0",
+    "pseudo_n": 5.0
+  }
+}

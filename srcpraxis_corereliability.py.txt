@@ -1,0 +1,31 @@
+from __future__ import annotations
+
+from math import exp
+from typing import Any, Dict, List
+
+
+def attach_reliability(
+    pra_rows: List[Dict[str, Any]],
+    config: Dict[str, Any] | None = None,
+) -> List[Dict[str, Any]]:
+    """
+    Attach simple reliability metrics based on posterior_mean_ccf.
+    """
+    out: List[Dict[str, Any]] = []
+
+    for row in pra_rows:
+        p = float(row.get("posterior_mean_ccf", row.get("posterior_mean", 0.0)))
+        if p <= 0.0:
+            lambda_eff = 0.0
+        else:
+            # Approximate lambda so P_fail ~ p
+            lambda_eff = -(1.0 - p)
+
+        reliability_1y = exp(-lambda_eff)
+
+        row_out = dict(row)
+        row_out["lambda_effective"] = lambda_eff
+        row_out["reliability_1y"] = reliability_1y
+        out.append(row_out)
+
+    return out

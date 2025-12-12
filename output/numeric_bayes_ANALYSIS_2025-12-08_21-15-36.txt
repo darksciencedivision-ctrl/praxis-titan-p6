@@ -1,0 +1,12 @@
+=== BAYESIAN RISK UPDATE (BETA-BINOMIAL) ===
+Source: C:\ai_control\output\numeric_risk_test_ANALYSIS_2025-12-08_21-15-36.txt
+Domain | Risk | FailureClass | AlphaPrior | BetaPrior | ObservedLikelihood | AlphaPost | BetaPost | PriorMean | PosteriorMean | Severity | PosteriorRPN
+Environmental | 125 °F (52 °C) heat dome 5 days | ENV | 1.000000 | 1.000000 | 0.850000 | 5.250000 | 1.750000 | 0.500000 | 0.750000 | 5.00 | 3.750000
+Environmental | Carrington- level GMD (G5) | ENV | 1.000000 | 1.000000 | 0.750000 | 4.750000 | 2.250000 | 0.500000 | 0.678571 | 5.00 | 3.392857
+Fuel | Total loss of gas compression + 5/6 LNG terminals iced-off | CMF | 1.000000 | 1.000000 | 0.800000 | 5.800000 | 2.200000 | 0.500000 | 0.725000 | 5.00 | 3.625000
+Cyber | Coordinated zero-day on all three major EMS + pipeline SCADA | CF | 1.000000 | 1.000000 | 0.700000 | 3.800000 | 2.200000 | 0.500000 | 0.633333 | 5.00 | 3.166667
+Cyber | Starlink + public cloud simultaneous multi-region loss | CF | 1.000000 | 1.000000 | 0.650000 | 3.600000 | 2.400000 | 0.500000 | 0.600000 | 5.00 | 3.000000
+Technical | >400 large transformers permanent damage | CMF | 1.000000 | 1.000000 | 0.800000 | 5.800000 | 2.200000 | 0.500000 | 0.725000 | 5.00 | 3.625000
+Nuclear | Station blackout >8h at ≥12 plants | CMF | 1.000000 | 1.000000 | 0.600000 | 4.600000 | 3.400000 | 0.500000 | 0.575000 | 5.00 | 2.875000
+Human | Control room + field crew <25% available | LF | 1.000000 | 1.000000 | 0.900000 | 5.500000 | 1.500000 | 0.500000 | 0.785714 | 4.00 | 3.142857
+Market | Nationwide insurance + FEMA collapse (force majeure invoked) | LF | 1.000000 | 1.000000 | 0.850000 | 5.250000 | 1.750000 | 0.500000 | 0.750000 | 4.00 | 3.000000

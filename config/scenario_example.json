@@ -1,0 +1,64 @@
+{
+  "scenario_name": "Builder Under Constraint",
+  "description": "Human-in-the-loop builder operating under hardware, training, communication, performance, and support constraints.",
+  "risks": [
+    {
+      "id": "R_HW_LIMIT",
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "RESOURCE",
+      "likelihood": 0.60,
+      "severity": 7
+    },
+    {
+      "id": "R_CERT_GAP",
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "ORGANIZATIONAL",
+      "likelihood": 0.55,
+      "severity": 6
+    },
+    {
+      "id": "R_SOC_COMM",
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "ORGANIZATIONAL",
+      "likelihood": 0.50,
+      "severity": 7
+    },
+    {
+      "id": "R_ENG_OUTPUT",
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HUMAN",
+      "likelihood": 0.40,
+      "severity": 5
+    },
+    {
+      "id": "R_SUPPORT_FAIL",
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "OPERATIONAL",
+      "likelihood": 0.55,
+      "severity": 7
+    }
+  ],
+  "ccf_groups": {},
+  "cascade": {},
+  "fault_tree": {
+    "top_event": "TE_BUILDER_UNDER_CONSTRAINT",
+    "gates": {
+      "TE_BUILDER_UNDER_CONSTRAINT": {
+        "type": "OR",
+        "inputs": [
+          "R_HW_LIMIT",
+          "R_CERT_GAP",
+          "R_SOC_COMM",
+          "R_ENG_OUTPUT",
+          "R_SUPPORT_FAIL"
+        ]
+      }
+    }
+  }
+}
+

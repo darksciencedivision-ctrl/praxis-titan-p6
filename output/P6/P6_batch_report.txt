@@ -1,0 +1,20 @@
+==============================
+PRAXIS P6 BATCH REPORT
+==============================
+
+Batch size: 2
+
+Scenarios (worst reliability first):
+- Titan Alt Scenario
+  Path: C:\ai_control\config\scenario_example_alt.json
+  Top event: G_TITAN_TOP
+  Top event probability: 0.974605
+  System reliability:    0.025395
+  Hash: d380482920b6442e8f37a4740543f90ff85bd83ac113422eb1d64007c19548a1
+
+- Titan K-of-N Test Scenario
+  Path: C:\ai_control\config\scenario_example.json
+  Top event: G_TITAN_TOP
+  Top event probability: 0.961836
+  System reliability:    0.038164
+  Hash: a13514140a7bd7e4f7bd6806d1f73c4772986a173669515d3cdc4656f560ba79

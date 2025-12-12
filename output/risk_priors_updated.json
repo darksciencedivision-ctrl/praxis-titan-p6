@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "priors": [
+    {
+      "domain": "Computational",
+      "risk": "Insufficient workstation capability",
+      "failure_class": "SPF",
+      "alpha": 4.25,
+      "beta": 2.75,
+      "severity": 0.9
+    },
+    {
+      "domain": "Training",
+      "risk": "Lack of required professional certifications",
+      "failure_class": "LF",
+      "alpha": 4.5,
+      "beta": 2.5,
+      "severity": 0.85
+    },
+    {
+      "domain": "Communication",
+      "risk": "Critical system information not reaching key engineer (father)",
+      "failure_class": "CCF",
+      "alpha": 4.0,
+      "beta": 3.0,
+      "severity": 0.8
+    },
+    {
+      "domain": "Performance",
+      "risk": "Human subsystem producing output exceeding observer expectations",
+      "failure_class": "HF",
+      "alpha": 2.5,
+      "beta": 4.5,
+      "severity": 0.95
+    },
+    {
+      "domain": "Operational",
+      "risk": "Lack of external support causing throughput degradation",
+      "failure_class": "LF",
+      "alpha": 3.5,
+      "beta": 3.5,
+      "severity": 0.9
+    }
+  ]
+}

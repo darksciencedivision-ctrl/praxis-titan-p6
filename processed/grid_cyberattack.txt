@@ -1,0 +1,1 @@
+A national power grid facing coordinated cyber-physical attacks on substations, control centers, and transmission lines, with an AI supervisor trying to maintain stability, prioritize load, and prevent cascading blackouts…
