@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.BAK
+*.bak
+
+# Logs / artifacts
+logs/
+output/
+runs/
+archive/
+ui_outbox/
+outbox/
+
+# Local environments
+.venv/
+env/
+
+# OS junk
+Thumbs.db
+.DS_Store
