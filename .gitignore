@@ -24,3 +24,6 @@ queue_v2/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Stray source backup (removed from history going forward)
+src_backup/
